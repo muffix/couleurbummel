@@ -1,0 +1,1935 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map renders and matches the snapshot 1`] = `
+[
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 0,
+        "justifyContent": "flex-end",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    testID="Screen:Map"
+  >
+    <AIRMap
+      edgePadding={
+        {
+          "bottom": 50,
+          "left": 50,
+          "right": 50,
+          "top": 50,
+        }
+      }
+      initialRegion={
+        {
+          "latitude": 51.3127342,
+          "latitudeDelta": 11.576627411414329,
+          "longitude": 10.355706,
+          "longitudeDelta": 9.483221,
+        }
+      }
+      loadingEnabled={true}
+      mapRef={[Function]}
+      mapType="standard"
+      onChange={[Function]}
+      onMapReady={[Function]}
+      onRegionChangeComplete={[Function]}
+      onUserLocationChange={[Function]}
+      region={null}
+      showsMyLocationButton={true}
+      showsPointsOfInterest={true}
+      showsUserLocation={true}
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      testID="Map:MapView"
+      tintColor="#008040"
+      userLocationPriority="balanced"
+    >
+      <AIRMapMarker
+        coordinate={
+          {
+            "latitude": 50.78046859833441,
+            "longitude": 6.07593297958374,
+          }
+        }
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            {
+              "zIndex": 10,
+            },
+          ]
+        }
+        tracksViewChanges={false}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "display": "flex",
+              "height": 60,
+              "justifyContent": "center",
+              "opacity": 1,
+              "width": 60,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "opacity": 0.5,
+                  "position": "absolute",
+                  "zIndex": 0,
+                },
+                {
+                  "backgroundColor": "#00B386",
+                  "borderRadius": 30,
+                  "height": 60,
+                  "width": 60,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "zIndex": 1,
+                },
+                {
+                  "backgroundColor": "#00B386",
+                  "borderRadius": 23,
+                  "height": 46,
+                  "width": 46,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontWeight": "bold",
+                  },
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": undefined,
+                    "fontSize": 17,
+                  },
+                ]
+              }
+            >
+              9
+            </Text>
+          </View>
+        </View>
+      </AIRMapMarker>
+      <AIRMapMarker
+        centerOffset={
+          {
+            "x": 0,
+            "y": -30,
+          }
+        }
+        coordinate={
+          {
+            "latitude": 49.0147614,
+            "longitude": 8.4225118,
+          }
+        }
+        identifier="address_karlsruhe_16"
+        onDeselect={[Function]}
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        tracksInfoWindowChanges={false}
+        tracksViewChanges={false}
+      >
+        <View>
+          <View
+            style={
+              {
+                "alignSelf": "center",
+                "height": 67,
+                "width": 40,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="100%"
+              bbWidth="100%"
+              focusable={false}
+              height="100%"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              vbHeight={297}
+              vbWidth={210}
+              width="100%"
+            >
+              <RNSVGGroup>
+                <RNSVGGroup
+                  matrix={
+                    [
+                      1,
+                      0,
+                      0,
+                      1,
+                      129.53117,
+                      73.448518,
+                    ]
+                  }
+                >
+                  <RNSVGPath
+                    d="m -25.025404,-67.058727 c -45.32449,0 -82.066306,36.742196 -82.066306,82.065275 0,4.763553 0.82687,10.552168 2.30218,17.093013 9.699623,11.693867 22.660072,25.824516 38.471556,39.712305 21.739555,19.094783 44.542681,34.003844 67.775191,44.313054 6.3887991,2.83493 12.816193,5.31994 19.272725,7.45743 18.651695,-40.130906 37.299533,-85.91832 37.299533,-108.575802 0,-45.323079 -36.742171,-82.065275 -82.066309,-82.065275 -0.06773,0 -0.494027,0.0021 -0.494027,0.0021 0,0 -0.427162,-0.0021 -0.494543,-0.0021 z m 0.116272,41.017134 c 0.05151,0 0.378271,0.0047 0.378271,0.0047 0,0 0.326413,-0.0047 0.378272,-0.0047 21.0502278,0 38.230224,17.0657417 38.230224,38.118087 0,21.051992 -17.2352894,38.118087 -38.285518,38.118087 -0.05186,0 -0.322978,-0.0041 -0.322978,-0.0041 0,0 -0.271988,0.0041 -0.323494,0.0041 -21.050581,0 -38.285519,-17.066095 -38.285519,-38.118087 0,-21.0523453 17.180161,-38.118087 38.230742,-38.118087 z m -71.18687,86.949732 c 2.888542,8.085306 6.206886,16.581123 9.777698,25.214998 3.238497,3.092094 6.622888,6.201435 10.149252,9.299174 21.739555,19.094429 44.542165,34.002819 67.774674,44.312029 5.9905133,2.65817 12.0154312,5.00568 18.065564,7.05073 1.837971,-3.76837 3.715013,-7.65704 5.611544,-11.63495 C 8.8590062,132.97207 2.4655418,130.47282 -3.8897434,127.64567 -28.330868,116.77413 -52.247642,101.1174 -74.975327,81.11104 -82.709972,74.302789 -89.759061,67.479324 -96.096002,60.908139 Z m 21.681364,52.605061 c 20.065274,44.27215 41.946794,84.70439 41.946794,84.70439 2.09832,3.87525 5.707782,5.75042 7.936983,5.6534 2.229201,0.097 5.838311,-1.77815 7.936983,-5.6534 0,0 8.9257808,-16.49329 20.6023605,-39.94382 -5.945005,-2.06163 -11.8637297,-4.39986 -17.7498205,-7.01817 -20.737316,-9.22443 -41.096623,-21.89493 -60.6733,-37.7424 z"
+                    fill={
+                      {
+                        "payload": 4293651435,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4278190080,
+                        "type": 0,
+                      }
+                    }
+                    strokeWidth="2"
+                  />
+                </RNSVGGroup>
+                <RNSVGCircle
+                  cx="105.60272"
+                  cy="85.525055"
+                  fill={
+                    {
+                      "payload": 4281571635,
+                      "type": 0,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                    ]
+                  }
+                  r="38.75"
+                  stroke={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  strokeWidth="2"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <AIRMapCallout
+          alphaHitTest={false}
+          onPress={[Function]}
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              [
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "minWidth": 465,
+                },
+              ],
+            ]
+          }
+          tooltip={false}
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "transparent",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#000000",
+                    "flex": 1,
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 5,
+                    "textAlign": "auto",
+                  }
+                }
+              >
+                Klosterweg 2
+              </Text>
+              <View
+                style={
+                  {
+                    "justifyContent": "center",
+                    "marginBottom": 5,
+                    "minWidth": "20%",
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  style={
+                    {
+                      "color": "#393E42FF",
+                      "fontSize": 11,
+                      "textAlign": "center",
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "padding": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "aspectRatio": 1,
+                      "height": 20,
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <View
+                    style={{}}
+                  >
+                    <RNSVGSvgView
+                      align="xMidYMid"
+                      bbHeight="100%"
+                      bbWidth="100%"
+                      focusable={false}
+                      height="100%"
+                      meetOrSlice={0}
+                      minX={0}
+                      minY={0}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "borderWidth": 0,
+                          },
+                          {
+                            "flex": 0,
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                      vbHeight={100}
+                      vbWidth={100}
+                      width="100%"
+                    >
+                      <RNSVGGroup>
+                        <RNSVGEllipse
+                          cx="50%"
+                          cy="50%"
+                          fill={
+                            {
+                              "payload": 4281571635,
+                              "type": 0,
+                            }
+                          }
+                          propList={
+                            [
+                              "fill",
+                              "stroke",
+                              "strokeWidth",
+                            ]
+                          }
+                          rx="50%"
+                          ry="50%"
+                          stroke={
+                            {
+                              "payload": 4290493371,
+                              "type": 0,
+                            }
+                          }
+                          strokeWidth="2"
+                        />
+                      </RNSVGGroup>
+                    </RNSVGSvgView>
+                  </View>
+                </View>
+                <Text
+                  style={
+                    {
+                      "color": "#000000",
+                      "flex": 1,
+                      "flexWrap": "nowrap",
+                      "fontSize": 18,
+                      "marginHorizontal": 5,
+                    }
+                  }
+                >
+                  Base colour/percussion
+                </Text>
+                <View
+                  style={
+                    {
+                      "alignSelf": "center",
+                      "width": "20%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "aspectRatio": 1.5,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#bbb",
+                            "borderRadius": 5,
+                            "borderWidth": 1,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "justifyContent": "center",
+                            "overflow": "hidden",
+                            "width": "100%",
+                          },
+                          {
+                            "paddingBottom": "12%",
+                            "paddingTop": "12%",
+                          },
+                          {
+                            "backgroundColor": "rgba(255, 255, 255, 1.0)",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(0, 0, 0, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(0, 100, 0, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <Modal
+            hardwareAccelerated={true}
+            onRequestClose={[Function]}
+            onShow={[Function]}
+            supportedOrientations={
+              [
+                "portrait",
+                "portrait-upside-down",
+                "landscape",
+              ]
+            }
+            transparent={true}
+            visible={false}
+          />
+        </AIRMapCallout>
+      </AIRMapMarker>
+      <AIRMapMarker
+        centerOffset={
+          {
+            "x": 0,
+            "y": -30,
+          }
+        }
+        coordinate={
+          {
+            "latitude": 48.51872,
+            "longitude": 9.04771,
+          }
+        }
+        identifier="address_tübingen_10"
+        onDeselect={[Function]}
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        tracksInfoWindowChanges={false}
+        tracksViewChanges={false}
+      >
+        <View>
+          <View
+            style={
+              {
+                "alignSelf": "center",
+                "height": 67,
+                "width": 40,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="100%"
+              bbWidth="100%"
+              focusable={false}
+              height="100%"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              vbHeight={297}
+              vbWidth={210}
+              width="100%"
+            >
+              <RNSVGGroup>
+                <RNSVGGroup
+                  matrix={
+                    [
+                      1,
+                      0,
+                      0,
+                      1,
+                      129.53117,
+                      73.448518,
+                    ]
+                  }
+                >
+                  <RNSVGPath
+                    d="m -25.025404,-67.058727 c -45.32449,0 -82.066306,36.742196 -82.066306,82.065275 0,4.763553 0.82687,10.552168 2.30218,17.093013 9.699623,11.693867 22.660072,25.824516 38.471556,39.712305 21.739555,19.094783 44.542681,34.003844 67.775191,44.313054 6.3887991,2.83493 12.816193,5.31994 19.272725,7.45743 18.651695,-40.130906 37.299533,-85.91832 37.299533,-108.575802 0,-45.323079 -36.742171,-82.065275 -82.066309,-82.065275 -0.06773,0 -0.494027,0.0021 -0.494027,0.0021 0,0 -0.427162,-0.0021 -0.494543,-0.0021 z m 0.116272,41.017134 c 0.05151,0 0.378271,0.0047 0.378271,0.0047 0,0 0.326413,-0.0047 0.378272,-0.0047 21.0502278,0 38.230224,17.0657417 38.230224,38.118087 0,21.051992 -17.2352894,38.118087 -38.285518,38.118087 -0.05186,0 -0.322978,-0.0041 -0.322978,-0.0041 0,0 -0.271988,0.0041 -0.323494,0.0041 -21.050581,0 -38.285519,-17.066095 -38.285519,-38.118087 0,-21.0523453 17.180161,-38.118087 38.230742,-38.118087 z m -71.18687,86.949732 c 2.888542,8.085306 6.206886,16.581123 9.777698,25.214998 3.238497,3.092094 6.622888,6.201435 10.149252,9.299174 21.739555,19.094429 44.542165,34.002819 67.774674,44.312029 5.9905133,2.65817 12.0154312,5.00568 18.065564,7.05073 1.837971,-3.76837 3.715013,-7.65704 5.611544,-11.63495 C 8.8590062,132.97207 2.4655418,130.47282 -3.8897434,127.64567 -28.330868,116.77413 -52.247642,101.1174 -74.975327,81.11104 -82.709972,74.302789 -89.759061,67.479324 -96.096002,60.908139 Z m 21.681364,52.605061 c 20.065274,44.27215 41.946794,84.70439 41.946794,84.70439 2.09832,3.87525 5.707782,5.75042 7.936983,5.6534 2.229201,0.097 5.838311,-1.77815 7.936983,-5.6534 0,0 8.9257808,-16.49329 20.6023605,-39.94382 -5.945005,-2.06163 -11.8637297,-4.39986 -17.7498205,-7.01817 -20.737316,-9.22443 -41.096623,-21.89493 -60.6733,-37.7424 z"
+                    fill={
+                      {
+                        "payload": 4293651435,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4278190080,
+                        "type": 0,
+                      }
+                    }
+                    strokeWidth="2"
+                  />
+                </RNSVGGroup>
+                <RNSVGCircle
+                  cx="105.60272"
+                  cy="85.525055"
+                  fill={
+                    {
+                      "payload": 4291611852,
+                      "type": 0,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                    ]
+                  }
+                  r="38.75"
+                  stroke={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  strokeWidth="2"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <AIRMapCallout
+          alphaHitTest={false}
+          onPress={[Function]}
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              [
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "minWidth": 465,
+                },
+              ],
+            ]
+          }
+          tooltip={false}
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "transparent",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#000000",
+                    "flex": 1,
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 5,
+                    "textAlign": "auto",
+                  }
+                }
+              >
+                Schlossbergstraße 7
+              </Text>
+              <View
+                style={
+                  {
+                    "justifyContent": "center",
+                    "marginBottom": 5,
+                    "minWidth": "20%",
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  style={
+                    {
+                      "color": "#393E42FF",
+                      "fontSize": 11,
+                      "textAlign": "center",
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "padding": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "aspectRatio": 1,
+                      "height": 20,
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <View
+                    style={{}}
+                  >
+                    <RNSVGSvgView
+                      align="xMidYMid"
+                      bbHeight="100%"
+                      bbWidth="100%"
+                      focusable={false}
+                      height="100%"
+                      meetOrSlice={0}
+                      minX={0}
+                      minY={0}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "borderWidth": 0,
+                          },
+                          {
+                            "flex": 0,
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                      vbHeight={100}
+                      vbWidth={100}
+                      width="100%"
+                    >
+                      <RNSVGGroup>
+                        <RNSVGEllipse
+                          cx="50%"
+                          cy="50%"
+                          fill={
+                            {
+                              "payload": 4291611852,
+                              "type": 0,
+                            }
+                          }
+                          propList={
+                            [
+                              "fill",
+                              "stroke",
+                              "strokeWidth",
+                            ]
+                          }
+                          rx="50%"
+                          ry="50%"
+                          stroke={
+                            {
+                              "payload": 4290493371,
+                              "type": 0,
+                            }
+                          }
+                          strokeWidth="2"
+                        />
+                      </RNSVGGroup>
+                    </RNSVGSvgView>
+                  </View>
+                </View>
+                <Text
+                  style={
+                    {
+                      "color": "#000000",
+                      "flex": 1,
+                      "flexWrap": "nowrap",
+                      "fontSize": 18,
+                      "marginHorizontal": 5,
+                    }
+                  }
+                >
+                  No colours
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Modal
+            hardwareAccelerated={true}
+            onRequestClose={[Function]}
+            onShow={[Function]}
+            supportedOrientations={
+              [
+                "portrait",
+                "portrait-upside-down",
+                "landscape",
+              ]
+            }
+            transparent={true}
+            visible={false}
+          />
+        </AIRMapCallout>
+      </AIRMapMarker>
+      <AIRMapMarker
+        centerOffset={
+          {
+            "x": 0,
+            "y": -30,
+          }
+        }
+        coordinate={
+          {
+            "latitude": 48.2121884,
+            "longitude": 16.3689328,
+          }
+        }
+        identifier="address_wien_34"
+        onDeselect={[Function]}
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        tracksInfoWindowChanges={false}
+        tracksViewChanges={false}
+      >
+        <View>
+          <View
+            style={
+              {
+                "alignSelf": "center",
+                "height": 67,
+                "width": 40,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="100%"
+              bbWidth="100%"
+              focusable={false}
+              height="100%"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              vbHeight={297}
+              vbWidth={210}
+              width="100%"
+            >
+              <RNSVGGroup>
+                <RNSVGGroup
+                  matrix={
+                    [
+                      1,
+                      0,
+                      0,
+                      1,
+                      129.53117,
+                      73.448518,
+                    ]
+                  }
+                >
+                  <RNSVGPath
+                    d="m -25.025404,-67.058727 c -45.32449,0 -82.066306,36.742196 -82.066306,82.065275 0,4.763553 0.82687,10.552168 2.30218,17.093013 9.699623,11.693867 22.660072,25.824516 38.471556,39.712305 21.739555,19.094783 44.542681,34.003844 67.775191,44.313054 6.3887991,2.83493 12.816193,5.31994 19.272725,7.45743 18.651695,-40.130906 37.299533,-85.91832 37.299533,-108.575802 0,-45.323079 -36.742171,-82.065275 -82.066309,-82.065275 -0.06773,0 -0.494027,0.0021 -0.494027,0.0021 0,0 -0.427162,-0.0021 -0.494543,-0.0021 z m 0.116272,41.017134 c 0.05151,0 0.378271,0.0047 0.378271,0.0047 0,0 0.326413,-0.0047 0.378272,-0.0047 21.0502278,0 38.230224,17.0657417 38.230224,38.118087 0,21.051992 -17.2352894,38.118087 -38.285518,38.118087 -0.05186,0 -0.322978,-0.0041 -0.322978,-0.0041 0,0 -0.271988,0.0041 -0.323494,0.0041 -21.050581,0 -38.285519,-17.066095 -38.285519,-38.118087 0,-21.0523453 17.180161,-38.118087 38.230742,-38.118087 z m -71.18687,86.949732 c 2.888542,8.085306 6.206886,16.581123 9.777698,25.214998 3.238497,3.092094 6.622888,6.201435 10.149252,9.299174 21.739555,19.094429 44.542165,34.002819 67.774674,44.312029 5.9905133,2.65817 12.0154312,5.00568 18.065564,7.05073 1.837971,-3.76837 3.715013,-7.65704 5.611544,-11.63495 C 8.8590062,132.97207 2.4655418,130.47282 -3.8897434,127.64567 -28.330868,116.77413 -52.247642,101.1174 -74.975327,81.11104 -82.709972,74.302789 -89.759061,67.479324 -96.096002,60.908139 Z m 21.681364,52.605061 c 20.065274,44.27215 41.946794,84.70439 41.946794,84.70439 2.09832,3.87525 5.707782,5.75042 7.936983,5.6534 2.229201,0.097 5.838311,-1.77815 7.936983,-5.6534 0,0 8.9257808,-16.49329 20.6023605,-39.94382 -5.945005,-2.06163 -11.8637297,-4.39986 -17.7498205,-7.01817 -20.737316,-9.22443 -41.096623,-21.89493 -60.6733,-37.7424 z"
+                    fill={
+                      {
+                        "payload": 4293651435,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4278190080,
+                        "type": 0,
+                      }
+                    }
+                    strokeWidth="2"
+                  />
+                </RNSVGGroup>
+                <RNSVGCircle
+                  cx="105.60272"
+                  cy="85.525055"
+                  fill={
+                    {
+                      "payload": 4291611852,
+                      "type": 0,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                    ]
+                  }
+                  r="38.75"
+                  stroke={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  strokeWidth="2"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <AIRMapCallout
+          alphaHitTest={false}
+          onPress={[Function]}
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              [
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "minWidth": 465,
+                },
+              ],
+            ]
+          }
+          tooltip={false}
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "transparent",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#000000",
+                    "flex": 1,
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 5,
+                    "textAlign": "auto",
+                  }
+                }
+              >
+                Färbergasse 8
+              </Text>
+              <View
+                style={
+                  {
+                    "justifyContent": "center",
+                    "marginBottom": 5,
+                    "minWidth": "20%",
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  style={
+                    {
+                      "color": "#393E42FF",
+                      "fontSize": 11,
+                      "textAlign": "center",
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "padding": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "aspectRatio": 1,
+                      "height": 20,
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <View
+                    style={{}}
+                  >
+                    <RNSVGSvgView
+                      align="xMidYMid"
+                      bbHeight="100%"
+                      bbWidth="100%"
+                      focusable={false}
+                      height="100%"
+                      meetOrSlice={0}
+                      minX={0}
+                      minY={0}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "borderWidth": 0,
+                          },
+                          {
+                            "flex": 0,
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                      vbHeight={100}
+                      vbWidth={100}
+                      width="100%"
+                    >
+                      <RNSVGGroup>
+                        <RNSVGEllipse
+                          cx="50%"
+                          cy="50%"
+                          fill={
+                            {
+                              "payload": 4291611852,
+                              "type": 0,
+                            }
+                          }
+                          propList={
+                            [
+                              "fill",
+                              "stroke",
+                              "strokeWidth",
+                            ]
+                          }
+                          rx="50%"
+                          ry="50%"
+                          stroke={
+                            {
+                              "payload": 4290493371,
+                              "type": 0,
+                            }
+                          }
+                          strokeWidth="2"
+                        />
+                      </RNSVGGroup>
+                    </RNSVGSvgView>
+                  </View>
+                </View>
+                <Text
+                  style={
+                    {
+                      "color": "#000000",
+                      "flex": 1,
+                      "flexWrap": "nowrap",
+                      "fontSize": 18,
+                      "marginHorizontal": 5,
+                    }
+                  }
+                >
+                  Minimal details
+                </Text>
+                <View
+                  style={
+                    {
+                      "alignSelf": "center",
+                      "width": "20%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "aspectRatio": 1.5,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#bbb",
+                            "borderRadius": 5,
+                            "borderWidth": 1,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "justifyContent": "center",
+                            "overflow": "hidden",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(255, 255, 255, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(0, 0, 205, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(255, 215, 0, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <Modal
+            hardwareAccelerated={true}
+            onRequestClose={[Function]}
+            onShow={[Function]}
+            supportedOrientations={
+              [
+                "portrait",
+                "portrait-upside-down",
+                "landscape",
+              ]
+            }
+            transparent={true}
+            visible={false}
+          />
+        </AIRMapCallout>
+      </AIRMapMarker>
+      <AIRMapMarker
+        centerOffset={
+          {
+            "x": 0,
+            "y": -30,
+          }
+        }
+        coordinate={
+          {
+            "latitude": 54.33783,
+            "longitude": 10.14379,
+          }
+        }
+        identifier="address_kiel_10"
+        onDeselect={[Function]}
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        tracksInfoWindowChanges={false}
+        tracksViewChanges={false}
+      >
+        <View>
+          <View
+            style={
+              {
+                "alignSelf": "center",
+                "height": 67,
+                "width": 40,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="100%"
+              bbWidth="100%"
+              focusable={false}
+              height="100%"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              vbHeight={297}
+              vbWidth={210}
+              width="100%"
+            >
+              <RNSVGGroup>
+                <RNSVGGroup
+                  matrix={
+                    [
+                      1,
+                      0,
+                      0,
+                      1,
+                      129.53117,
+                      73.448518,
+                    ]
+                  }
+                >
+                  <RNSVGPath
+                    d="m -25.025404,-67.058727 c -45.32449,0 -82.066306,36.742196 -82.066306,82.065275 0,4.763553 0.82687,10.552168 2.30218,17.093013 9.699623,11.693867 22.660072,25.824516 38.471556,39.712305 21.739555,19.094783 44.542681,34.003844 67.775191,44.313054 6.3887991,2.83493 12.816193,5.31994 19.272725,7.45743 18.651695,-40.130906 37.299533,-85.91832 37.299533,-108.575802 0,-45.323079 -36.742171,-82.065275 -82.066309,-82.065275 -0.06773,0 -0.494027,0.0021 -0.494027,0.0021 0,0 -0.427162,-0.0021 -0.494543,-0.0021 z m 0.116272,41.017134 c 0.05151,0 0.378271,0.0047 0.378271,0.0047 0,0 0.326413,-0.0047 0.378272,-0.0047 21.0502278,0 38.230224,17.0657417 38.230224,38.118087 0,21.051992 -17.2352894,38.118087 -38.285518,38.118087 -0.05186,0 -0.322978,-0.0041 -0.322978,-0.0041 0,0 -0.271988,0.0041 -0.323494,0.0041 -21.050581,0 -38.285519,-17.066095 -38.285519,-38.118087 0,-21.0523453 17.180161,-38.118087 38.230742,-38.118087 z m -71.18687,86.949732 c 2.888542,8.085306 6.206886,16.581123 9.777698,25.214998 3.238497,3.092094 6.622888,6.201435 10.149252,9.299174 21.739555,19.094429 44.542165,34.002819 67.774674,44.312029 5.9905133,2.65817 12.0154312,5.00568 18.065564,7.05073 1.837971,-3.76837 3.715013,-7.65704 5.611544,-11.63495 C 8.8590062,132.97207 2.4655418,130.47282 -3.8897434,127.64567 -28.330868,116.77413 -52.247642,101.1174 -74.975327,81.11104 -82.709972,74.302789 -89.759061,67.479324 -96.096002,60.908139 Z m 21.681364,52.605061 c 20.065274,44.27215 41.946794,84.70439 41.946794,84.70439 2.09832,3.87525 5.707782,5.75042 7.936983,5.6534 2.229201,0.097 5.838311,-1.77815 7.936983,-5.6534 0,0 8.9257808,-16.49329 20.6023605,-39.94382 -5.945005,-2.06163 -11.8637297,-4.39986 -17.7498205,-7.01817 -20.737316,-9.22443 -41.096623,-21.89493 -60.6733,-37.7424 z"
+                    fill={
+                      {
+                        "payload": 4293651435,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    stroke={
+                      {
+                        "payload": 4278190080,
+                        "type": 0,
+                      }
+                    }
+                    strokeWidth="2"
+                  />
+                </RNSVGGroup>
+                <RNSVGCircle
+                  cx="105.60272"
+                  cy="85.525055"
+                  fill={
+                    {
+                      "payload": 4293817889,
+                      "type": 0,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                      "stroke",
+                      "strokeWidth",
+                    ]
+                  }
+                  r="38.75"
+                  stroke={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  strokeWidth="2"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <AIRMapCallout
+          alphaHitTest={false}
+          onPress={[Function]}
+          style={
+            [
+              {
+                "position": "absolute",
+              },
+              [
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "minWidth": 465,
+                },
+              ],
+            ]
+          }
+          tooltip={false}
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "transparent",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#000000",
+                    "flex": 1,
+                    "fontSize": 18,
+                    "fontWeight": "bold",
+                    "marginBottom": 5,
+                    "textAlign": "auto",
+                  }
+                }
+              >
+                Düppelstraße 27
+              </Text>
+              <View
+                style={
+                  {
+                    "justifyContent": "center",
+                    "marginBottom": 5,
+                    "minWidth": "20%",
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  style={
+                    {
+                      "color": "#393E42FF",
+                      "fontSize": 11,
+                      "textAlign": "center",
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View>
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "padding": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "aspectRatio": 1,
+                      "height": 20,
+                      "marginRight": 5,
+                    }
+                  }
+                >
+                  <View
+                    style={{}}
+                  >
+                    <RNSVGSvgView
+                      align="xMidYMid"
+                      bbHeight="100%"
+                      bbWidth="100%"
+                      focusable={false}
+                      height="100%"
+                      meetOrSlice={0}
+                      minX={0}
+                      minY={0}
+                      style={
+                        [
+                          {
+                            "backgroundColor": "transparent",
+                            "borderWidth": 0,
+                          },
+                          {
+                            "flex": 0,
+                            "height": "100%",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                      vbHeight={100}
+                      vbWidth={100}
+                      width="100%"
+                    >
+                      <RNSVGGroup>
+                        <RNSVGEllipse
+                          cx="50%"
+                          cy="50%"
+                          fill={
+                            {
+                              "payload": 4293817889,
+                              "type": 0,
+                            }
+                          }
+                          propList={
+                            [
+                              "fill",
+                              "stroke",
+                              "strokeWidth",
+                            ]
+                          }
+                          rx="50%"
+                          ry="50%"
+                          stroke={
+                            {
+                              "payload": 4290493371,
+                              "type": 0,
+                            }
+                          }
+                          strokeWidth="2"
+                        />
+                      </RNSVGGroup>
+                    </RNSVGSvgView>
+                  </View>
+                </View>
+                <Text
+                  style={
+                    {
+                      "color": "#000000",
+                      "flex": 1,
+                      "flexWrap": "nowrap",
+                      "fontSize": 18,
+                      "marginHorizontal": 5,
+                    }
+                  }
+                >
+                  3 colours
+                </Text>
+                <View
+                  style={
+                    {
+                      "alignSelf": "center",
+                      "width": "20%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "aspectRatio": 1.5,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#bbb",
+                            "borderRadius": 5,
+                            "borderWidth": 1,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "justifyContent": "center",
+                            "overflow": "hidden",
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(0, 150, 255, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(255, 255, 255, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                      <View
+                        style={
+                          [
+                            {
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "width": "100%",
+                            },
+                            {
+                              "backgroundColor": "rgba(150, 0, 0, 1.0)",
+                            },
+                          ]
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <Modal
+            hardwareAccelerated={true}
+            onRequestClose={[Function]}
+            onShow={[Function]}
+            supportedOrientations={
+              [
+                "portrait",
+                "portrait-upside-down",
+                "landscape",
+              ]
+            }
+            transparent={true}
+            visible={false}
+          />
+        </AIRMapCallout>
+      </AIRMapMarker>
+    </AIRMap>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "space-evenly",
+          "marginBottom": 20,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 28,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 2,
+              },
+              {
+                "borderRadius": 28,
+                "elevation": 4,
+              },
+              false,
+            ]
+          }
+          testID="RNE_BUTTON_WRAPPER"
+        >
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": false,
+                "disabled": false,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#e1e8ee",
+                  "borderColor": "#008040",
+                  "borderRadius": 2,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "height": 56,
+                  "justifyContent": "center",
+                  "padding": 16,
+                  "paddingHorizontal": 10,
+                  "width": 56,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "overflow": "hidden",
+                  }
+                }
+                testID="RNE__ICON__CONTAINER"
+              >
+                <View
+                  accessibilityRole="button"
+                  android_ripple={
+                    {
+                      "borderless": false,
+                      "color": "rgba(0, 0, 0, 0.3)",
+                      "radius": -5,
+                    }
+                  }
+                  disabled={false}
+                  replaceTheme={[Function]}
+                  testID="RNE__ICON__CONTAINER_ACTION"
+                  updateTheme={[Function]}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "justifyContent": "center",
+                      }
+                    }
+                    testID="RNE__ICON"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#393e42",
+                            "fontSize": 24,
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                          {
+                            "fontFamily": "Material Design Icons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                      testID="RNE__ICON__Component"
+                    >
+                      󰍜
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 28,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 0,
+            "transform": [
+              {
+                "scale": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 2,
+              },
+              {
+                "borderRadius": 28,
+                "elevation": 4,
+              },
+              false,
+            ]
+          }
+          testID="RNE_BUTTON_WRAPPER"
+        >
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": false,
+                "disabled": false,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#e1e8ee",
+                  "borderColor": "#008040",
+                  "borderRadius": 2,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "height": 56,
+                  "justifyContent": "center",
+                  "padding": 16,
+                  "paddingHorizontal": 10,
+                  "width": 56,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "overflow": "hidden",
+                  }
+                }
+                testID="RNE__ICON__CONTAINER"
+              >
+                <View
+                  accessibilityRole="button"
+                  android_ripple={
+                    {
+                      "borderless": false,
+                      "color": "rgba(0, 0, 0, 0.3)",
+                      "radius": -5,
+                    }
+                  }
+                  disabled={false}
+                  replaceTheme={[Function]}
+                  testID="RNE__ICON__CONTAINER_ACTION"
+                  updateTheme={[Function]}
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "justifyContent": "center",
+                      }
+                    }
+                    testID="RNE__ICON"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#393e42",
+                            "fontSize": 24,
+                          },
+                          {
+                            "backgroundColor": "transparent",
+                          },
+                          {
+                            "fontFamily": "Material Design Icons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                      testID="RNE__ICON__Component"
+                    >
+                      󰆤
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>,
+  <Modal
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    replaceTheme={[Function]}
+    testID="Internal__Overlay"
+    transparent={true}
+    updateTheme={[Function]}
+    visible={false}
+  />,
+]
+`;

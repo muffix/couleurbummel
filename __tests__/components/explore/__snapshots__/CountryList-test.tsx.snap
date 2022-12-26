@@ -1,0 +1,561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country list renders correctly 1`] = `
+[
+  <RCTScrollView
+    data={
+      [
+        {
+          "cityIds": [
+            "city_at_wien",
+          ],
+          "id": "country_at",
+          "isoCode": "at",
+          "name": "Österreich",
+          "translationKey": "COUNTRY_AT",
+        },
+        {
+          "cityIds": [
+            "city_de_aachen",
+            "city_de_tübingen",
+            "city_de_karlsruhe",
+            "city_de_kiel",
+          ],
+          "id": "country_de",
+          "isoCode": "de",
+          "name": "Deutschland",
+          "translationKey": "COUNTRY_DE",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+      }
+    }
+    testID="Screen:ExploreCountries"
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../react-native-country-flag/dist/cjs/flags/at.png",
+                }
+              }
+              style={
+                [
+                  {
+                    "height": 25,
+                    "width": 40,
+                  },
+                  {
+                    "borderColor": "#bbb",
+                    "borderRadius": 2,
+                    "borderWidth": 0.2,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Austria
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#D1D1D6",
+                          "fontSize": 16,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Ionicons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../react-native-country-flag/dist/cjs/flags/de.png",
+                }
+              }
+              style={
+                [
+                  {
+                    "height": 25,
+                    "width": 40,
+                  },
+                  {
+                    "borderColor": "#bbb",
+                    "borderRadius": 2,
+                    "borderWidth": 0.2,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Germany
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#D1D1D6",
+                          "fontSize": 16,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Ionicons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>,
+  <Modal
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    replaceTheme={[Function]}
+    testID="Internal__Overlay"
+    transparent={true}
+    updateTheme={[Function]}
+    visible={false}
+  />,
+]
+`;

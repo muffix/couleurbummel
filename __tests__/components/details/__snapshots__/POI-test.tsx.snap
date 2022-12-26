@@ -1,0 +1,1660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`POI details view matches snapshot for fully populated POI 1`] = `
+[
+  <RCTScrollView
+    style={
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "padding": 5,
+        },
+        undefined,
+      ]
+    }
+    testID="Screen:POIDetails"
+  >
+    <View>
+      <View
+        style={
+          {
+            "paddingTop": 10,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-evenly",
+              "marginVertical": 5,
+              "maxHeight": 80,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "aspectRatio": 1.5,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginHorizontal": 5,
+                "maxWidth": 120,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "aspectRatio": 1.5,
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#bbb",
+                      "borderRadius": 5,
+                      "borderWidth": 1,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "center",
+                      "overflow": "hidden",
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(170, 58, 98, 1.0)",
+                      },
+                    ]
+                  }
+                />
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(255, 255, 255, 1.0)",
+                      },
+                    ]
+                  }
+                />
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(255, 130, 171, 1.0)",
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "aspectRatio": 1.5,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginHorizontal": 5,
+                "maxWidth": 120,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "aspectRatio": 1.5,
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#bbb",
+                      "borderRadius": 5,
+                      "borderWidth": 1,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "center",
+                      "overflow": "hidden",
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(170, 58, 98, 1.0)",
+                      },
+                    ]
+                  }
+                />
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(255, 255, 255, 1.0)",
+                      },
+                    ]
+                  }
+                />
+                <View
+                  style={
+                    [
+                      {
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "width": "100%",
+                      },
+                      {
+                        "backgroundColor": "rgba(170, 58, 98, 1.0)",
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰋜
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Aachen Town Hall
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰍎
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Markt
+52062 Aachen
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰳋
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                KDStV Marchia
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰏲
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                +49 241 123456
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰇰
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                rathaus@aachen.de
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰖟
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                www.aachen.de
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          replaceTheme={[Function]}
+          style={
+            {
+              "borderRadius": 5,
+            }
+          }
+          updateTheme={[Function]}
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+            testID="RNE__LISTITEM__padView"
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#008040",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰆂
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "paddingLeft": 16,
+                }
+              }
+            />
+            <View
+              replaceTheme={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+              theme={
+                {
+                  "colors": {
+                    "accent": "#3CB371",
+                    "accentTransparent": "#3CB37180",
+                    "background": "#ffffff",
+                    "black": "#242424",
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff3b30",
+                    "fixed": {
+                      "black": "#000000",
+                      "darkGrey": "#393E42FF",
+                      "lightGrey": "#EBEBEB",
+                      "white": "#FFFFFF",
+                    },
+                    "grey": "#7d7d7d",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                    "mapMarkerCentreStroke": "#000000",
+                    "mapMarkerFill": "#EBEBEB",
+                    "platform": {
+                      "android": {
+                        "error": "#f44336",
+                        "grey": "rgba(0, 0, 0, 0.54)",
+                        "primary": "#2196f3",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "default": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "ios": {
+                        "error": "#ff3b30",
+                        "grey": "#7d7d7d",
+                        "primary": "#007aff",
+                        "searchBg": "#dcdce1",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                      "web": {
+                        "error": "#ff190c",
+                        "grey": "#393e42",
+                        "primary": "#2089dc",
+                        "searchBg": "#303337",
+                        "secondary": "#ca71eb",
+                        "success": "#52c41a",
+                        "warning": "#faad14",
+                      },
+                    },
+                    "primary": "#008040",
+                    "primaryTransparent": "rgba(0,128,64,0.75)",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "text": "#000000",
+                    "warning": "#ffcc00",
+                    "white": "#ffffff",
+                  },
+                  "mode": "light",
+                  "spacing": {
+                    "lg": 12,
+                    "md": 8,
+                    "sm": 4,
+                    "xl": 24,
+                    "xs": 2,
+                  },
+                }
+              }
+              updateTheme={[Function]}
+            >
+              <Text
+                accessibilityRole="text"
+                selectable={true}
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "fontSize": 17,
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Test remark
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>,
+  <Modal
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    replaceTheme={[Function]}
+    testID="Internal__Overlay"
+    transparent={true}
+    updateTheme={[Function]}
+    visible={false}
+  />,
+]
+`;

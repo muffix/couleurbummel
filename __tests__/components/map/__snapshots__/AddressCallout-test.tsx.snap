@@ -1,0 +1,467 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressCallout renders a POI 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "transparent",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        {
+          "color": "#000000",
+          "flex": 1,
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "marginBottom": 5,
+          "textAlign": "auto",
+        }
+      }
+    >
+      Street or house name
+    </Text>
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "marginBottom": 5,
+          "minWidth": "20%",
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          {
+            "color": "#393E42FF",
+            "fontSize": 11,
+            "textAlign": "center",
+          }
+        }
+      >
+        42m
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "padding": 5,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "aspectRatio": 1,
+            "height": 20,
+            "marginRight": 5,
+          }
+        }
+      >
+        <View
+          style={{}}
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="100%"
+            bbWidth="100%"
+            focusable={false}
+            height="100%"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": "100%",
+                  "width": "100%",
+                },
+              ]
+            }
+            vbHeight={100}
+            vbWidth={100}
+            width="100%"
+          >
+            <RNSVGGroup>
+              <RNSVGEllipse
+                cx="50%"
+                cy="50%"
+                fill={
+                  {
+                    "payload": 4281941570,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                rx="50%"
+                ry="50%"
+                stroke={
+                  {
+                    "payload": 4290493371,
+                    "type": 0,
+                  }
+                }
+                strokeWidth="2"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "flex": 1,
+            "flexWrap": "nowrap",
+            "fontSize": 18,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        Rathaus
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AddressCallout renders multiple corporations 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "transparent",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        {
+          "color": "#000000",
+          "flex": 1,
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "marginBottom": 5,
+          "textAlign": "auto",
+        }
+      }
+    >
+      Street or house name
+    </Text>
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "marginBottom": 5,
+          "minWidth": "20%",
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          {
+            "color": "#393E42FF",
+            "fontSize": 11,
+            "textAlign": "center",
+          }
+        }
+      >
+        42m
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "padding": 5,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "aspectRatio": 1,
+            "height": 20,
+            "marginRight": 5,
+          }
+        }
+      >
+        <View
+          style={{}}
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="100%"
+            bbWidth="100%"
+            focusable={false}
+            height="100%"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": "100%",
+                  "width": "100%",
+                },
+              ]
+            }
+            vbHeight={100}
+            vbWidth={100}
+            width="100%"
+          >
+            <RNSVGGroup>
+              <RNSVGEllipse
+                cx="50%"
+                cy="50%"
+                fill={
+                  {
+                    "payload": 4281941570,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                rx="50%"
+                ry="50%"
+                stroke={
+                  {
+                    "payload": 4290493371,
+                    "type": 0,
+                  }
+                }
+                strokeWidth="2"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "flex": 1,
+            "flexWrap": "nowrap",
+            "fontSize": 18,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        A.D.V. Laetitia
+      </Text>
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "width": "20%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "aspectRatio": 1.5,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderColor": "#bbb",
+                  "borderRadius": 5,
+                  "borderWidth": 1,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                  "overflow": "hidden",
+                  "width": "100%",
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "padding": 5,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "aspectRatio": 1,
+            "height": 20,
+            "marginRight": 5,
+          }
+        }
+      >
+        <View
+          style={{}}
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="100%"
+            bbWidth="100%"
+            focusable={false}
+            height="100%"
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": "100%",
+                  "width": "100%",
+                },
+              ]
+            }
+            vbHeight={100}
+            vbWidth={100}
+            width="100%"
+          >
+            <RNSVGGroup>
+              <RNSVGEllipse
+                cx="50%"
+                cy="50%"
+                fill={
+                  {
+                    "payload": 4281941570,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                rx="50%"
+                ry="50%"
+                stroke={
+                  {
+                    "payload": 4290493371,
+                    "type": 0,
+                  }
+                }
+                strokeWidth="2"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "flex": 1,
+            "flexWrap": "nowrap",
+            "fontSize": 18,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        K.St.V. Alania-Breslau
+      </Text>
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "width": "20%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "aspectRatio": 1.5,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderColor": "#bbb",
+                  "borderRadius": 5,
+                  "borderWidth": 1,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                  "overflow": "hidden",
+                  "width": "100%",
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

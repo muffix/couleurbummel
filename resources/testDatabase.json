@@ -1,0 +1,1061 @@
+{
+  "addresses": {
+    "address_aachen_22": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_kaiserpfalz"
+      ],
+      "fullAddress": "Hexenberg 10\nD-52074\nAachen",
+      "id": "address_aachen_22",
+      "latitude": 50.77621498,
+      "longitude": 6.06589079
+    },
+    "address_aachen_21": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_baltia"
+      ],
+      "fullAddress": "Rütscher Straße 110\nD-52072\nAachen",
+      "id": "address_aachen_21",
+      "latitude": 50.78701,
+      "longitude": 6.07324
+    },
+    "address_karlsruhe_16": {
+      "cityIds": [
+        "city_de_karlsruhe"
+      ],
+      "corporationIds": [
+        "corporation_de_karlsruhe_kdstv_schwarzwald"
+      ],
+      "fullAddress": "Klosterweg 2\nD-76131\nKarlsruhe",
+      "id": "address_karlsruhe_16",
+      "latitude": 49.0147614,
+      "longitude": 8.4225118
+    },
+    "address_aachen_23": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_makaria"
+      ],
+      "fullAddress": "Kruppstraße 12\nD-52072\nAachen",
+      "id": "address_aachen_23",
+      "latitude": 50.78158452,
+      "longitude": 6.07470453
+    },
+    "address_wien_34": {
+      "cityIds": [
+        "city_at_wien"
+      ],
+      "corporationIds": [
+        "corporation_at_wien_köhv_pannonia",
+        "corporation_at_wien_köstv_babenberg"
+      ],
+      "fullAddress": "Färbergasse 8\nA-1010\nWien",
+      "id": "address_wien_34",
+      "latitude": 48.2121884,
+      "longitude": 16.3689328
+    },
+    "address_aachen_24": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_ripuaria"
+      ],
+      "fullAddress": "Junkerstraße 68\nD-52064\nAachen",
+      "id": "address_aachen_24",
+      "latitude": 50.77327,
+      "longitude": 6.07295
+    },
+    "address_aachen_20": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_franconia"
+      ],
+      "fullAddress": "Ludwigsallee 101\nD-52062\nAachen",
+      "id": "address_aachen_20",
+      "latitude": 50.78244263,
+      "longitude": 6.08559966
+    },
+    "address_aachen_29": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_marchia"
+      ],
+      "fullAddress": "Nizzaallee 4\nD-52072\nAachen",
+      "id": "address_aachen_29",
+      "latitude": 50.78422666,
+      "longitude": 6.08046055,
+      "name": "Märkerhaus",
+      "pointOfInterestIds": [
+        "poi_test_0"
+      ]
+    },
+    "address_tübingen_10": {
+      "cityIds": [
+        "city_de_tübingen"
+      ],
+      "corporationIds": [
+        "corporation_de_tübingen_av_igel"
+      ],
+      "fullAddress": "Schlossbergstraße 7\nD-72070\nTübingen",
+      "id": "address_tübingen_10",
+      "latitude": 48.51872,
+      "longitude": 9.04771
+    },
+    "address_aachen_28": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_kdstv_bergland"
+      ],
+      "fullAddress": "Kruppstraße 8-10\nD-52072\nAachen",
+      "id": "address_aachen_28",
+      "latitude": 50.78153533,
+      "longitude": 6.07502639
+    },
+    "address_kiel_10": {
+      "cityIds": [
+        "city_de_kiel"
+      ],
+      "corporationIds": [
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "fullAddress": "Düppelstraße 27\nD-24105\nKiel",
+      "id": "address_kiel_10",
+      "latitude": 54.33783,
+      "longitude": 10.14379
+    },
+    "address_aachen_0": {
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_adv_laetitia",
+        "corporation_de_aachen_kstv_alaniabreslau"
+      ],
+      "fullAddress": "Süsterfeldstraße 30\nD-52072\nAachen",
+      "id": "address_aachen_0",
+      "latitude": 50.7818953,
+      "longitude": 6.0717416
+    },
+    "address_poi_aachen_townhall": {
+      "id": "address_poi_aachen_townhall",
+      "latitude": 50.77602502,
+      "longitude": 6.0837543,
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "pointOfInterestIds": [
+        "poi_aachen_townhall"
+      ],
+      "fullAddress": "Markt\n52062 Aachen"
+    }
+  },
+  "cities": {
+    "city_de_karlsruhe": {
+      "addressIds": [
+        "address_karlsruhe_16"
+      ],
+      "countryId": "country_de",
+      "id": "city_de_karlsruhe",
+      "translationKey": "LOC_CITY_KARLSRUHE",
+      "name": "Karlsruhe"
+    },
+    "city_de_aachen": {
+      "addressIds": [
+        "address_aachen_0",
+        "address_aachen_20",
+        "address_aachen_21",
+        "address_aachen_22",
+        "address_aachen_23",
+        "address_aachen_24",
+        "address_aachen_28",
+        "address_aachen_29",
+        "address_poi_aachen_townhall"
+      ],
+      "countryId": "country_de",
+      "id": "city_de_aachen",
+      "translationKey": "LOC_CITY_AACHEN",
+      "name": "Aachen"
+    },
+    "city_de_kiel": {
+      "addressIds": [
+        "address_kiel_10"
+      ],
+      "countryId": "country_de",
+      "id": "city_de_kiel",
+      "translationKey": "LOC_CITY_KIEL",
+      "name": "Kiel"
+    },
+    "city_de_tübingen": {
+      "addressIds": [
+        "address_tübingen_10"
+      ],
+      "countryId": "country_de",
+      "id": "city_de_tübingen",
+      "translationKey": "LOC_CITY_TÜBINGEN",
+      "name": "Tübingen"
+    },
+    "city_at_wien": {
+      "addressIds": [
+        "address_wien_34"
+      ],
+      "countryId": "country_at",
+      "id": "city_at_wien",
+      "translationKey": "LOC_CITY_WIEN",
+      "name": "Wien"
+    }
+  },
+  "corporations": {
+    "corporation_de_aachen_kdstv_bergland": {
+      "addressId": "address_aachen_28",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1921-01-01",
+      "id": "corporation_de_aachen_kdstv_bergland",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Montag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "KDStV Bergland",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_green",
+            "colour_orange"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_orange",
+            "colour_white",
+            "colour_orange"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kdstv_ripuaria": {
+      "addressId": "address_aachen_24",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1912-01-01",
+      "id": "corporation_de_aachen_kdstv_ripuaria",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Dienstag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.D.St.V. Ripuaria",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_dark",
+            "colour_white",
+            "colour_orange"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_blue_dark",
+            "colour_white",
+            "colour_blue_dark"
+          ]
+        }
+      ]
+    },
+    "corporation_de_kiel_corps_palaiomarchiamasovia": {
+      "addressId": "address_kiel_10",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1950-01-01",
+      "id": "corporation_de_kiel_corps_palaiomarchiamasovia",
+      "indicatorColourId": "ind_orange",
+      "longName": "3 colours",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "",
+      "shortName": "3 colours",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_red"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_orange",
+            "colour_white",
+            "colour_black"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_orange",
+            "colour_white",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kstv_alaniabreslau": {
+      "addressId": "address_aachen_0",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1905-01-01",
+      "id": "corporation_de_aachen_kstv_alaniabreslau",
+      "indicatorColourId": "ind_yellow",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_kv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Montag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.St.V. Alania-Breslau",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_silver",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_adv_laetitia": {
+      "addressId": "address_aachen_0",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "2000-01-01",
+      "id": "corporation_de_aachen_adv_laetitia",
+      "indicatorColourId": "ind_grey",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "A.D.V. Laetitia",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_silver",
+            "colour_blue"
+          ]
+        }
+      ]
+    },
+    "corporation_de_tübingen_av_igel": {
+      "addressId": "address_tübingen_10",
+      "coloursPrinciple": 1,
+      "fencingPrinciple": 1,
+      "foundationDate": "1871-01-01",
+      "id": "corporation_de_tübingen_av_igel",
+      "indicatorColourId": "ind_grey",
+      "longName": "No colours",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "No colours",
+      "website": "*** TEST WEBSITE ***"
+    },
+    "corporation_de_aachen_kdstv_franconia": {
+      "addressId": "address_aachen_20",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1898-01-01",
+      "id": "corporation_de_aachen_kdstv_franconia",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Mittwoch",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.D.St.-V. Franconia",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_green",
+            "colour_gold"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_at_wien_köstv_babenberg": {
+      "addressId": "address_wien_34",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "",
+      "id": "corporation_at_wien_köstv_babenberg",
+      "indicatorColourId": "ind_grey",
+      "longName": "Minimal details",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "Minimal details",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_blue",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kdstv_marchia": {
+      "addressId": "address_aachen_29",
+      "coloursPrinciple": 5,
+      "eventIds": [
+        "event_mch_stiftungsfest"
+      ],
+      "fencingPrinciple": 1,
+      "foundationDate": "1910-01-01",
+      "id": "corporation_de_aachen_kdstv_marchia",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Donnerstag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "KDStV Marchia",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red_crimson",
+            "colour_white",
+            "colour_pink"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_red_crimson",
+            "colour_white",
+            "colour_red_crimson"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kdstv_kaiserpfalz": {
+      "addressId": "address_aachen_22",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1920-01-01",
+      "id": "corporation_de_aachen_kdstv_kaiserpfalz",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Dienstag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.D.St.V. Kaiserpfalz",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_silver",
+            "colour_purple"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_silver",
+            "colour_purple"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kdstv_baltia": {
+      "addressId": "address_aachen_21",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1904-01-01",
+      "id": "corporation_de_aachen_kdstv_baltia",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Mittwoch",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.D.St.V. Baltia",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_black",
+            "colour_silver"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_karlsruhe_kdstv_schwarzwald": {
+      "addressId": "address_karlsruhe_16",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1921-01-01",
+      "id": "corporation_de_karlsruhe_kdstv_schwarzwald",
+      "indicatorColourId": "ind_green",
+      "longName": "Base colour/percussion",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Mittwoch",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "Base colour/percussion",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "baseColourId": "colour_white",
+          "colourIds": [
+            "colour_black",
+            "colour_green"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_black",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_kdstv_makaria": {
+      "addressId": "address_aachen_23",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1896-01-01",
+      "id": "corporation_de_aachen_kdstv_makaria",
+      "indicatorColourId": "ind_green",
+      "longName": "*** TEST LONGNAME ***",
+      "mail": "*** TEST MAIL ***",
+      "motto": "*** TEST MOTTO ***",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "phone": "*** TEST PHONE ***",
+      "jourFixe": "Dienstag",
+      "remark": "*** TEST REMARK ***",
+      "shortName": "K.D.St.V. Makaria",
+      "website": "*** TEST WEBSITE ***",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green_moss",
+            "colour_white",
+            "colour_pink"
+          ]
+        },
+        {
+          "colourIds": [
+            "colour_green_moss",
+            "colour_white",
+            "colour_green_moss"
+          ]
+        }
+      ]
+    }
+  },
+  "countries": {
+    "country_at": {
+      "cityIds": [
+        "city_at_wien"
+      ],
+      "id": "country_at",
+      "translationKey": "COUNTRY_AT",
+      "name": "Österreich",
+      "isoCode": "at"
+    },
+    "country_de": {
+      "cityIds": [
+        "city_de_aachen",
+        "city_de_tübingen",
+        "city_de_karlsruhe",
+        "city_de_kiel"
+      ],
+      "id": "country_de",
+      "translationKey": "COUNTRY_DE",
+      "name": "Deutschland",
+      "isoCode": "de"
+    }
+  },
+  "organisations": {
+    "organisation_kv": {
+      "abbreviation": "KV",
+      "id": "organisation_kv",
+      "mapDisplayableIds": [
+        "corporation_de_aachen_kstv_alaniabreslau"
+      ],
+      "name": "Kartellverband katholischer deutscher Studentenvereine",
+      "indicatorColourId": "ind_yellow"
+    },
+    "organisation_kscv": {
+      "abbreviation": "KSCV",
+      "id": "organisation_kscv",
+      "mapDisplayableIds": [
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "name": "Kösener Senioren-Convents-Verband",
+      "indicatorColourId": "ind_orange"
+    },
+    "organisation_cv": {
+      "abbreviation": "CV",
+      "id": "organisation_cv",
+      "mapDisplayableIds": [
+        "corporation_de_aachen_kdstv_franconia",
+        "corporation_de_aachen_kdstv_baltia",
+        "corporation_de_aachen_kdstv_kaiserpfalz",
+        "corporation_de_aachen_kdstv_makaria",
+        "corporation_de_aachen_kdstv_ripuaria",
+        "corporation_de_aachen_kdstv_bergland",
+        "corporation_de_aachen_kdstv_marchia",
+        "corporation_de_karlsruhe_kdstv_schwarzwald"
+      ],
+      "name": "Cartellverband der Katholischen Deutschen Studentenverbindungen",
+      "indicatorColourId": "ind_green"
+    }
+  },
+  "colours": {
+    "colour_green_moss": {
+      "id": "colour_green_moss",
+      "inColours": [
+        "corporation_de_aachen_kdstv_makaria"
+      ],
+      "translationKey": "COLOUR_GREEN_MOSS",
+      "colourValue": "rgba(179, 238, 58, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ]
+    },
+    "colour_blue_dark": {
+      "id": "colour_blue_dark",
+      "inColours": [
+        "corporation_de_aachen_kdstv_ripuaria"
+      ],
+      "translationKey": "COLOUR_BLUE_DARK",
+      "colourValue": "rgba(0, 0, 139, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ]
+    },
+    "colour_blue_light": {
+      "id": "colour_blue_light",
+      "inColours": [
+        "corporation_de_aachen_kstv_alaniabreslau",
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "translationKey": "COLOUR_BLUE_LIGHT",
+      "colourValue": "rgba(0, 150, 255, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ]
+    },
+    "ind_grey": {
+      "id": "ind_grey",
+      "translationKey": "LOC_COLOUR_",
+      "colourValue": "rgba(204, 204, 204, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "inColours": []
+    },
+    "colour_green": {
+      "id": "colour_green",
+      "inColours": [
+        "corporation_de_aachen_kdstv_bergland",
+        "corporation_de_aachen_kdstv_franconia",
+        "corporation_de_aachen_kdstv_kaiserpfalz",
+        "corporation_de_karlsruhe_kdstv_schwarzwald"
+      ],
+      "translationKey": "COLOUR_GREEN",
+      "colourValue": "rgba(0, 100, 0, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ]
+    },
+    "colour_silver": {
+      "id": "colour_silver",
+      "inColours": [
+        "corporation_de_aachen_adv_laetitia",
+        "corporation_de_aachen_kdstv_baltia",
+        "corporation_de_aachen_kdstv_kaiserpfalz",
+        "corporation_de_aachen_kstv_alaniabreslau"
+      ],
+      "translationKey": "COLOUR_SILVER",
+      "colourValue": "rgba(192, 192, 192, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_silver"
+      ]
+    },
+    "ind_green": {
+      "id": "ind_green",
+      "translationKey": "LOC_COLOUR_",
+      "colourValue": "rgba(51, 153, 51, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "inColours": []
+    },
+    "colour_orange": {
+      "id": "colour_orange",
+      "inColours": [
+        "corporation_de_aachen_kdstv_bergland",
+        "corporation_de_aachen_kdstv_ripuaria",
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "translationKey": "COLOUR_ORANGE",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ]
+    },
+    "colour_pink": {
+      "id": "colour_pink",
+      "inColours": [
+        "corporation_de_aachen_kdstv_makaria",
+        "corporation_de_aachen_kdstv_marchia"
+      ],
+      "translationKey": "COLOUR_PINK",
+      "colourValue": "rgba(255, 130, 171, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_pink"
+      ]
+    },
+    "colour_purple": {
+      "id": "colour_purple",
+      "inColours": [
+        "corporation_de_aachen_kdstv_kaiserpfalz"
+      ],
+      "translationKey": "COLOUR_PURPLE",
+      "colourValue": "rgba(128, 0, 128, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_purple"
+      ]
+    },
+    "colour_red_crimson": {
+      "id": "colour_red_crimson",
+      "inColours": [
+        "corporation_de_aachen_kdstv_marchia"
+      ],
+      "translationKey": "COLOUR_RED_CRIMSON",
+      "colourValue": "rgba(170, 58, 98, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ]
+    },
+    "ind_yellow": {
+      "id": "ind_yellow",
+      "translationKey": "LOC_COLOUR_",
+      "colourValue": "rgba(255, 255, 0, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_yellow"
+      ],
+      "inColours": []
+    },
+    "ind_orange": {
+      "id": "ind_orange",
+      "translationKey": "LOC_COLOUR_",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ],
+      "inColours": []
+    },
+    "colour_red": {
+      "id": "colour_red",
+      "inColours": [
+        "corporation_de_aachen_kdstv_baltia",
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "translationKey": "COLOUR_RED",
+      "colourValue": "rgba(150, 0, 0, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ]
+    },
+    "colour_blue": {
+      "id": "colour_blue",
+      "inColours": [
+        "corporation_at_wien_köstv_babenberg",
+        "corporation_de_aachen_adv_laetitia"
+      ],
+      "translationKey": "COLOUR_BLUE",
+      "colourValue": "rgba(0, 0, 205, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ]
+    },
+    "colour_white": {
+      "id": "colour_white",
+      "inColours": [
+        "corporation_at_wien_köstv_babenberg",
+        "corporation_de_aachen_kdstv_bergland",
+        "corporation_de_aachen_kdstv_makaria",
+        "corporation_de_aachen_kdstv_marchia",
+        "corporation_de_aachen_kdstv_ripuaria",
+        "corporation_de_karlsruhe_kdstv_schwarzwald",
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "translationKey": "COLOUR_WHITE",
+      "colourValue": "rgba(255, 255, 255, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_white"
+      ]
+    },
+    "colour_gold": {
+      "id": "colour_gold",
+      "inColours": [
+        "corporation_at_wien_köstv_babenberg",
+        "corporation_de_aachen_kdstv_franconia"
+      ],
+      "translationKey": "COLOUR_GOLD",
+      "colourValue": "rgba(255, 215, 0, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_gold"
+      ]
+    },
+    "colour_black": {
+      "id": "colour_black",
+      "inColours": [
+        "corporation_de_aachen_kdstv_baltia",
+        "corporation_de_aachen_kdstv_franconia",
+        "corporation_de_aachen_kstv_alaniabreslau",
+        "corporation_de_karlsruhe_kdstv_schwarzwald",
+        "corporation_de_kiel_corps_palaiomarchiamasovia"
+      ],
+      "translationKey": "COLOUR_BLACK",
+      "colourValue": "rgba(0, 0, 0, 1.0)",
+      "colourFamilyIds": [
+        "colour_family_black"
+      ]
+    }
+  },
+  "colourFamilies": {
+    "colour_family_pink": {
+      "id": "colour_family_pink",
+      "memberColourIds": [
+        "colour_pink"
+      ],
+      "translationKey": "COLOUR_FAMILY_PINK",
+      "sampleColourValue": "pink"
+    },
+    "colour_family_yellow": {
+      "id": "colour_family_yellow",
+      "memberColourIds": [
+        "colour_yellow",
+        "ind_yellow"
+      ],
+      "translationKey": "COLOUR_FAMILY_YELLOW",
+      "sampleColourValue": "yellow"
+    },
+    "colour_family_silver": {
+      "id": "colour_family_silver",
+      "memberColourIds": [
+        "colour_silver"
+      ],
+      "translationKey": "COLOUR_FAMILY_SILVER",
+      "sampleColourValue": "rgba(192, 192, 192, 1.0)"
+    },
+    "colour_family_white": {
+      "id": "colour_family_white",
+      "memberColourIds": [
+        "colour_white",
+        "ind_white"
+      ],
+      "translationKey": "COLOUR_FAMILY_WHITE",
+      "sampleColourValue": "white"
+    },
+    "colour_family_blue": {
+      "id": "colour_family_blue",
+      "memberColourIds": [
+        "colour_blue",
+        "colour_blue_dark",
+        "colour_blue_light",
+        "ind_blue"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLUE",
+      "sampleColourValue": "blue"
+    },
+    "colour_family_gold": {
+      "id": "colour_family_gold",
+      "memberColourIds": [
+        "colour_gold"
+      ],
+      "translationKey": "COLOUR_FAMILY_GOLD",
+      "sampleColourValue": "rgba(255, 215, 0, 1.0)"
+    },
+    "colour_family_orange": {
+      "id": "colour_family_orange",
+      "memberColourIds": [
+        "colour_orange",
+        "ind_orange"
+      ],
+      "translationKey": "COLOUR_FAMILY_ORANGE",
+      "sampleColourValue": "orange"
+    },
+    "colour_family_green": {
+      "id": "colour_family_green",
+      "memberColourIds": [
+        "colour_green",
+        "colour_green_dark",
+        "colour_green_light",
+        "colour_green_moss",
+        "colour_green_not_as_light",
+        "ind_green"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREEN",
+      "sampleColourValue": "green"
+    },
+    "colour_family_purple": {
+      "id": "colour_family_purple",
+      "memberColourIds": [
+        "colour_purple"
+      ],
+      "translationKey": "COLOUR_FAMILY_PURPLE",
+      "sampleColourValue": "purple"
+    },
+    "colour_family_grey": {
+      "id": "colour_family_grey",
+      "memberColourIds": [
+        "colour_grey",
+        "colour_grey_light",
+        "ind_grey"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREY",
+      "sampleColourValue": "grey"
+    },
+    "colour_family_black": {
+      "id": "colour_family_black",
+      "memberColourIds": [
+        "colour_black"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLACK",
+      "sampleColourValue": "black"
+    },
+    "colour_family_red": {
+      "id": "colour_family_red",
+      "memberColourIds": [
+        "colour_red",
+        "colour_red_bordeaux",
+        "colour_red_crimson",
+        "colour_red_dark",
+        "colour_red_wine",
+        "ind_red"
+      ],
+      "translationKey": "COLOUR_FAMILY_RED",
+      "sampleColourValue": "red"
+    }
+  },
+  "events": {
+    "event_mch_stiftungsfest": {
+      "id": "event_mch_stiftungsfest",
+      "begin": "2025-06-06T18:00:00+02:00",
+      "end": "2025-06-09T18:00:00+02:00",
+      "hidden": true,
+      "name": "Stiftungsfest",
+      "description": "Stiftungsfest",
+      "mapDisplayableIds": [
+        "corporation_de_aachen_kdstv_marchia"
+      ]
+    }
+  },
+  "pointsOfInterest": {
+    "poi_aachen_townhall": {
+      "addressId": "address_poi_aachen_townhall",
+      "associatedCorporationIds": [
+        "corporation_de_aachen_kdstv_marchia"
+      ],
+      "eventIds": [
+        "event_mch_stiftungsfest"
+      ],
+      "iconName": "icon_coat_mch",
+      "id": "poi_aachen_townhall",
+      "indicatorColourId": "ind_green",
+      "longName": "Aachen Town Hall",
+      "mail": "rathaus@aachen.de",
+      "phone": "+49 241 123456",
+      "remark": "Test remark",
+      "shortName": "Rathaus",
+      "website": "www.aachen.de"
+    }
+  }
+}

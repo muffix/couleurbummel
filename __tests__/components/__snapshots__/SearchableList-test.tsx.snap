@@ -1,0 +1,798 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country list displays nothing if search term is empty 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "transparent",
+        "borderBottomColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderTopColor": "transparent",
+        "borderTopWidth": 1,
+        "padding": 8,
+      }
+    }
+    testID="RNE__SearchBar-wrapper"
+  >
+    <View
+      style={
+        {
+          "paddingHorizontal": 0,
+          "width": "100%",
+        }
+      }
+      testID="RNE__Input__view-wrapper"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#dcdce1",
+            "borderBottomWidth": 0,
+            "borderColor": "#86939e",
+            "borderRadius": 15,
+            "flexDirection": "row",
+            "minHeight": 30,
+            "overflow": "hidden",
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "overflow": "hidden",
+              }
+            }
+            testID="RNE__ICON__CONTAINER"
+          >
+            <View
+              accessibilityRole="button"
+              android_ripple={
+                {
+                  "borderless": false,
+                  "color": "rgba(0, 0, 0, 0.3)",
+                  "radius": -5,
+                }
+              }
+              disabled={false}
+              testID="RNE__ICON__CONTAINER_ACTION"
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                testID="RNE__ICON"
+              >
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "color": "#86939e",
+                        "fontSize": 18,
+                      },
+                      {
+                        "backgroundColor": "transparent",
+                      },
+                      {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      {},
+                    ]
+                  }
+                  testID="RNE__ICON__Component"
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          editable={true}
+          keyboardType="default"
+          numberOfLines={1}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="SEARCH_BAR_PLACEHOLDER"
+          placeholderTextColor="#86939e"
+          platform="default"
+          style={
+            {
+              "color": "#86939e",
+              "flex": 1,
+              "fontSize": 18,
+              "marginLeft": 10,
+              "minHeight": 40,
+            }
+          }
+          testID="RNE__SearchBar"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginRight": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#ff190c",
+            "fontSize": 12,
+            "height": 0,
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      [
+        "Aachen",
+        "Berlin",
+        "München",
+        "Tübingen",
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Aachen
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Berlin
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          München
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Tübingen
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Country list filters the list when searched 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "transparent",
+        "borderBottomColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderTopColor": "transparent",
+        "borderTopWidth": 1,
+        "padding": 8,
+      }
+    }
+    testID="RNE__SearchBar-wrapper"
+  >
+    <View
+      style={
+        {
+          "paddingHorizontal": 0,
+          "width": "100%",
+        }
+      }
+      testID="RNE__Input__view-wrapper"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#dcdce1",
+            "borderBottomWidth": 0,
+            "borderColor": "#86939e",
+            "borderRadius": 15,
+            "flexDirection": "row",
+            "minHeight": 30,
+            "overflow": "hidden",
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "overflow": "hidden",
+              }
+            }
+            testID="RNE__ICON__CONTAINER"
+          >
+            <View
+              accessibilityRole="button"
+              android_ripple={
+                {
+                  "borderless": false,
+                  "color": "rgba(0, 0, 0, 0.3)",
+                  "radius": -5,
+                }
+              }
+              disabled={false}
+              testID="RNE__ICON__CONTAINER_ACTION"
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                testID="RNE__ICON"
+              >
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "color": "#86939e",
+                        "fontSize": 18,
+                      },
+                      {
+                        "backgroundColor": "transparent",
+                      },
+                      {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      {},
+                    ]
+                  }
+                  testID="RNE__ICON__Component"
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          editable={true}
+          keyboardType="default"
+          numberOfLines={1}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="SEARCH_BAR_PLACEHOLDER"
+          placeholderTextColor="#86939e"
+          platform="default"
+          style={
+            {
+              "color": "#86939e",
+              "flex": 1,
+              "fontSize": 18,
+              "marginLeft": 10,
+              "minHeight": 40,
+            }
+          }
+          testID="RNE__SearchBar"
+          underlineColorAndroid="transparent"
+          value="chen"
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginRight": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <ActivityIndicator
+              style={
+                {
+                  "marginRight": 5,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                accessibilityState={
+                  {
+                    "disabled": false,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#86939e",
+                          "fontSize": 18,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#ff190c",
+            "fontSize": 12,
+            "height": 0,
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      [
+        "Aachen",
+        "Berlin",
+        "München",
+        "Tübingen",
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Aachen
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Berlin
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          München
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Tübingen
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Country list renders correctly with no optional fields set 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "transparent",
+        "borderBottomColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderTopColor": "transparent",
+        "borderTopWidth": 1,
+        "padding": 8,
+      }
+    }
+    testID="RNE__SearchBar-wrapper"
+  >
+    <View
+      style={
+        {
+          "paddingHorizontal": 0,
+          "width": "100%",
+        }
+      }
+      testID="RNE__Input__view-wrapper"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#dcdce1",
+            "borderBottomWidth": 0,
+            "borderColor": "#86939e",
+            "borderRadius": 15,
+            "flexDirection": "row",
+            "minHeight": 30,
+            "overflow": "hidden",
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "overflow": "hidden",
+              }
+            }
+            testID="RNE__ICON__CONTAINER"
+          >
+            <View
+              accessibilityRole="button"
+              android_ripple={
+                {
+                  "borderless": false,
+                  "color": "rgba(0, 0, 0, 0.3)",
+                  "radius": -5,
+                }
+              }
+              disabled={false}
+              testID="RNE__ICON__CONTAINER_ACTION"
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                testID="RNE__ICON"
+              >
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    [
+                      {
+                        "color": "#86939e",
+                        "fontSize": 18,
+                      },
+                      {
+                        "backgroundColor": "transparent",
+                      },
+                      {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      {},
+                    ]
+                  }
+                  testID="RNE__ICON__Component"
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          editable={true}
+          keyboardType="default"
+          numberOfLines={1}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder="SEARCH_BAR_PLACEHOLDER"
+          placeholderTextColor="#86939e"
+          platform="default"
+          style={
+            {
+              "color": "#86939e",
+              "flex": 1,
+              "fontSize": 18,
+              "marginLeft": 10,
+              "minHeight": 40,
+            }
+          }
+          testID="RNE__SearchBar"
+          underlineColorAndroid="transparent"
+          value=""
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 40,
+              "justifyContent": "center",
+              "marginRight": 8,
+              "marginVertical": 4,
+              "paddingRight": 4,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "color": "#ff190c",
+            "fontSize": 12,
+            "height": 0,
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      [
+        "Aachen",
+        "Berlin",
+        "München",
+        "Tübingen",
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Aachen
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Berlin
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          München
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Tübingen
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

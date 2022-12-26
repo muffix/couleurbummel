@@ -1,0 +1,925 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://couleurbummel.app/v1/model.schema.json",
+  "title": "CouleurbummelModel",
+  "description": "The database model for the app Couleurbummel\n\nThe objects on the top level are all mappings from IDs uniquely identifying objects to the respective objects.",
+  "type": "object",
+  "properties": {
+    "addresses": {
+      "type": "object",
+      "description": "A mapping of address ID to an address object",
+      "additionalProperties": {
+        "$ref": "#/$defs/address"
+      }
+    },
+    "cities": {
+      "type": "object",
+      "description": "A mapping of city ID to a city object",
+      "additionalProperties": {
+        "$ref": "#/$defs/city"
+      }
+    },
+    "colours": {
+      "type": "object",
+      "description": "A mapping of colour ID to a colour object",
+      "additionalProperties": {
+        "$ref": "#/$defs/colour"
+      }
+    },
+    "colourFamilies": {
+      "type": "object",
+      "description": "A mapping of colour family ID to a colour family object",
+      "additionalProperties": {
+        "$ref": "#/$defs/colourFamily"
+      }
+    },
+    "corporations": {
+      "type": "object",
+      "description": "A mapping of corporation ID to a corporation object",
+      "additionalProperties": {
+        "$ref": "#/$defs/corporation"
+      }
+    },
+    "countries": {
+      "type": "object",
+      "description": "A mapping of country ID to a country object",
+      "additionalProperties": {
+        "$ref": "#/$defs/country"
+      }
+    },
+    "events": {
+      "type": "object",
+      "description": "A mapping of event ID to an event object",
+      "additionalProperties": {
+        "$ref": "#/$defs/event"
+      }
+    },
+    "organisations": {
+      "type": "object",
+      "description": "A mapping of organisation ID to an organisation object",
+      "additionalProperties": {
+        "$ref": "#/$defs/organisation"
+      }
+    },
+    "pointsOfInterest": {
+      "type": "object",
+      "description": "A mapping of point of interest ID to a point of interest object",
+      "additionalProperties": {
+        "$ref": "#/$defs/pointOfInterest"
+      }
+    }
+  },
+  "$defs": {
+    "baseModel": {
+      "hidden": {
+        "type": [
+          "boolean",
+          "null"
+        ],
+        "title": "Hidden",
+        "description": "If true, the object is not shown in the app"
+      },
+      "id": {
+        "type": "string",
+        "title": "ID",
+        "description": "The unique ID of this object"
+      }
+    },
+    "mapDisplayable": {
+      "addressId": {
+        "type": "string",
+        "title": "The ID of the address at which this object is situated"
+      },
+      "eventIds": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "title": "The IDs of events taking place at this location",
+        "items": {
+          "type": "string",
+          "title": "An ID of an event"
+        }
+      },
+      "indicatorColourId": {
+        "type": "string",
+        "title": "Indicator colour ID",
+        "description": "The ID of the colour used to indicate the object on the map"
+      },
+      "longName": {
+        "type": "string",
+        "title": "Long name",
+        "description": "The full name of the corporation",
+        "examples": [
+          "KDStV Marchia (Breslau) zu Aachen im CV"
+        ]
+      },
+      "mail": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "E-Mail",
+        "description": "A contact email address",
+        "examples": [
+          "chargen@marchia.de"
+        ]
+      },
+      "phone": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "default": "",
+        "title": "The phone Schema",
+        "examples": [
+          "+49 241 18984012"
+        ]
+      },
+      "remark": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "default": "",
+        "title": "The remark Schema",
+        "examples": [
+          ""
+        ]
+      },
+      "shortName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "default": "",
+        "title": "The shortName Schema",
+        "examples": [
+          "KDStV Marchia"
+        ]
+      },
+      "website": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "default": "",
+        "title": "The website Schema",
+        "examples": [
+          "www.marchia.de"
+        ]
+      }
+    },
+    "ids": {
+      "addresses": {
+        "type": "array",
+        "title": "Address IDs",
+        "items": {
+          "$ref": "#/$defs/ids/address"
+        }
+      },
+      "address": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Address ID",
+        "description": "The ID of an address"
+      },
+      "cities": {
+        "type": "array",
+        "title": "City IDs",
+        "items": {
+          "$ref": "#/$defs/ids/city"
+        }
+      },
+      "city": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "City ID",
+        "description": "The ID of a city",
+        "examples": [
+          "city_de_aachen"
+        ]
+      },
+      "colour": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Colour ID",
+        "description": "The ID of a colour"
+      },
+      "colourFamilies": {
+        "type": "array",
+        "title": "Colour family IDs",
+        "items": {
+          "$ref": "#/$defs/ids/colourFamily"
+        }
+      },
+      "colourFamily": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Colour family ID",
+        "description": "The ID of a colour family"
+      },
+      "corporations": {
+        "type": "array",
+        "title": "Corporation IDs",
+        "items": {
+          "$ref": "#/$defs/ids/corporation"
+        }
+      },
+      "corporation": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "The ID of a corporation",
+        "examples": [
+          "corporation_de_aachen_kdstv_marchia"
+        ]
+      },
+      "country": {
+        "type": "string",
+        "description": "The ID of a country",
+        "examples": [
+          "country_de"
+        ]
+      },
+      "organisations": {
+        "type": "array",
+        "title": "Organisation IDs",
+        "description": "The IDs of organisations of which this object is a member",
+        "items": {
+          "$ref": "#/$defs/ids/organisation"
+        },
+        "examples": [
+          [
+            "organisation_cv"
+          ]
+        ]
+      },
+      "organisation": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Organisation ID",
+        "description": "The ID of an organisation",
+        "examples": [
+          "organisation_cv"
+        ]
+      },
+      "pointsOfInterest": {
+        "type": "array",
+        "title": "Point of Interests",
+        "items": {
+          "$ref": "#/$defs/ids/pointOfInterest"
+        }
+      },
+      "pointOfInterest": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "The ID of a point of interest",
+        "examples": [
+          "poi_de_aachen_townhall"
+        ]
+      }
+    },
+    "translationKey": {
+      "type": "string",
+      "title": "Translation key",
+      "description": "A key that is used to look up the name in various languages",
+      "pattern": "^[a-zA-Z0-9À-ž][a-zA-Z0-9À-ž_]*$"
+    },
+    "colourValue": {
+      "type": "string",
+      "title": "Colour value",
+      "description": "How to generate this colour in the app",
+      "examples": [
+        "#0000FF",
+        "#0000FF00",
+        "blue",
+        "rgba(0, 150, 255, 1.0)",
+        "rgb(0, 150, 255)"
+      ]
+    },
+    "iso8601datetime": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(.\\d{3})?[+-]\\d{2}:\\d{2}$"
+    },
+    "address": {
+      "type": "object",
+      "required": [
+        "id",
+        "latitude",
+        "longitude"
+      ],
+      "properties": {
+        "cityIds": {
+          "$ref": "#/$defs/ids/cities",
+          "title": "The IDs of cities to which this address belongs"
+        },
+        "corporationIds": {
+          "$ref": "#/$defs/ids/corporations",
+          "description": "The IDs of corporations situated at this address"
+        },
+        "fullAddress": {
+          "type": "string",
+          "default": "",
+          "title": "The postal address",
+          "examples": [
+            "Nizzaallee 4\nD-52072\nAachen"
+          ]
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "address_aachen_0"
+          ]
+        },
+        "latitude": {
+          "type": "number",
+          "title": "The latitude at which to set the pin",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "title": "The longitude at which to set the pin",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "The name of this address, house or location"
+        },
+        "pointOfInterestIds": {
+          "$ref": "#/$defs/ids/pointsOfInterest",
+          "description": "IDs of points of interest situated at this address"
+        }
+      }
+    },
+    "city": {
+      "type": "object",
+      "title": "A city belonging to a country and containing a number of addresses",
+      "required": [
+        "countryId",
+        "id",
+        "name",
+        "translationKey"
+      ],
+      "properties": {
+        "addressIds": {
+          "$ref": "#/$defs/ids/addresses",
+          "description": "IDs of addresses in this city"
+        },
+        "countryId": {
+          "$ref": "#/$defs/ids/country"
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "city_de_aachen"
+          ]
+        },
+        "translationKey": {
+          "$ref": "#/$defs/translationKey"
+        },
+        "name": {
+          "type": "string",
+          "title": "The name of the city in its local language",
+          "examples": [
+            "Aachen"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "addressIds": [
+            "address_aachen_0",
+            "address_aachen_1",
+            "address_aachen_2"
+          ],
+          "countryId": "country_de",
+          "id": "city_de_aachen",
+          "translationKey": "CITY_AACHEN",
+          "name": "Aachen"
+        }
+      ]
+    },
+    "colour": {
+      "type": "object",
+      "title": "Colour",
+      "description": "A colour",
+      "required": [
+        "colourFamilyIds",
+        "id",
+        "translationKey",
+        "colourValue"
+      ],
+      "properties": {
+        "colourFamilyIds": {
+          "$ref": "#/$defs/ids/colourFamilies",
+          "description": "The IDs of the colour families that this colour is a shade of",
+          "examples": [
+            "colour_family_blue"
+          ]
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "colour_blue"
+          ]
+        },
+        "inColours": {
+          "$ref": "#/$defs/ids/corporations",
+          "description": "IDs of corporations using this colour",
+          "examples": [
+            [
+              "corporation_de_aachen_corps_palaeoteutonia",
+              "corporation_de_aachen_ab_alania"
+            ]
+          ]
+        },
+        "translationKey": {
+          "$ref": "#/$defs/translationKey",
+          "examples": [
+            "COLOUR_BLUE"
+          ]
+        },
+        "colourValue": {
+          "$ref": "#/$defs/colourValue"
+        }
+      }
+    },
+    "colourFamily": {
+      "type": "object",
+      "title": "ColourFamily",
+      "description": "A colour family",
+      "required": [
+        "id",
+        "memberColourIds",
+        "translationKey"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "colour_blue"
+          ]
+        },
+        "memberColourIds": {
+          "$ref": "#/$defs/ids/colourFamilies",
+          "examples": [
+            "colour_family_red"
+          ]
+        },
+        "translationKey": {
+          "$ref": "#/$defs/translationKey"
+        },
+        "sampleColourValue": {
+          "$ref": "#/$defs/colourValue",
+          "description": "A colour value representing all shades of the family"
+        }
+      }
+    },
+    "corporation": {
+      "type": "object",
+      "title": "Corporation",
+      "required": [
+        "addressId",
+        "coloursPrinciple",
+        "fencingPrinciple",
+        "id",
+        "longName",
+        "shortName"
+      ],
+      "properties": {
+        "addressId": {
+          "$ref": "#/$defs/mapDisplayable/addressId",
+          "description": "The ID of the address at which this corporation is situated"
+        },
+        "coloursPrinciple": {
+          "type": "integer",
+          "default": 0,
+          "title": "Colours principle",
+          "description": "0: Unknown, 1: No colours exist, 2: Wearing needles, 3: Not wearing colours, 4: Wearing is optional, 5: Wearing is mandatory",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "eventIds": {
+          "$ref": "#/$defs/mapDisplayable/eventIds"
+        },
+        "fencingPrinciple": {
+          "type": "integer",
+          "title": "Fencing principle",
+          "description": "0: Unknown, 1: Not fencing, 2: Fencing is opt-in, 3: Training is mandatory, but mensur is optional, 4: Mensur is mandatory",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "foundationDate": {
+          "type": "string",
+          "title": "Foundation date",
+          "description": "The date (yyyy-MM-dd) or year at which the corporation was founded",
+          "pattern": "^$|^\\d{4}(-\\d{2}-\\d{2})?$",
+          "examples": [
+            "1910",
+            "1910-01-01"
+          ]
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "corporation_de_aachen_kdstv_marchia"
+          ]
+        },
+        "indicatorColourId": {
+          "$ref": "#/$defs/mapDisplayable/indicatorColourId",
+          "description": "The ID of the colour used to indicate a member of this organisation on the map",
+          "examples": [
+            "ind_green"
+          ]
+        },
+        "longName": {
+          "$ref": "#/$defs/mapDisplayable/longName"
+        },
+        "mail": {
+          "$ref": "#/$defs/mapDisplayable/mail"
+        },
+        "motto": {
+          "type": "string",
+          "title": "Motto",
+          "description": "The corporation's motto",
+          "examples": [
+            "Mens agitat molem!"
+          ]
+        },
+        "organisationIds": {
+          "$ref": "#/$defs/ids/organisations",
+          "description": "The IDs of organisations of which this corporation is a member"
+        },
+        "phone": {
+          "$ref": "#/$defs/mapDisplayable/phone"
+        },
+        "jourFixe": {
+          "type": "string",
+          "title": "Jour Fixe",
+          "description": "Free-text comment on the best day/time to visit",
+          "examples": [
+            "Donnerstag"
+          ]
+        },
+        "remark": {
+          "$ref": "#/$defs/mapDisplayable/remark"
+        },
+        "shortName": {
+          "$ref": "#/$defs/mapDisplayable/shortName"
+        },
+        "website": {
+          "$ref": "#/$defs/mapDisplayable/website"
+        },
+        "colours": {
+          "type": "array",
+          "title": "Colours / Couleur",
+          "description": "An array of couleur identifying or worn by a corporation",
+          "items": {
+            "type": "object",
+            "title": "Couleur",
+            "description": "Represents a sash-like collection of colours, such as a tricolore",
+            "required": [
+              "colourIds"
+            ],
+            "properties": {
+              "baseColourId": {
+                "$ref": "#/$defs/ids/colour",
+                "description": "The ID of the colour to use as a background for the colours defined in colourIds, which will be inset"
+              },
+              "colourIds": {
+                "type": "array",
+                "title": "Colour IDs",
+                "description": "The IDs of the colours, top to bottom",
+                "items": {
+                  "$ref": "#/$defs/ids/colour"
+                }
+              },
+              "percussion": {
+                "$ref": "#/$defs/ids/colour",
+                "description": "The ID of the colour to use as a percussion for the colours defined in colourIds, which will be inset. Narrower in height than a baseColour"
+              }
+            },
+            "examples": [
+              {
+                "colourIds": [
+                  "colour_red_crimson",
+                  "colour_white",
+                  "colour_pink"
+                ]
+              },
+              {
+                "baseColourId": "colour_white",
+                "colourIds": [
+                  "colour_black",
+                  "colour_green"
+                ]
+              }
+            ]
+          },
+          "examples": [
+            [
+              {
+                "colourIds": [
+                  "colour_red_crimson",
+                  "colour_white",
+                  "colour_pink"
+                ]
+              },
+              {
+                "colourIds": [
+                  "colour_red_crimson",
+                  "colour_white",
+                  "colour_red_crimson"
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      "examples": [
+        {
+          "addressId": "address_aachen_29",
+          "coloursPrinciple": 5,
+          "eventIds": [
+            "event_christmas"
+          ],
+          "fencingPrinciple": 1,
+          "foundationDate": "1910",
+          "id": "corporation_d_aachen_kdstv_marchia",
+          "indicatorColourId": "ind_green",
+          "longName": "KDStV Marchia (Breslau) zu Aachen im CV",
+          "mail": "chargen@marchia.de",
+          "motto": "Mens agitat molem!",
+          "organisationIds": [
+            "organisation_cv"
+          ],
+          "phone": "+49 241 18984012",
+          "regularsTable": "Donnerstag",
+          "shortName": "KDStV Marchia",
+          "website": "www.marchia.de",
+          "colours": [
+            {
+              "colourIds": [
+                "colour_red_crimson",
+                "colour_white",
+                "colour_pink"
+              ]
+            },
+            {
+              "colourIds": [
+                "colour_red_crimson",
+                "colour_white",
+                "colour_red_crimson"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "country": {
+      "type": "object",
+      "required": [
+        "id",
+        "isoCode"
+      ],
+      "properties": {
+        "cityIds": {
+          "$ref": "#/$defs/ids/cities",
+          "description": "The IDs of cities in this country"
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "country_de"
+          ]
+        },
+        "isoCode": {
+          "type": "string",
+          "title": "Country code",
+          "description": "The ISO3166 code (2 or 3 letters, any case) of the country",
+          "pattern": "[a-zA-z]{2,3}",
+          "examples": [
+            "de"
+          ]
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "title": "An event associated to a corporation, organisation, and/or point of interest",
+      "required": [
+        "begin",
+        "id",
+        "mapDisplayableIds",
+        "name"
+      ],
+      "properties": {
+        "begin": {
+          "$ref": "#/$defs/iso8601datetime",
+          "description": "ISO8601 date string for the start of the event"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "description": "More details on the event"
+        },
+        "end": {
+          "$ref": "#/$defs/iso8601datetime",
+          "description": "ISO8601 date string for the end of the event"
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "event_christmas"
+          ]
+        },
+        "mapDisplayableIds": {
+          "type": "array",
+          "description": "The IDs of corporations or points of interest where this event is happening",
+          "items": {
+            "type": "string",
+            "title": "The ID of a corporation or a point of interest"
+          }
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "The name of the event"
+        }
+      },
+      "examples": [
+        {
+          "begin": "2022-12-24T18:00:00+01:00",
+          "description": "Christmas events:\n- Christmas Eve\n- Christmas Day\n- Boxing Day",
+          "end": "2022-12-26T22:00:00+01:00",
+          "id": "event_christmas_0",
+          "mapDisplayableIds": [
+            "corporation_0",
+            "corporation_1",
+            "corporation_2"
+          ],
+          "name": "Christmas"
+        }
+      ]
+    },
+    "organisation": {
+      "type": "object",
+      "title": "Organisation",
+      "description": "An organisation in which corporations are members",
+      "required": [
+        "abbreviation",
+        "id",
+        "name"
+      ],
+      "properties": {
+        "abbreviation": {
+          "type": "string",
+          "title": "Abbreviation",
+          "description": "The abbreviation of the organisation"
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "organisation_cv"
+          ]
+        },
+        "mapDisplayableIds": {
+          "type": "array",
+          "title": "Member IDs",
+          "description": "The IDs of corporations or points of interest that are associated with this organisation",
+          "items": {
+            "type": "string",
+            "title": "An ID of a corporation or a points of interest"
+          }
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "The name of the organisation",
+          "examples": [
+            "Cartellverband der Katholischen Deutschen Studentenverbindungen"
+          ]
+        },
+        "indicatorColourId": {
+          "$ref": "#/$defs/mapDisplayable/indicatorColourId",
+          "description": "The ID of the colour used to indicate a member of this organisation on the map"
+        }
+      },
+      "examples": [
+        {
+          "abbreviation": "CV",
+          "id": "organisation_cv",
+          "mapDisplayableIds": [
+            "corporation_d_aachen_kdstv_baltia",
+            "corporation_d_aachen_kdstv_bergland",
+            "corporation_d_aachen_kdstv_franconia",
+            "corporation_d_aachen_kdstv_kaiserpfalz",
+            "corporation_d_aachen_kdstv_makaria",
+            "corporation_d_aachen_kdstv_marchia",
+            "corporation_d_aachen_kdstv_ripuaria"
+          ],
+          "name": "Cartellverband der Katholischen Deutschen Studentenverbindungen",
+          "indicatorColour": "ind_green"
+        }
+      ]
+    },
+    "pointOfInterest": {
+      "type": "object",
+      "title": "Point of Interest",
+      "description": "A location on the map which isn't home to a corporation",
+      "required": [
+        "addressId",
+        "id",
+        "longName",
+        "shortName"
+      ],
+      "properties": {
+        "addressId": {
+          "$ref": "#/$defs/mapDisplayable/addressId",
+          "description": "The ID of the address at which this corporation is situated"
+        },
+        "associatedCorporationId": {
+          "$ref": "#/$defs/ids/corporation",
+          "description": "The ID of a corporation with which this POI is associated"
+        },
+        "eventIds": {
+          "$ref": "#/$defs/mapDisplayable/eventIds"
+        },
+        "hidden": {
+          "$ref": "#/$defs/baseModel/hidden"
+        },
+        "iconName": {
+          "type": "string",
+          "title": "Icon name",
+          "description": "The name of the icon to use for the marker"
+        },
+        "id": {
+          "$ref": "#/$defs/baseModel/id",
+          "examples": [
+            "corporation_de_aachen_kdstv_marchia"
+          ]
+        },
+        "indicatorColourId": {
+          "$ref": "#/$defs/mapDisplayable/indicatorColourId",
+          "description": "The ID of the colour used to indicate a member of this organisation on the map",
+          "examples": [
+            "ind_green"
+          ]
+        },
+        "longName": {
+          "$ref": "#/$defs/mapDisplayable/longName"
+        },
+        "mail": {
+          "$ref": "#/$defs/mapDisplayable/mail"
+        },
+        "phone": {
+          "$ref": "#/$defs/mapDisplayable/phone"
+        },
+        "remark": {
+          "$ref": "#/$defs/mapDisplayable/remark"
+        },
+        "shortName": {
+          "$ref": "#/$defs/mapDisplayable/shortName"
+        },
+        "website": {
+          "$ref": "#/$defs/mapDisplayable/website"
+        }
+      }
+    }
+  }
+}

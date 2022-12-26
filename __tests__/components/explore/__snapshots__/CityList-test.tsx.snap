@@ -1,0 +1,2075 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`City list renders correctly 1`] = `
+[
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+          "borderBottomColor": "transparent",
+          "borderBottomWidth": 1,
+          "borderTopColor": "transparent",
+          "borderTopWidth": 1,
+          "padding": 8,
+        }
+      }
+      testID="RNE__SearchBar-wrapper"
+    >
+      <View
+        style={
+          {
+            "paddingHorizontal": 0,
+            "width": "100%",
+          }
+        }
+        testID="RNE__Input__view-wrapper"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#dcdce1",
+              "borderBottomWidth": 0,
+              "borderColor": "#86939e",
+              "borderRadius": 15,
+              "flexDirection": "row",
+              "minHeight": 30,
+              "overflow": "hidden",
+              "transform": [
+                {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "height": 40,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "marginVertical": 4,
+                "paddingRight": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                testID="RNE__ICON__CONTAINER_ACTION"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#86939e",
+                          "fontSize": 18,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <TextInput
+            editable={true}
+            keyboardType="default"
+            numberOfLines={1}
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            onFocus={[Function]}
+            placeholder="Search..."
+            placeholderTextColor="#86939e"
+            platform="default"
+            style={
+              {
+                "color": "#86939e",
+                "flex": 1,
+                "fontSize": 18,
+                "marginLeft": 10,
+                "minHeight": 40,
+              }
+            }
+            testID="RNE__SearchBar"
+            underlineColorAndroid="transparent"
+            value=""
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "height": 40,
+                "justifyContent": "center",
+                "marginRight": 8,
+                "marginVertical": 4,
+                "paddingRight": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            />
+          </View>
+        </View>
+        <Text
+          style={
+            {
+              "color": "#ff190c",
+              "fontSize": 12,
+              "height": 0,
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <RCTScrollView
+      data={
+        [
+          {
+            "addressIds": [
+              "address_aachen_0",
+              "address_aachen_20",
+              "address_aachen_21",
+              "address_aachen_22",
+              "address_aachen_23",
+              "address_aachen_24",
+              "address_aachen_28",
+              "address_aachen_29",
+              "address_poi_aachen_townhall",
+            ],
+            "countryId": "country_de",
+            "id": "city_de_aachen",
+            "name": "Aachen",
+            "translationKey": "LOC_CITY_AACHEN",
+          },
+          {
+            "addressIds": [
+              "address_karlsruhe_16",
+            ],
+            "countryId": "country_de",
+            "id": "city_de_karlsruhe",
+            "name": "Karlsruhe",
+            "translationKey": "LOC_CITY_KARLSRUHE",
+          },
+          {
+            "addressIds": [
+              "address_kiel_10",
+            ],
+            "countryId": "country_de",
+            "id": "city_de_kiel",
+            "name": "Kiel",
+            "translationKey": "LOC_CITY_KIEL",
+          },
+          {
+            "addressIds": [
+              "address_tübingen_10",
+            ],
+            "countryId": "country_de",
+            "id": "city_de_tübingen",
+            "name": "Tübingen",
+            "translationKey": "LOC_CITY_TÜBINGEN",
+          },
+          {
+            "addressIds": [
+              "address_wien_34",
+            ],
+            "countryId": "country_at",
+            "id": "city_at_wien",
+            "name": "Wien",
+            "translationKey": "LOC_CITY_WIEN",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            replaceTheme={[Function]}
+            updateTheme={[Function]}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "#bcbbc1",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "padding": 10,
+                }
+              }
+              testID="RNE__LISTITEM__padView"
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "flex": 1,
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Aachen
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰍎
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰓒
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "paddingLeft": 16,
+                  }
+                }
+              />
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "transform": [
+                      {
+                        "rotate": "0deg",
+                      },
+                    ],
+                  }
+                }
+                testID="RNE__ListItem__Accordion__Icon"
+              >
+                <View
+                  style={
+                    {
+                      "overflow": "hidden",
+                    }
+                  }
+                  testID="RNE__ICON__CONTAINER"
+                >
+                  <View
+                    accessibilityRole="button"
+                    android_ripple={
+                      {
+                        "borderless": false,
+                        "color": "rgba(0, 0, 0, 0.3)",
+                        "radius": -5,
+                      }
+                    }
+                    disabled={false}
+                    testID="RNE__ICON__CONTAINER_ACTION"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "transparent",
+                          "justifyContent": "center",
+                        }
+                      }
+                      testID="RNE__ICON"
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        selectable={false}
+                        style={
+                          [
+                            {
+                              "color": "#242424",
+                              "fontSize": 24,
+                            },
+                            {
+                              "backgroundColor": "transparent",
+                            },
+                            {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            {},
+                          ]
+                        }
+                        testID="RNE__ICON__Component"
+                      >
+                        󰅀
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            replaceTheme={[Function]}
+            updateTheme={[Function]}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "#bcbbc1",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "padding": 10,
+                }
+              }
+              testID="RNE__LISTITEM__padView"
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "flex": 1,
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Karlsruhe
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰍎
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰓒
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "paddingLeft": 16,
+                  }
+                }
+              />
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "transform": [
+                      {
+                        "rotate": "0deg",
+                      },
+                    ],
+                  }
+                }
+                testID="RNE__ListItem__Accordion__Icon"
+              >
+                <View
+                  style={
+                    {
+                      "overflow": "hidden",
+                    }
+                  }
+                  testID="RNE__ICON__CONTAINER"
+                >
+                  <View
+                    accessibilityRole="button"
+                    android_ripple={
+                      {
+                        "borderless": false,
+                        "color": "rgba(0, 0, 0, 0.3)",
+                        "radius": -5,
+                      }
+                    }
+                    disabled={false}
+                    testID="RNE__ICON__CONTAINER_ACTION"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "transparent",
+                          "justifyContent": "center",
+                        }
+                      }
+                      testID="RNE__ICON"
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        selectable={false}
+                        style={
+                          [
+                            {
+                              "color": "#242424",
+                              "fontSize": 24,
+                            },
+                            {
+                              "backgroundColor": "transparent",
+                            },
+                            {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            {},
+                          ]
+                        }
+                        testID="RNE__ICON__Component"
+                      >
+                        󰅀
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            replaceTheme={[Function]}
+            updateTheme={[Function]}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "#bcbbc1",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "padding": 10,
+                }
+              }
+              testID="RNE__LISTITEM__padView"
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "flex": 1,
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Kiel
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰍎
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰓒
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "paddingLeft": 16,
+                  }
+                }
+              />
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "transform": [
+                      {
+                        "rotate": "0deg",
+                      },
+                    ],
+                  }
+                }
+                testID="RNE__ListItem__Accordion__Icon"
+              >
+                <View
+                  style={
+                    {
+                      "overflow": "hidden",
+                    }
+                  }
+                  testID="RNE__ICON__CONTAINER"
+                >
+                  <View
+                    accessibilityRole="button"
+                    android_ripple={
+                      {
+                        "borderless": false,
+                        "color": "rgba(0, 0, 0, 0.3)",
+                        "radius": -5,
+                      }
+                    }
+                    disabled={false}
+                    testID="RNE__ICON__CONTAINER_ACTION"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "transparent",
+                          "justifyContent": "center",
+                        }
+                      }
+                      testID="RNE__ICON"
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        selectable={false}
+                        style={
+                          [
+                            {
+                              "color": "#242424",
+                              "fontSize": 24,
+                            },
+                            {
+                              "backgroundColor": "transparent",
+                            },
+                            {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            {},
+                          ]
+                        }
+                        testID="RNE__ICON__Component"
+                      >
+                        󰅀
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            replaceTheme={[Function]}
+            updateTheme={[Function]}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "#bcbbc1",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "padding": 10,
+                }
+              }
+              testID="RNE__LISTITEM__padView"
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "flex": 1,
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Tübingen
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰍎
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰓒
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "paddingLeft": 16,
+                  }
+                }
+              />
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "transform": [
+                      {
+                        "rotate": "0deg",
+                      },
+                    ],
+                  }
+                }
+                testID="RNE__ListItem__Accordion__Icon"
+              >
+                <View
+                  style={
+                    {
+                      "overflow": "hidden",
+                    }
+                  }
+                  testID="RNE__ICON__CONTAINER"
+                >
+                  <View
+                    accessibilityRole="button"
+                    android_ripple={
+                      {
+                        "borderless": false,
+                        "color": "rgba(0, 0, 0, 0.3)",
+                        "radius": -5,
+                      }
+                    }
+                    disabled={false}
+                    testID="RNE__ICON__CONTAINER_ACTION"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "transparent",
+                          "justifyContent": "center",
+                        }
+                      }
+                      testID="RNE__ICON"
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        selectable={false}
+                        style={
+                          [
+                            {
+                              "color": "#242424",
+                              "fontSize": 24,
+                            },
+                            {
+                              "backgroundColor": "transparent",
+                            },
+                            {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            {},
+                          ]
+                        }
+                        testID="RNE__ICON__Component"
+                      >
+                        󰅀
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            replaceTheme={[Function]}
+            updateTheme={[Function]}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderColor": "#bcbbc1",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "padding": 10,
+                }
+              }
+              testID="RNE__LISTITEM__padView"
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "backgroundColor": "transparent",
+                    "color": "#242424",
+                    "flex": 1,
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                  }
+                }
+                testID="listItemTitle"
+              >
+                Wien
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰍎
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "overflow": "hidden",
+                    },
+                    {
+                      "borderRadius": 2,
+                    },
+                    undefined,
+                    false,
+                  ]
+                }
+                testID="RNE_BUTTON_WRAPPER"
+              >
+                <View
+                  accessibilityRole="button"
+                  accessibilityState={
+                    {
+                      "busy": false,
+                      "disabled": false,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "borderColor": "#008040",
+                        "borderRadius": 2,
+                        "borderWidth": 0,
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "padding": 8,
+                        "paddingHorizontal": 10,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "overflow": "hidden",
+                        }
+                      }
+                      testID="RNE__ICON__CONTAINER"
+                    >
+                      <View
+                        accessibilityRole="button"
+                        android_ripple={
+                          {
+                            "borderless": false,
+                            "color": "rgba(0, 0, 0, 0.3)",
+                            "radius": -5,
+                          }
+                        }
+                        disabled={false}
+                        replaceTheme={[Function]}
+                        testID="RNE__ICON__CONTAINER_ACTION"
+                        updateTheme={[Function]}
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "transparent",
+                              "justifyContent": "center",
+                            }
+                          }
+                          testID="RNE__ICON"
+                        >
+                          <Text
+                            allowFontScaling={false}
+                            selectable={false}
+                            style={
+                              [
+                                {
+                                  "color": "#008040",
+                                  "fontSize": 24,
+                                },
+                                {
+                                  "backgroundColor": "transparent",
+                                },
+                                {
+                                  "fontFamily": "Material Design Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                                {},
+                              ]
+                            }
+                            testID="RNE__ICON__Component"
+                          >
+                            󰓒
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "paddingLeft": 16,
+                  }
+                }
+              />
+              <View
+                collapsable={false}
+                style={
+                  {
+                    "transform": [
+                      {
+                        "rotate": "0deg",
+                      },
+                    ],
+                  }
+                }
+                testID="RNE__ListItem__Accordion__Icon"
+              >
+                <View
+                  style={
+                    {
+                      "overflow": "hidden",
+                    }
+                  }
+                  testID="RNE__ICON__CONTAINER"
+                >
+                  <View
+                    accessibilityRole="button"
+                    android_ripple={
+                      {
+                        "borderless": false,
+                        "color": "rgba(0, 0, 0, 0.3)",
+                        "radius": -5,
+                      }
+                    }
+                    disabled={false}
+                    testID="RNE__ICON__CONTAINER_ACTION"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "transparent",
+                          "justifyContent": "center",
+                        }
+                      }
+                      testID="RNE__ICON"
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        selectable={false}
+                        style={
+                          [
+                            {
+                              "color": "#242424",
+                              "fontSize": 24,
+                            },
+                            {
+                              "backgroundColor": "transparent",
+                            },
+                            {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            {},
+                          ]
+                        }
+                        testID="RNE__ICON__Component"
+                      >
+                        󰅀
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>,
+  <Modal
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    replaceTheme={[Function]}
+    testID="Internal__Overlay"
+    transparent={true}
+    updateTheme={[Function]}
+    visible={false}
+  />,
+]
+`;

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "327906390370",
+    "firebase_url": "https://api-project-327906390370.firebaseio.com",
+    "project_id": "api-project-327906390370",
+    "storage_bucket": "api-project-327906390370.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327906390370:android:5f44e2db04ec78c5",
+        "android_client_info": {
+          "package_name": "de.marchia.couleurbummel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327906390370-9d5t2hqmnr4mlu0hrc1ldujfev3dc1bi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.marchia.couleurbummel",
+            "certificate_hash": "82C410E26BDF020051DEA24A5C67EFEC6B10B5AB"
+          }
+        },
+        {
+          "client_id": "327906390370-ago6klta6d5spi8bk79j7dluv857lt5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "FIREBASE_API_KEY_PLACEHOLDER"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327906390370-dscjctlpka0ivah7a1fmnmvntikakqmu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "de.marchia.couleurbummel",
+                "app_store_id": "378792819"
+              }
+            },
+            {
+              "client_id": "327906390370-ago6klta6d5spi8bk79j7dluv857lt5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

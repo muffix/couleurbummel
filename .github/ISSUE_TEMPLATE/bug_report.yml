@@ -1,0 +1,70 @@
+name: 🐛 Bug report
+description: Create a report to help improve the app
+labels: [ "Needs triage" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+        A bug means that there is something broken or unexpected in the app.
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please [search the history](https://github.com/muffi/couleurbummel/issues) to see if an issue already exists for the same problem.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: checkboxes
+    attributes:
+      label: Happening on the latest app version?
+      description: Please try again with the latest version before filing a bug report.
+      options:
+        - label: I have seen this on the latest version of the app
+          required: true
+  - type: checkboxes
+    attributes:
+      label: This is not a data update request
+      description: Please use the in-app functionality to request data updates or additions.
+      options:
+        - label: I am not requesting a data update
+          required: true
+  - type: textarea
+    attributes:
+      label: Explain what you did
+      description: Describe how you interacted with the app when you encountered the bug.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      render: Markdown
+      description: |
+        Please give a detailed description of how to reproduce the bug.
+        1. Go to '...'
+        2. Tap '....'
+        3. Scroll to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Your device and OS
+      description: Which device and operating system version are you using?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
