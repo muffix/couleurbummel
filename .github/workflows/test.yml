@@ -24,7 +24,7 @@ jobs:
           corepack enable
       - name: Install node modules
         run: |
-          yarn install --frozen-lockfile
+          yarn install --immutable --immutable-cache --check-cache
       - name: Lint
         run: |
           yarn lint
