@@ -1122,7 +1122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.0.0":
   version: 7.20.0
   resolution: "@babel/runtime@npm:7.20.0"
   dependencies:
@@ -1146,6 +1146,15 @@ __metadata:
   dependencies:
     regenerator-runtime: ^0.13.11
   checksum: 42a8504db21031b1859fbc0f52d698a3d2f5ada9519eb76c6f96a7e657d8d555732a18fe71ef428a67cc9fc81ca0d3562fb7afdc70549c5fec343190cbaa9b03
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.20.7":
+  version: 7.20.7
+  resolution: "@babel/runtime@npm:7.20.7"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 4629ce5c46f06cca9cfb9b7fc00d48003335a809888e2b91ec2069a2dcfbfef738480cff32ba81e0b7c290f8918e5c22ddcf2b710001464ee84ba62c7e32a3a3
   languageName: node
   linkType: hard
 
@@ -3216,7 +3225,7 @@ __metadata:
   resolution: "Couleurbummel@workspace:."
   dependencies:
     "@babel/core": ^7.12.9
-    "@babel/runtime": ^7.12.5
+    "@babel/runtime": ^7.20.7
     "@jest/globals": ^29.3.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^2.0.0
