@@ -16,6 +16,9 @@ changelog:
     - title: ":bug: Bug Fix"
       labels:
         - "PR: Bug Fix :bug:"
+    - title: ":zap: Performance improvement"
+      labels:
+        - "PR: Performance improvement :zap:"
     - title: ":memo: Documentation"
       labels:
         - "PR: Docs :memo:"
