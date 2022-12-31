@@ -59,7 +59,7 @@ interface Constants {
     sort: {
       sortButton: string;
       selectedSortOption: string;
-      sortbyName: string;
+      sortByName: string;
       sortByDistance: string;
     };
     favourites: {
@@ -209,7 +209,7 @@ const constants: Readonly<Constants> = Object.freeze({
     sort: {
       sortButton: 'sort',
       selectedSortOption: 'check',
-      sortbyName: 'sort-alphabetical-ascending',
+      sortByName: 'sort-alphabetical-ascending',
       sortByDistance: 'map-marker',
     },
     favourites: {

@@ -23,7 +23,7 @@ export const ExploreCountriesScreen = ({}: ScreenProps) => {
         component={CountryListScreen}
         options={{
           title: t('SCREEN_COUNTRIES'),
-          headerLeft: () => <ToggleDrawerButton />,
+          headerLeft: ToggleDrawerButton,
         }}
       />
       <Stack.Screen

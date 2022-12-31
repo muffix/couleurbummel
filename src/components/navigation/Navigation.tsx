@@ -143,7 +143,7 @@ export const Navigation = () => {
           options={{
             headerShown: true,
             title: t('SCREEN_SETTINGS'),
-            headerLeft: () => <ToggleDrawerButton />,
+            headerLeft: ToggleDrawerButton,
           }}
           name="Settings"
           component={SettingsScreen}

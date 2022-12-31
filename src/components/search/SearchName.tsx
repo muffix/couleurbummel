@@ -16,6 +16,7 @@ import {ToggleDrawerButton} from '../navigation/ToggleDrawerButton';
 const Stack = createNativeStackNavigator<StackScreenParamsList>();
 
 const screenName = 'SearchName';
+const NamedSortButton = () => <SortButton screenName={screenName} />;
 
 /**
  * The root screen in the search by name section
@@ -30,8 +31,8 @@ export const SearchNameScreen = ({}: ScreenProps) => {
         component={SearchScreen}
         options={{
           title: t('SCREEN_SEARCH_NAME'),
-          headerLeft: () => <ToggleDrawerButton />,
-          headerRight: () => <SortButton screenName={screenName} />,
+          headerLeft: ToggleDrawerButton,
+          headerRight: NamedSortButton,
         }}
       />
       <Stack.Screen

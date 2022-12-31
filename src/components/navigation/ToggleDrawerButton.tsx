@@ -5,7 +5,7 @@ import React from 'react';
 import constants from '../../constants';
 
 /**
- * The button to toggle the drawer
+ * The button component to toggle the drawer
  */
 export const ToggleDrawerButton = () => {
   const {theme} = useTheme();
@@ -20,6 +20,7 @@ export const ToggleDrawerButton = () => {
     />
   );
 };
+
 const useStyles = makeStyles(() => ({
   menuButton: {
     backgroundColor: 'transparent',

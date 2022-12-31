@@ -1,5 +1,5 @@
 import {StackActions, useNavigation} from '@react-navigation/native';
-import {Button, ListItem, makeStyles, useTheme} from '@rneui/themed';
+import {ListItem, makeStyles} from '@rneui/themed';
 import React, {useContext, useEffect, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {FlatList} from 'react-native';
@@ -18,6 +18,7 @@ import {toggleFavouriteCorporationAction} from '../contexts/actions';
 import {StateContext} from '../contexts/GlobalStateContext';
 import {ModelContext} from '../contexts/ModelContext';
 import {UserLocationContext} from '../contexts/UserLocationContext';
+import {FavouriteButton} from '../FavouriteButton';
 import fuzzySearch from '../fuzzySearch';
 import {SearchableList} from '../SearchableList';
 
@@ -47,25 +48,31 @@ const filterCorporations = (
     fuzzySearch(searchTerm, c.shortName.toLowerCase()),
   );
 
+const renderCorporation =
+  (hideOrganisation?: boolean) => (item: [Address, Corporation]) => {
+    const [address, corporation] = item;
+
+    return (
+      <CorporationItem
+        corporation={corporation}
+        address={address}
+        hideOrganisation={hideOrganisation}
+      />
+    );
+  };
+
 /**
  * A list of corporations
  */
 export const CorporationList = (props: CorporationListProps) => {
-  const {t} = useTranslation();
-  const {theme} = useTheme();
   const styles = useStyles();
-  const {globalState, dispatch} = useContext(StateContext);
-  const model = useContext(ModelContext);
+  const {globalState} = useContext(StateContext);
   const userLocation = useContext(UserLocationContext);
 
   const navigation = useNavigation();
 
   const [addressesAndCorporations, setAddressesAndCorporations] = useState(
     props.addressesAndCorporations,
-  );
-
-  const [favourites, setFavourites] = useState(
-    globalState.favourites.corporation,
   );
 
   useEffect(() => {
@@ -83,74 +90,7 @@ export const CorporationList = (props: CorporationListProps) => {
     setAddressesAndCorporations(
       sortCorporations(props.addressesAndCorporations, option, userLocation),
     );
-
-    setFavourites(globalState.favourites.corporation);
   }, [globalState, userLocation, props]);
-
-  const renderCorporation = (item: [Address, Corporation]) => {
-    const [address, corporation] = item;
-
-    let orgsString = '';
-    if (!props.hideOrganisation) {
-      const orgs = corporation.organisationIds
-        ?.map(orgId => model.organisation(orgId))
-        .filter(o => !!o)
-        .map(o => (o as Organisation).abbreviation);
-
-      orgsString = orgs ? ` (${orgs.join(', ')})` : '';
-    }
-
-    return (
-      <ListItem.Swipeable
-        key={corporation.id}
-        onPress={() => {
-          log.debug(corporation.shortName);
-          navigation.dispatch(
-            StackActions.push('CorporationDetails', {
-              corporation: corporation,
-            }),
-          );
-        }}
-        style={({pressed}) =>
-          pressed ? styles.listItemPressed : styles.listItemDefault
-        }
-        rightContent={reset => (
-          <Button
-            buttonStyle={styles.favouriteButton}
-            title={t('BUTTON_FAVOURITE') || ''}
-            icon={{
-              name: favourites.has(corporation.id)
-                ? constants.icons.explore.favourite
-                : constants.icons.explore.nonFavourite,
-              color: theme.colors.iconOnPrimaryColourBackgroundColour,
-            }}
-            onPress={() => {
-              dispatch(toggleFavouriteCorporationAction(corporation.id));
-              reset();
-            }}
-          />
-        )}
-        bottomDivider>
-        <ListItem.Content>
-          <ListItem.Title style={styles.corporationName}>
-            {`${corporation.shortName}${orgsString}`}
-          </ListItem.Title>
-          {userLocation && (
-            <ListItem.Subtitle style={styles.distanceText}>
-              {t('DISTANCE', {
-                distanceString: formatDistance(userLocation, {
-                  latitude: address.latitude,
-                  longitude: address.longitude,
-                }),
-              })}
-            </ListItem.Subtitle>
-          )}
-          <ColoursSet c={corporation} />
-        </ListItem.Content>
-        <ListItem.Chevron />
-      </ListItem.Swipeable>
-    );
-  };
 
   if (!props.searchable) {
     return (
@@ -159,7 +99,7 @@ export const CorporationList = (props: CorporationListProps) => {
         ListHeaderComponent={props.headerComponent}
         testID={props.testID}
         data={addressesAndCorporations}
-        renderItem={({item}) => renderCorporation(item)}
+        renderItem={({item}) => renderCorporation(props.hideOrganisation)(item)}
         keyExtractor={([_address, c]) => c.id}
       />
     );
@@ -170,7 +110,7 @@ export const CorporationList = (props: CorporationListProps) => {
       testID={props.testID}
       allItems={addressesAndCorporations}
       filterItems={filterCorporations}
-      renderItem={renderCorporation}
+      renderItem={renderCorporation(props.hideOrganisation)}
       keyExtractor={([_address, c]) => c.id}
       searchDelayMs={constants.explore.search.delayMs}
       headerComponent={props.headerComponent}
@@ -178,6 +118,83 @@ export const CorporationList = (props: CorporationListProps) => {
         props.searchOptions?.showsResultsOnEmptySearch
       }
     />
+  );
+};
+
+/**
+ * A row in a list of corporations
+ *
+ * @param corporation the corporation
+ * @param address the address at which the corporation is located
+ * @param hideOrganisation whether we want to hide the corporation's organisation name in parentheses
+ * @constructor
+ */
+const CorporationItem = ({
+  corporation,
+  address,
+  hideOrganisation,
+}: {
+  corporation: Corporation;
+  address: Address;
+  hideOrganisation?: boolean;
+}) => {
+  const navigation = useNavigation();
+  const styles = useStyles();
+  const {t} = useTranslation();
+
+  const model = useContext(ModelContext);
+  const userLocation = useContext(UserLocationContext);
+
+  let orgsString = '';
+  if (!hideOrganisation) {
+    const orgs = corporation.organisationIds
+      ?.map(orgId => model.organisation(orgId))
+      .filter(o => !!o)
+      .map(o => (o as Organisation).abbreviation);
+
+    orgsString = orgs ? ` (${orgs.join(', ')})` : '';
+  }
+
+  return (
+    <ListItem.Swipeable
+      key={corporation.id}
+      onPress={() => {
+        log.debug(corporation.shortName);
+        navigation.dispatch(
+          StackActions.push('CorporationDetails', {
+            corporation: corporation,
+          }),
+        );
+      }}
+      style={({pressed}) =>
+        pressed ? styles.listItemPressed : styles.listItemDefault
+      }
+      rightContent={reset => (
+        <FavouriteButton
+          itemId={corporation.id}
+          toggleAction={toggleFavouriteCorporationAction}
+          postDispatch={reset}
+        />
+      )}
+      bottomDivider>
+      <ListItem.Content>
+        <ListItem.Title style={styles.corporationName}>
+          {`${corporation.shortName}${orgsString}`}
+        </ListItem.Title>
+        {userLocation && (
+          <ListItem.Subtitle style={styles.distanceText}>
+            {t('DISTANCE', {
+              distanceString: formatDistance(userLocation, {
+                latitude: address.latitude,
+                longitude: address.longitude,
+              }),
+            })}
+          </ListItem.Subtitle>
+        )}
+        <ColoursSet c={corporation} />
+      </ListItem.Content>
+      <ListItem.Chevron />
+    </ListItem.Swipeable>
   );
 };
 
@@ -208,8 +225,5 @@ const useStyles = makeStyles(theme => ({
   },
   listItemDefault: {
     backgroundColor: theme.colors.white,
-  },
-  favouriteButton: {
-    height: '100%',
   },
 }));

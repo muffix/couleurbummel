@@ -35,6 +35,7 @@ import {ToggleDrawerButton} from '../navigation/ToggleDrawerButton';
 import {ColoursQuery, searchColours} from './helpers';
 
 const screenName: DrawerScreenName = 'SearchColours';
+const NamedSortButton = () => <SortButton screenName={screenName} />;
 
 const Stack = createNativeStackNavigator<StackScreenParamsList>();
 
@@ -48,8 +49,8 @@ export const SearchColoursScreen = ({}: ColoursSearchScreenProps) => {
         component={SearchColours}
         options={{
           title: t('SCREEN_SEARCH_COLOURS'),
-          headerLeft: () => <ToggleDrawerButton />,
-          headerRight: () => <SortButton screenName={screenName} />,
+          headerLeft: ToggleDrawerButton,
+          headerRight: NamedSortButton,
         }}
       />
       <Stack.Screen
