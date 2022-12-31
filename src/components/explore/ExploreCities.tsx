@@ -22,7 +22,7 @@ export const ExploreCitiesScreen = ({}: ScreenProps) => {
         component={CityListScreen}
         options={{
           title: t('SCREEN_CITIES'),
-          headerLeft: () => <ToggleDrawerButton />,
+          headerLeft: ToggleDrawerButton,
         }}
         initialParams={{
           testID: 'Screen:ExploreCities',

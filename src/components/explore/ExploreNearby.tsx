@@ -22,6 +22,7 @@ import {SortButton} from './SortButton';
 const Stack = createNativeStackNavigator<StackScreenParamsList>();
 
 const screenName: ExploreScreen = 'Closest';
+const NamedSortButton = () => <SortButton screenName={screenName} />;
 
 const fetchNearbyAddresses = (
   model: CouleurbummelModel,
@@ -92,8 +93,8 @@ export const ExploreNearbyScreen = ({}: ScreenProps) => {
         component={NearbyScreen}
         options={{
           title: t('SCREEN_NEARBY'),
-          headerLeft: () => <ToggleDrawerButton />,
-          headerRight: () => <SortButton screenName={screenName} />,
+          headerLeft: ToggleDrawerButton,
+          headerRight: NamedSortButton,
         }}
       />
       <Stack.Screen

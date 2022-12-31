@@ -1,7 +1,13 @@
 import {Button, Icon, ListItem, makeStyles, useTheme} from '@rneui/themed';
-import React, {ForwardedRef, useContext, useEffect, useState} from 'react';
+import React, {
+  ForwardedRef,
+  RefObject,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 import {useTranslation} from 'react-i18next';
-import {View, ViewProps} from 'react-native';
+import {GestureResponderEvent, View} from 'react-native';
 import Popover from 'react-native-popover-view';
 
 import constants from '../../constants';
@@ -21,8 +27,6 @@ interface SortButtonProps {
  * @param screenName the name of the explore screen under which this item is nested
  */
 export const SortButton = ({screenName}: SortButtonProps) => {
-  const {t} = useTranslation();
-  const {theme} = useTheme();
   const styles = useStyles();
 
   const [showPopover, setShowPopover] = useState(false);
@@ -36,16 +40,70 @@ export const SortButton = ({screenName}: SortButtonProps) => {
     setSelectedOption(globalState.corporationSorting[screenName]);
   }, [screenName, globalState]);
 
-  const sortItem = (
-    option: SortOption,
-    iconName: string,
-    translationKey: TranslationKey,
-  ) => (
+  const popoverSource = (sourceRef: RefObject<View>) => (
+    <ButtonWithForwardedRef
+      onPress={() => setShowPopover(true)}
+      ref={sourceRef}
+    />
+  );
+
+  const onSortOptionPress = (option: SortOption) => () => {
+    dispatch(setSortOptionAction(screenName, option));
+    setShowPopover(false);
+  };
+
+  return (
+    <Popover
+      animationConfig={{duration: 200}}
+      isVisible={showPopover}
+      onRequestClose={() => setShowPopover(false)}
+      popoverStyle={styles.popover}
+      from={popoverSource}>
+      <View>
+        <SortItem
+          isSelected={selectedOption === 'name'}
+          iconName={constants.icons.sort.sortByName}
+          translationKey={'SORT_NAME'}
+          onPress={onSortOptionPress('name')}
+        />
+        <SortItem
+          isSelected={selectedOption === 'distance'}
+          iconName={constants.icons.sort.sortByDistance}
+          translationKey={'SORT_DISTANCE'}
+          onPress={onSortOptionPress('distance')}
+        />
+      </View>
+    </Popover>
+  );
+};
+
+interface SortItemProps {
+  isSelected: boolean;
+  iconName: string;
+  translationKey: TranslationKey;
+  onPress: (event: GestureResponderEvent) => void;
+}
+
+/**
+ * An item in the list of available options to sort a list
+ * @param isSelected whether the current option is selected
+ * @param iconName the name of the icon
+ * @param translationKey the key to translate the option name
+ * @param onPress an event handler that is run when the item is pressed
+ */
+const SortItem = ({
+  isSelected,
+  iconName,
+  translationKey,
+  onPress,
+}: SortItemProps) => {
+  const styles = useStyles();
+  const {theme} = useTheme();
+  const {t} = useTranslation();
+
+  return (
     <ListItem
-      onPress={() => {
-        dispatch(setSortOptionAction(screenName, option));
-        setShowPopover(false);
-      }}
+      onPress={onPress}
       style={({pressed}) =>
         pressed ? [styles.listItem, styles.listItemPressed] : styles.listItem
       }
@@ -56,48 +114,39 @@ export const SortButton = ({screenName}: SortButtonProps) => {
       </ListItem.Content>
       <Icon
         name={constants.icons.sort.selectedSortOption}
-        color={selectedOption === option ? theme.colors.primary : 'transparent'}
+        color={isSelected ? theme.colors.primary : 'transparent'}
       />
     </ListItem>
   );
-
-  return (
-    <Popover
-      animationConfig={{duration: 200}}
-      isVisible={showPopover}
-      onRequestClose={() => setShowPopover(false)}
-      popoverStyle={styles.popover}
-      from={sourceRef => (
-        <ViewWithForwardedRef ref={sourceRef}>
-          <Button
-            buttonStyle={styles.sortButton}
-            icon={{
-              name: constants.icons.sort.sortButton,
-              color: theme.colors.primary,
-            }}
-            onPress={() => setShowPopover(true)}
-          />
-        </ViewWithForwardedRef>
-      )}
-      debug>
-      <View>
-        {sortItem('name', constants.icons.sort.sortbyName, 'SORT_NAME')}
-        {sortItem(
-          'distance',
-          constants.icons.sort.sortByDistance,
-          'SORT_DISTANCE',
-        )}
-      </View>
-    </Popover>
-  );
 };
 
-const ViewWithForwardedRef = React.forwardRef(
-  (props: ViewProps, ref: ForwardedRef<View>) => (
-    <View ref={ref} renderToHardwareTextureAndroid={true} collapsable={false}>
-      {props.children}
-    </View>
-  ),
+/**
+ * A button with a forwarded ref
+ */
+const ButtonWithForwardedRef = React.forwardRef(
+  (
+    props: {onPress: (event: GestureResponderEvent) => void},
+    ref: ForwardedRef<View>,
+  ) => {
+    const styles = useStyles();
+    const {theme} = useTheme();
+
+    return (
+      // We need to pass `renderToHardwareTextureAndroid` and `collapsable` for Android devices to correctly determine
+      // the coordinates of the source of the popover.
+      // See https://github.com/SteffeyDev/react-native-popover-view#show-from-a-ref-not-working
+      <View ref={ref} renderToHardwareTextureAndroid={true} collapsable={false}>
+        <Button
+          buttonStyle={styles.sortButton}
+          icon={{
+            name: constants.icons.sort.sortButton,
+            color: theme.colors.primary,
+          }}
+          onPress={props.onPress}
+        />
+      </View>
+    );
+  },
 );
 
 const useStyles = makeStyles(theme => ({

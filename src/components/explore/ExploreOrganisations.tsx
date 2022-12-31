@@ -23,6 +23,7 @@ import {SortButton} from './SortButton';
 const Stack = createNativeStackNavigator<StackScreenParamsList>();
 
 const screenName: ExploreScreen = 'Organisations';
+const NamedSortButton = () => <SortButton screenName={screenName} />;
 
 /**
  * The root screen in the Organisations section
@@ -37,7 +38,7 @@ export const ExploreOrganisationsScreen = ({}: ScreenProps) => {
         component={OrganisationList}
         options={{
           title: t('SCREEN_ORGANISATIONS'),
-          headerLeft: () => <ToggleDrawerButton />,
+          headerLeft: ToggleDrawerButton,
         }}
       />
       <Stack.Screen
@@ -45,7 +46,7 @@ export const ExploreOrganisationsScreen = ({}: ScreenProps) => {
         component={CorporationListScreen}
         options={{
           title: t('SCREEN_CORPORATION_LIST'),
-          headerRight: () => <SortButton screenName={screenName} />,
+          headerRight: NamedSortButton,
         }}
       />
       <Stack.Screen

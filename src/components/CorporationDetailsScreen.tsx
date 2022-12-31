@@ -1,5 +1,5 @@
 import {makeStyles} from '@rneui/themed';
-import React, {memo, useEffect} from 'react';
+import React, {memo, useCallback, useEffect} from 'react';
 
 import {CorporationDetailsScreenProps} from '../types/screens';
 import {CorporationDetails} from './details/Corporation';
@@ -13,10 +13,15 @@ export const CorporationDetailsScreen = memo(
     const styles = useStyles();
     const corporation = route.params.corporation;
 
+    const RequestChangeForCorporationButton = useCallback(
+      () => <RequestChangeButton name={corporation.shortName} />,
+      [corporation],
+    );
+
     useEffect(() => {
       navigation.setOptions({
         title: corporation.shortName,
-        headerRight: () => <RequestChangeButton name={corporation.shortName} />,
+        headerRight: RequestChangeForCorporationButton,
       });
     });
 
