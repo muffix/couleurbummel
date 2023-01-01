@@ -34,8 +34,7 @@ the [instructions on their website](https://reactnative.dev/docs/environment-set
 
 Node 16 - See `.node-version` for the specific version.
 
-The project uses `yarn` 3 as a package manager and makes use of
-its [zero-installs](https://yarnpkg.com/features/zero-installs) strategy, which means that all
+The project uses `yarn` 3 as a package manager and makes use of its [zero-installs] strategy, which means that all
 dependencies (`.yarn/cache`) are committed to the repository.
 
 Run `corepack enable` to enable `yarn` and install the dependencies.
@@ -61,6 +60,22 @@ Depending on the app you're looking to build, you'll additionally need the follo
 
 - Ruby 2.7.5 in order to run Cocoapods for iOS - See `.ruby-version` for the specific version
 - Xcode 14 and the SDKs that come with it
+
+### Adding new dependencies
+
+Since the project is using [zero-installs], make sure changes to the cache (`.yarn` directory) are committed when adding
+or removing dependencies. If you're adding dependencies. This is easiest if you only use the `yarn add`
+and `yarn remove` commands, respectively. Both will update the package files and the cache.
+
+The linter job in the CI will fail if not all changes are committed. It runs the following command to ensure that the
+lockfiles and dependency files aren't changed after the installation:
+
+```shell
+yarn install --immutable --immutable-cache --check-cache
+```
+
+If a dependency is only used for developing/testing/linting, please add the `--dev` or `-D` flag with `yarn add` to
+avoid installing it into release versions.
 
 ## Running
 
@@ -97,3 +112,5 @@ git update-index --skip-worktree .env
 [issues]: https://github.com/muffix/couleurbummel/issues
 
 [React Native]: https://reactnative.dev/
+
+[zero-installs]: https://yarnpkg.com/features/zero-installs
