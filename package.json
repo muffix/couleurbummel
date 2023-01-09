@@ -27,7 +27,7 @@
     "i18n-iso-countries": "^7.5.0",
     "i18next": "^22.4.6",
     "react": "^18.2.0",
-    "react-i18next": "^12.1.1",
+    "react-i18next": "^12.1.4",
     "react-native": "^0.70.6",
     "react-native-bootsplash": "^4.4.0",
     "react-native-config": "^1.4.11",
