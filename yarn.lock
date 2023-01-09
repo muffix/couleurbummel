@@ -3109,7 +3109,7 @@ __metadata:
     react-native-bootsplash: ^4.4.0
     react-native-config: ^1.4.11
     react-native-country-flag: ^1.1.9
-    react-native-element-dropdown: ^2.5.1
+    react-native-element-dropdown: ^2.5.3
     react-native-gesture-handler: ^2.8.0
     react-native-localize: ^2.2.4
     react-native-logs: ^5.0.1
@@ -9299,14 +9299,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-element-dropdown@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "react-native-element-dropdown@npm:2.5.1"
+"react-native-element-dropdown@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "react-native-element-dropdown@npm:2.5.3"
   peerDependencies:
     lodash: "*"
     react: "*"
     react-native: "*"
-  checksum: ae70e7f2660af029c281bf6af7cc4bdec47cceac91950a1095e9807460aef7ef735dc2fd834a8ab5171cbc7240e79efb8924781c0419b69b7daa7553af847f8f
+  checksum: 0ac2d8b1c54bee0b9b9711448135ea1577acde1573277e99c04459c4a23e0649a240bf0774d329278440712bacb59ea8496fba2504656973bca3eb691d4b43ac
   languageName: node
   linkType: hard
 

@@ -32,7 +32,7 @@
     "react-native-bootsplash": "^4.4.0",
     "react-native-config": "^1.4.11",
     "react-native-country-flag": "^1.1.9",
-    "react-native-element-dropdown": "^2.5.1",
+    "react-native-element-dropdown": "^2.5.3",
     "react-native-gesture-handler": "^2.8.0",
     "react-native-localize": "^2.2.4",
     "react-native-logs": "^5.0.1",
