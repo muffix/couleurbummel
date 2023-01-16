@@ -18,7 +18,7 @@
     "@react-native-firebase/app-check": "^16.5.0",
     "@react-native-firebase/database": "^16.5.0",
     "@react-navigation/drawer": "^6.5.6",
-    "@react-navigation/native": "^6.1.1",
+    "@react-navigation/native": "^6.1.2",
     "@react-navigation/native-stack": "^6.9.7",
     "@rneui/base": "^4.0.0-rc.7",
     "@rneui/themed": "^4.0.0-rc.7",
