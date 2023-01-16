@@ -3107,7 +3107,7 @@ __metadata:
     react-i18next: ^12.1.4
     react-native: ^0.70.6
     react-native-bootsplash: ^4.4.0
-    react-native-config: ^1.4.11
+    react-native-config: ^1.4.12
     react-native-country-flag: ^1.1.9
     react-native-element-dropdown: ^2.5.3
     react-native-gesture-handler: ^2.8.0
@@ -9280,15 +9280,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-config@npm:^1.4.11":
-  version: 1.4.11
-  resolution: "react-native-config@npm:1.4.11"
+"react-native-config@npm:^1.4.12":
+  version: 1.4.12
+  resolution: "react-native-config@npm:1.4.12"
   peerDependencies:
     react-native-windows: ">=0.61"
   peerDependenciesMeta:
     react-native-windows:
       optional: true
-  checksum: 83528268a932d49827436730945e2c1b4458b17772f5b2aa63aeeec0bd2269cab546f3cf98dfdda97e6b8d1624b5474b028de6048783eebb31155095a7419978
+  checksum: 5d14d2e2c067fc6d401ee41b22a803b3bd3162a8a566997f941de0244a277687e96cf6ddccad7e4f03ba82811059786df2d821669f274aefb43b3e43bdffc7da
   languageName: node
   linkType: hard
 
