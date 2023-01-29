@@ -3106,7 +3106,7 @@ __metadata:
     react: ^18.2.0
     react-i18next: ^12.1.4
     react-native: ^0.70.6
-    react-native-bootsplash: ^4.4.0
+    react-native-bootsplash: ^4.4.1
     react-native-config: ^1.4.12
     react-native-country-flag: ^1.1.9
     react-native-element-dropdown: ^2.5.3
@@ -9255,16 +9255,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-bootsplash@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "react-native-bootsplash@npm:4.4.0"
+"react-native-bootsplash@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "react-native-bootsplash@npm:4.4.1"
   dependencies:
     fs-extra: ^11.1.0
     jimp: ^0.16.2
     picocolors: ^1.0.0
   peerDependencies:
     react-native: ">=0.65.0"
-  checksum: 1c26a56ef1a4851d7cf231f01002c3b838db3e40fc73c2921ae466333162628d75d3d7441926c8224f94dd50312e287981561a4794b71ee6a050bba3e38cdf5f
+  checksum: cadbce78aaccb1302191f6867a3b8edbd445ddacfd52f400e721efd445eab88bcea6ca1d933947e94b0b1c84b03dfecf00064a158c616a480b84becf3a0ba68e
   languageName: node
   linkType: hard
 
