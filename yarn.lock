@@ -3152,9 +3152,9 @@ __metadata:
     i18next: ^22.4.6
     jest: ^29.3.1
     metro-react-native-babel-preset: ^0.73.7
-    react: ^18.2.0
+    react: 18.1.0
     react-i18next: ^12.1.4
-    react-native: ^0.70.6
+    react-native: 0.70.9
     react-native-bootsplash: ^4.4.1
     react-native-config: ^1.4.12
     react-native-country-flag: ^1.1.9
@@ -9542,9 +9542,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native@npm:^0.70.6":
-  version: 0.70.6
-  resolution: "react-native@npm:0.70.6"
+"react-native@npm:0.70.9":
+  version: 0.70.9
+  resolution: "react-native@npm:0.70.9"
   dependencies:
     "@jest/create-cache-key-function": ^27.0.1
     "@react-native-community/cli": 9.3.2
@@ -9582,7 +9582,7 @@ __metadata:
     react: 18.1.0
   bin:
     react-native: cli.js
-  checksum: ae57e1b86f4e6950913f8b59732ab57d2dd1ee30af6c2ca68f88b03b8448cb01c51967b148550a8b8cb6d42ca9b73cead2e854b9ecc2f4b9d5d75fccff798846
+  checksum: 02ff779cfe6608facf1c161d052dc71ed34e188aefc984829d92a29a6d0a13685ea569b3ad0e868023da1806ae5f24b0f41fe43c5a6373b528531ec1610713f1
   languageName: node
   linkType: hard
 
@@ -9618,12 +9618,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react@npm:18.2.0"
+"react@npm:18.1.0":
+  version: 18.1.0
+  resolution: "react@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
+  checksum: 5bb296b561b43ef2220395da4faac86c14a087c8c80e1a7598a5740f01ee605c11eaf249985c1e2000971c4cd32ccb46d40f00479bbd9fb6b1c7cf857393b7d4
   languageName: node
   linkType: hard
 
