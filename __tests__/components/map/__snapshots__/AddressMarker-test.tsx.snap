@@ -93,7 +93,7 @@ exports[`AddressMarker defaults to transparent 1`] = `
           r="38.75"
           stroke={
             {
-              "payload": 4293651435,
+              "payload": 4278190080,
               "type": 0,
             }
           }
