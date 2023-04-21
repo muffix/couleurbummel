@@ -116,8 +116,10 @@ export const AddressMarkerView = memo(
     const {theme} = useTheme();
     const styles = useStyles();
 
-    const centreStrokeColour = theme.colors.fixed.black;
     const hasIcon = iconName && getIconNamed(iconName);
+    const centreStrokeColour = hasIcon
+      ? theme.colors.mapMarkerFill
+      : theme.colors.fixed.black;
 
     let centreFillColour: ColorValue = 'transparent';
     if (colours.length === 0 && hasIcon) {
