@@ -1,5 +1,7 @@
 const getIconNamed = (iconName: string) => {
   switch (iconName) {
+    case 'icon_coat_chw':
+      return require('./poi/icon_coat_chw.png');
     case 'icon_coat_mch':
       return require('./poi/icon_coat_mch.png');
     case 'icon_coat_nds':
