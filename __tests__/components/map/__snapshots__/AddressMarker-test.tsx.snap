@@ -410,3 +410,278 @@ exports[`AddressMarker renders a pie chart for colours in the right proportions 
   </View>
 </View>
 `;
+
+exports[`AddressMarker shows an icon 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "height": 67,
+        "width": 40,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight="100%"
+      bbWidth="100%"
+      focusable={false}
+      height="100%"
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+      vbHeight={297}
+      vbWidth={210}
+      width="100%"
+    >
+      <RNSVGGroup>
+        <RNSVGGroup
+          matrix={
+            [
+              1,
+              0,
+              0,
+              1,
+              129.53117,
+              73.448518,
+            ]
+          }
+        >
+          <RNSVGPath
+            d="m -25.025404,-67.058727 c -45.32449,0 -82.066306,36.742196 -82.066306,82.065275 0,4.763553 0.82687,10.552168 2.30218,17.093013 9.699623,11.693867 22.660072,25.824516 38.471556,39.712305 21.739555,19.094783 44.542681,34.003844 67.775191,44.313054 6.3887991,2.83493 12.816193,5.31994 19.272725,7.45743 18.651695,-40.130906 37.299533,-85.91832 37.299533,-108.575802 0,-45.323079 -36.742171,-82.065275 -82.066309,-82.065275 -0.06773,0 -0.494027,0.0021 -0.494027,0.0021 0,0 -0.427162,-0.0021 -0.494543,-0.0021 z m 0.116272,41.017134 c 0.05151,0 0.378271,0.0047 0.378271,0.0047 0,0 0.326413,-0.0047 0.378272,-0.0047 21.0502278,0 38.230224,17.0657417 38.230224,38.118087 0,21.051992 -17.2352894,38.118087 -38.285518,38.118087 -0.05186,0 -0.322978,-0.0041 -0.322978,-0.0041 0,0 -0.271988,0.0041 -0.323494,0.0041 -21.050581,0 -38.285519,-17.066095 -38.285519,-38.118087 0,-21.0523453 17.180161,-38.118087 38.230742,-38.118087 z m -71.18687,86.949732 c 2.888542,8.085306 6.206886,16.581123 9.777698,25.214998 3.238497,3.092094 6.622888,6.201435 10.149252,9.299174 21.739555,19.094429 44.542165,34.002819 67.774674,44.312029 5.9905133,2.65817 12.0154312,5.00568 18.065564,7.05073 1.837971,-3.76837 3.715013,-7.65704 5.611544,-11.63495 C 8.8590062,132.97207 2.4655418,130.47282 -3.8897434,127.64567 -28.330868,116.77413 -52.247642,101.1174 -74.975327,81.11104 -82.709972,74.302789 -89.759061,67.479324 -96.096002,60.908139 Z m 21.681364,52.605061 c 20.065274,44.27215 41.946794,84.70439 41.946794,84.70439 2.09832,3.87525 5.707782,5.75042 7.936983,5.6534 2.229201,0.097 5.838311,-1.77815 7.936983,-5.6534 0,0 8.9257808,-16.49329 20.6023605,-39.94382 -5.945005,-2.06163 -11.8637297,-4.39986 -17.7498205,-7.01817 -20.737316,-9.22443 -41.096623,-21.89493 -60.6733,-37.7424 z"
+            fill={
+              {
+                "payload": 4293651435,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            strokeWidth="2"
+          />
+        </RNSVGGroup>
+        <RNSVGCircle
+          cx="105.60272"
+          cy="85.525055"
+          fill={
+            {
+              "payload": 4293651435,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          r="38.75"
+          stroke={
+            {
+              "payload": 4293651435,
+              "type": 0,
+            }
+          }
+          strokeWidth="2"
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        {
+          "bottom": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 10,
+        }
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          {
+            "backgroundColor": "transparent",
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          replaceTheme={[Function]}
+          source={
+            {
+              "testUri": "../../../src/assets/poi/icon_coat_mch.png",
+            }
+          }
+          style={
+            {
+              "bottom": 0,
+              "height": 25,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 25,
+            }
+          }
+          testID="RNE__Image"
+          theme={
+            {
+              "colors": {
+                "accent": "#3CB371",
+                "accentTransparent": "#3CB37180",
+                "background": "#ffffff",
+                "black": "#242424",
+                "disabled": "hsl(208, 8%, 90%)",
+                "divider": "#bcbbc1",
+                "error": "#ff3b30",
+                "fixed": {
+                  "black": "#000000",
+                  "darkGrey": "#393E42FF",
+                  "lightGrey": "#EBEBEB",
+                  "white": "#FFFFFF",
+                },
+                "grey": "#7d7d7d",
+                "grey0": "#393e42",
+                "grey1": "#43484d",
+                "grey2": "#5e6977",
+                "grey3": "#86939e",
+                "grey4": "#bdc6cf",
+                "grey5": "#e1e8ee",
+                "greyOutline": "#bbb",
+                "iconOnPrimaryColourBackgroundColour": "#E1E8EE",
+                "mapMarkerCentreStroke": "#000000",
+                "mapMarkerFill": "#EBEBEB",
+                "platform": {
+                  "android": {
+                    "error": "#f44336",
+                    "grey": "rgba(0, 0, 0, 0.54)",
+                    "primary": "#2196f3",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#9C27B0",
+                    "success": "#4caf50",
+                    "warning": "#ffeb3b",
+                  },
+                  "default": {
+                    "error": "#ff3b30",
+                    "grey": "#7d7d7d",
+                    "primary": "#007aff",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "warning": "#ffcc00",
+                  },
+                  "ios": {
+                    "error": "#ff3b30",
+                    "grey": "#7d7d7d",
+                    "primary": "#007aff",
+                    "searchBg": "#dcdce1",
+                    "secondary": "#5856d6",
+                    "success": "#4cd964",
+                    "warning": "#ffcc00",
+                  },
+                  "web": {
+                    "error": "#ff190c",
+                    "grey": "#393e42",
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#ca71eb",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                },
+                "primary": "#008040",
+                "primaryTransparent": "rgba(0,128,64,0.75)",
+                "searchBg": "#dcdce1",
+                "secondary": "#5856d6",
+                "success": "#4cd964",
+                "text": "#000000",
+                "warning": "#ffcc00",
+                "white": "#ffffff",
+              },
+              "mode": "light",
+              "spacing": {
+                "lg": 12,
+                "md": 8,
+                "sm": 4,
+                "xl": 24,
+                "xs": 2,
+              },
+            }
+          }
+          transitionDuration={360}
+          updateTheme={[Function]}
+        />
+        <View
+          accessibilityElementsHidden={true}
+          collapsable={false}
+          importantForAccessibility="no-hide-descendants"
+          pointerEvents="none"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#bdbdbd",
+                "height": 25,
+                "justifyContent": "center",
+                "width": 25,
+              }
+            }
+            testID="RNE__Image__placeholder"
+          />
+        </View>
+        <View
+          style={
+            {
+              "height": 25,
+              "width": 25,
+            }
+          }
+          testID="RNE__Image__children__container"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

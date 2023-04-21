@@ -28,6 +28,20 @@ describe('AddressMarker', () => {
     await waitFor(() => expect(marker).toMatchSnapshot());
   });
 
+  it('shows an icon', async () => {
+    let marker: ReactTestRenderer;
+
+    act(() => {
+      marker = renderer.create(
+        <ThemeProvider theme={theme}>
+          <AddressMarkerView colours={[]} iconName={'icon_coat_mch'} />
+        </ThemeProvider>,
+      );
+    });
+
+    await waitFor(() => expect(marker).toMatchSnapshot());
+  });
+
   it('renders a green centre', async () => {
     let marker: ReactTestRenderer;
 
