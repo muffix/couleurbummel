@@ -36,7 +36,12 @@ export const AddressMarker = memo(({mapDisplayables}: AddressMarkerProps) => {
     mapDisplayables.pois.length &&
     mapDisplayables.pois[0].iconName
   ) {
-    return <AddressMarkerView colours={[]} iconName={'icon_coat_mch'} />;
+    return (
+      <AddressMarkerView
+        colours={[]}
+        iconName={mapDisplayables.pois[0].iconName}
+      />
+    );
   }
 
   return <AddressMarkerView colours={colours} />;
@@ -111,12 +116,11 @@ export const AddressMarkerView = memo(
     const {theme} = useTheme();
     const styles = useStyles();
 
-    const centreStrokeColour = colours.length
-      ? theme.colors.fixed.black
-      : theme.colors.mapMarkerFill;
+    const centreStrokeColour = theme.colors.fixed.black;
+    const hasIcon = iconName && getIconNamed(iconName);
 
     let centreFillColour: ColorValue = 'transparent';
-    if (colours.length === 0 && iconName) {
+    if (colours.length === 0 && hasIcon) {
       centreFillColour = theme.colors.mapMarkerFill;
     }
     if (colours.length === 1) {
@@ -154,7 +158,7 @@ export const AddressMarkerView = memo(
             />
           </Svg>
 
-          {iconName && (
+          {hasIcon && (
             <View style={styles.iconContainer}>
               <Image style={styles.icon} source={getIconNamed(iconName)} />
             </View>
