@@ -42,14 +42,16 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
   [FIRApp configure];
 
-  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView];
-
-  self.moduleName = @"RnDiffApp";
+  self.moduleName = @"Couleurbummel";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
-  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+  [super application:application didFinishLaunchingWithOptions:launchOptions];
+
+  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:self.window.rootViewController.view];
+
+  return YES;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
