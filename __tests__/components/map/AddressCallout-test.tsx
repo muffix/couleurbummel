@@ -5,13 +5,16 @@
 import 'react-native';
 
 import {ThemeProvider} from '@rneui/themed';
-import {render, screen, waitFor} from '@testing-library/react-native';
+import {render, screen} from '@testing-library/react-native';
 import React from 'react';
 
 // Note: test renderer must be required after react-native.
 import {AddressCallout} from '../../../src/components/map/AddressCallout';
 import {theme} from '../../../src/style/themes';
-import {getTestModel} from '../../__helpers__/helpers';
+import {
+  getTestModel,
+  waitForPromisesToResolveWithAct,
+} from '../../__helpers__/helpers';
 
 describe('AddressCallout', () => {
   const model = getTestModel();
@@ -22,7 +25,9 @@ describe('AddressCallout', () => {
       'corporation_de_aachen_kstv_alaniabreslau',
     ]);
 
-    expect(corporationsAtSameAddress).toHaveLength(2);
+    await waitForPromisesToResolveWithAct().then(() =>
+      expect(corporationsAtSameAddress).toHaveLength(2),
+    );
 
     render(
       <ThemeProvider theme={theme}>
@@ -37,7 +42,9 @@ describe('AddressCallout', () => {
       </ThemeProvider>,
     );
 
-    await waitFor(() => expect(screen.toJSON()).toMatchSnapshot());
+    await waitForPromisesToResolveWithAct().then(() =>
+      expect(screen.toJSON()).toMatchSnapshot(),
+    );
   });
 
   it('renders a POI', async () => {
@@ -57,6 +64,8 @@ describe('AddressCallout', () => {
       </ThemeProvider>,
     );
 
-    await waitFor(() => expect(screen.toJSON()).toMatchSnapshot());
+    await waitForPromisesToResolveWithAct().then(() =>
+      expect(screen.toJSON()).toMatchSnapshot(),
+    );
   });
 });

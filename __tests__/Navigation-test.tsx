@@ -1,5 +1,11 @@
 import {ThemeProvider} from '@rneui/themed';
-import {fireEvent, render, screen} from '@testing-library/react-native';
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react-native';
 import React from 'react';
 
 import {Navigation} from '../src/components/navigation/Navigation';
@@ -23,13 +29,15 @@ describe('Custom navigation', () => {
     const settingsButton = await screen.findByTestId('Navigation:Settings');
     const mapButton = await screen.findByTestId('Navigation:Map');
 
-    fireEvent(settingsButton, 'press');
-    const settingsScreen = await screen.findByTestId('Screen:Settings');
-    expect(settingsScreen).toBeTruthy();
+    act(() => fireEvent(settingsButton, 'press'));
+    await waitFor(async () =>
+      expect(await screen.findByTestId('Screen:Settings')).toBeTruthy(),
+    );
 
-    fireEvent(mapButton, 'press');
-    const mapView = await screen.findByTestId('Map:MapView');
-    expect(mapView).toBeTruthy();
+    act(() => fireEvent(mapButton, 'press'));
+    await waitFor(async () =>
+      expect(await screen.findByTestId('Map:MapView')).toBeTruthy(),
+    );
   });
 
   const nonDefaultScreenNames = [
@@ -54,19 +62,24 @@ describe('Custom navigation', () => {
 
       // First navigate to the map
       const mapButton = await screen.findByTestId('Navigation:Map');
-      fireEvent(mapButton, 'press');
-      const mapView = await screen.findByTestId('Map:MapView');
-      expect(mapView).toBeTruthy();
+      act(() => fireEvent(mapButton, 'press'));
+      await waitFor(async () =>
+        expect(await screen.findByTestId('Map:MapView')).toBeTruthy(),
+      );
 
       // Navigate to the new screen
       const newScreenButton = await screen.findByTestId(
         `Navigation:${screenName}`,
       );
-      fireEvent(newScreenButton, 'press');
-      const newScreen = await screen.findByTestId(`Screen:${screenName}`);
-      expect(newScreen).toBeTruthy();
+      act(() => fireEvent(newScreenButton, 'press'));
+      await waitFor(async () =>
+        expect(await screen.findByTestId(`Screen:${screenName}`)).toBeTruthy(),
+      );
 
-      fireEvent(mapButton, 'press');
+      act(() => fireEvent(mapButton, 'press'));
+      await waitFor(async () =>
+        expect(await screen.findByTestId('Map:MapView')).toBeTruthy(),
+      );
     });
   });
 });
