@@ -205,6 +205,7 @@ exports[`Country list displays nothing if search term is empty 1`] = `
   >
     <View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -213,6 +214,7 @@ exports[`Country list displays nothing if search term is empty 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -221,6 +223,7 @@ exports[`Country list displays nothing if search term is empty 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -229,6 +232,7 @@ exports[`Country list displays nothing if search term is empty 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -423,7 +427,19 @@ exports[`Country list filters the list when searched 1`] = `
                 accessibilityRole="button"
                 accessibilityState={
                   {
+                    "busy": undefined,
+                    "checked": undefined,
                     "disabled": false,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
                   }
                 }
                 accessible={true}
@@ -520,6 +536,7 @@ exports[`Country list filters the list when searched 1`] = `
   >
     <View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -528,6 +545,7 @@ exports[`Country list filters the list when searched 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -536,6 +554,7 @@ exports[`Country list filters the list when searched 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -544,6 +563,7 @@ exports[`Country list filters the list when searched 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -761,6 +781,7 @@ exports[`Country list renders correctly with no optional fields set 1`] = `
   >
     <View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -769,6 +790,7 @@ exports[`Country list renders correctly with no optional fields set 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -777,6 +799,7 @@ exports[`Country list renders correctly with no optional fields set 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
@@ -785,6 +808,7 @@ exports[`Country list renders correctly with no optional fields set 1`] = `
         </Text>
       </View>
       <View
+        onFocusCapture={[Function]}
         onLayout={[Function]}
         style={null}
       >
