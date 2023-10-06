@@ -1,10 +1,4 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from '@testing-library/react-native';
 import React from 'react';
 
 import {CityListScreen} from '../../../src/components/explore/CityList';
@@ -13,16 +7,12 @@ import {
   CountryListScreen,
 } from '../../../src/components/explore/CountryList';
 import {StackScreenParamsList} from '../../../src/types/screens';
-import {TestContexts} from '../../__helpers__/Contexts';
 import {waitForPromisesToResolveWithAct} from '../../__helpers__/helpers';
+import {fireEvent, render, screen, waitFor} from '../../__helpers__/test-utils';
 
 describe('Country list', () => {
   it('renders correctly', async () => {
-    render(
-      <TestContexts>
-        <CountryList />
-      </TestContexts>,
-    );
+    render(<CountryList />);
     await waitForPromisesToResolveWithAct().then(() =>
       expect(screen.toJSON()).toMatchSnapshot(),
     );
@@ -31,12 +21,10 @@ describe('Country list', () => {
   it('pushes the cities view to the stack when a country is selected', async () => {
     const Stack = createNativeStackNavigator<StackScreenParamsList>();
     render(
-      <TestContexts>
-        <Stack.Navigator>
-          <Stack.Screen name="Countries" component={CountryListScreen} />
-          <Stack.Screen name="Cities" component={CityListScreen} />
-        </Stack.Navigator>
-      </TestContexts>,
+      <Stack.Navigator>
+        <Stack.Screen name="Countries" component={CountryListScreen} />
+        <Stack.Screen name="Cities" component={CityListScreen} />
+      </Stack.Navigator>,
     );
 
     const germanyRow = await screen.findByText('Germany');

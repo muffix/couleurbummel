@@ -1,12 +1,11 @@
-import {render, screen} from '@testing-library/react-native';
 import React from 'react';
 
 import {POIDetails} from '../../../src/components/details/PointOfInterest';
-import {TestContexts} from '../../__helpers__/Contexts';
 import {
   getTestModel,
   waitForPromisesToResolveWithAct,
 } from '../../__helpers__/helpers';
+import {render, screen} from '../../__helpers__/test-utils';
 
 const model = getTestModel();
 
@@ -15,11 +14,7 @@ describe('POI details view', () => {
     const pois = model.pointsOfInterestById(poiIds);
     expect(pois).toHaveLength(1);
 
-    render(
-      <TestContexts>
-        <POIDetails pois={pois} />
-      </TestContexts>,
-    );
+    render(<POIDetails pois={pois} />);
 
     await waitForPromisesToResolveWithAct().then(() =>
       expect(screen.toJSON()).toMatchSnapshot(),

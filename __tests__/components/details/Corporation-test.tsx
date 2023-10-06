@@ -1,15 +1,14 @@
 import 'react-native';
 
-import {render, screen} from '@testing-library/react-native';
 import React from 'react';
 
 // Note: test renderer must be required after react-native.
 import {CorporationDetails} from '../../../src/components/details/Corporation';
-import {TestContexts} from '../../__helpers__/Contexts';
 import {
   getTestModel,
   waitForPromisesToResolveWithAct,
 } from '../../__helpers__/helpers';
+import {render, screen} from '../../__helpers__/test-utils';
 
 const model = getTestModel();
 
@@ -19,11 +18,9 @@ describe('Corporation details view', () => {
     expect(corporations).toHaveLength(corporationIds.length);
 
     render(
-      <TestContexts>
-        <CorporationDetails
-          corporations={model.corporationsById(corporationIds)}
-        />
-      </TestContexts>,
+      <CorporationDetails
+        corporations={model.corporationsById(corporationIds)}
+      />,
     );
 
     await waitForPromisesToResolveWithAct().then(() =>
