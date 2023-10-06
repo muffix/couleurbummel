@@ -98,7 +98,7 @@ export const Navigation = () => {
         initialRouteName="Map"
         useLegacyImplementation={false}
         screenOptions={{...drawerOptions}}
-        drawerContent={props => <CustomDrawerContent {...props} />}>
+        drawerContent={CustomDrawerContent}>
         <Drawer.Screen
           options={{
             headerShown: false,
@@ -153,37 +153,6 @@ export const Navigation = () => {
     </NavigationContainer>
   );
 };
-
-/**
- * An item in the drawer that links to a website
- */
-const LinkItem = memo(
-  (props: {
-    iconKey: IconKey;
-    titleTranslationKey: TranslationKey;
-    url: string;
-  }) => {
-    const styles = useStyles();
-    const {t} = useTranslation();
-
-    return (
-      <ListItem
-        style={({pressed}) =>
-          pressed ? [styles.listItem, styles.listItemPressed] : styles.listItem
-        }
-        onPress={() => Linking.openURL(props.url)}>
-        <Icon name={constants.icons.drawer[props.iconKey]} />
-        <ListItem.Content>
-          <ListItem.Title>
-            <Text style={styles.listItemText}>
-              {t(props.titleTranslationKey)}
-            </Text>
-          </ListItem.Title>
-        </ListItem.Content>
-      </ListItem>
-    );
-  },
-);
 
 const CustomDrawerContent = (props: DrawerContentComponentProps) => {
   useTheme();
@@ -342,6 +311,37 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => {
     </DrawerContentScrollView>
   );
 };
+
+/**
+ * An item in the drawer that links to a website
+ */
+const LinkItem = memo(
+  (props: {
+    iconKey: IconKey;
+    titleTranslationKey: TranslationKey;
+    url: string;
+  }) => {
+    const styles = useStyles();
+    const {t} = useTranslation();
+
+    return (
+      <ListItem
+        style={({pressed}) =>
+          pressed ? [styles.listItem, styles.listItemPressed] : styles.listItem
+        }
+        onPress={() => Linking.openURL(props.url)}>
+        <Icon name={constants.icons.drawer[props.iconKey]} />
+        <ListItem.Content>
+          <ListItem.Title>
+            <Text style={styles.listItemText}>
+              {t(props.titleTranslationKey)}
+            </Text>
+          </ListItem.Title>
+        </ListItem.Content>
+      </ListItem>
+    );
+  },
+);
 
 interface FavouriteItemProps {
   item: {id: string; name: string};
