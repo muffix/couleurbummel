@@ -1,20 +1,15 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {fireEvent, render, screen} from '@testing-library/react-native';
 import React from 'react';
 
 import {CorporationDetailsScreen} from '../../../src/components/CorporationDetailsScreen';
 import {CityList} from '../../../src/components/explore/CityList';
 import {StackScreenParamsList} from '../../../src/types/screens';
-import {TestContexts} from '../../__helpers__/Contexts';
 import {waitForPromisesToResolveWithAct} from '../../__helpers__/helpers';
+import {fireEvent, render, screen} from '../../__helpers__/test-utils';
 
 describe('City list', () => {
   it('renders correctly', async () => {
-    render(
-      <TestContexts>
-        <CityList />
-      </TestContexts>,
-    );
+    render(<CityList />);
 
     await waitForPromisesToResolveWithAct().then(() =>
       expect(screen.toJSON()).toMatchSnapshot(),
@@ -24,15 +19,13 @@ describe('City list', () => {
   it('pushes the corporation details view to the stack when a corporation is selected', async () => {
     const Stack = createNativeStackNavigator<StackScreenParamsList>();
     render(
-      <TestContexts>
-        <Stack.Navigator>
-          <Stack.Screen name="Cities" component={CityList} />
-          <Stack.Screen
-            name="CorporationDetails"
-            component={CorporationDetailsScreen}
-          />
-        </Stack.Navigator>
-      </TestContexts>,
+      <Stack.Navigator>
+        <Stack.Screen name="Cities" component={CityList} />
+        <Stack.Screen
+          name="CorporationDetails"
+          component={CorporationDetailsScreen}
+        />
+      </Stack.Navigator>,
     );
 
     const aachenRow = await screen.findByText('Aachen');
