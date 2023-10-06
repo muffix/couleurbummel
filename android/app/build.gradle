@@ -102,8 +102,8 @@ android {
         applicationId "de.marchia.couleurbummel"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode project.env.get("CURRENT_PROJECT_VERSION").toInteger()
-        versionName project.env.get("MARKETING_VERSION")
+        versionCode project.env.get("APP_VERSION_CODE").toInteger()
+        versionName project.env.get("APP_VERSION")
         manifestPlaceholders = [mapsApiKey: project.env.get("GOOGLE_MAPS_API_KEY")]
     }
 
