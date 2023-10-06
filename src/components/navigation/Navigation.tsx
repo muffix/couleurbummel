@@ -96,6 +96,7 @@ export const Navigation = () => {
       }>
       <Drawer.Navigator
         initialRouteName="Map"
+        useLegacyImplementation={false}
         screenOptions={{...drawerOptions}}
         drawerContent={props => <CustomDrawerContent {...props} />}>
         <Drawer.Screen
