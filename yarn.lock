@@ -3283,9 +3283,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-native@npm:^5.4.0":
-  version: 5.4.0
-  resolution: "@testing-library/jest-native@npm:5.4.0"
+"@testing-library/jest-native@npm:^5.4.3":
+  version: 5.4.3
+  resolution: "@testing-library/jest-native@npm:5.4.3"
   dependencies:
     chalk: ^4.1.2
     jest-diff: ^29.0.1
@@ -3296,7 +3296,7 @@ __metadata:
     react: ">=16.0.0"
     react-native: ">=0.59"
     react-test-renderer: ">=16.0.0"
-  checksum: 5a8305d8c09f365890f3de43642a8302f99d158d5f953fb33f584ec3d2d50047919d112d98a828a07681f2c01c8438826be51d8dc02dc0a241d2d109702470f0
+  checksum: 2a4ebfeff09523860771cfddac6fcc3faa2f855dc63255b9efc016e727132320f16f935cec9717d6d79cfa6715fce6ded877215c8ec85d236a5c3136a65b1020
   languageName: node
   linkType: hard
 
@@ -3904,7 +3904,7 @@ __metadata:
     "@react-navigation/native-stack": ^6.9.7
     "@rneui/base": ^4.0.0-rc.8
     "@rneui/themed": ^4.0.0-rc.8
-    "@testing-library/jest-native": ^5.4.0
+    "@testing-library/jest-native": ^5.4.3
     "@testing-library/react-native": ^11.5.0
     "@tsconfig/react-native": ^3.0.0
     "@types/jest": ^29.2.6
