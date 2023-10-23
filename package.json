@@ -33,7 +33,7 @@
     "react-native-config": "^1.4.12",
     "react-native-country-flag": "^1.1.9",
     "react-native-element-dropdown": "^2.5.3",
-    "react-native-gesture-handler": "^2.9.0",
+    "react-native-gesture-handler": "^2.13.3",
     "react-native-localize": "^2.2.4",
     "react-native-logs": "^5.0.1",
     "react-native-map-clustering": "^3.4.2",

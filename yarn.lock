@@ -3935,7 +3935,7 @@ __metadata:
     react-native-config: ^1.4.12
     react-native-country-flag: ^1.1.9
     react-native-element-dropdown: ^2.5.3
-    react-native-gesture-handler: ^2.9.0
+    react-native-gesture-handler: ^2.13.3
     react-native-localize: ^2.2.4
     react-native-logs: ^5.0.1
     react-native-map-clustering: ^3.4.2
@@ -9870,9 +9870,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "react-native-gesture-handler@npm:2.9.0"
+"react-native-gesture-handler@npm:^2.13.3":
+  version: 2.13.3
+  resolution: "react-native-gesture-handler@npm:2.13.3"
   dependencies:
     "@egjs/hammerjs": ^2.0.17
     hoist-non-react-statics: ^3.3.0
@@ -9882,7 +9882,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 6bfdd9d23486193424dcfb0073dd821a216c2783dde746d73a3441e920602343f09efa10261c6f09fcbcb645d029a95305c86f61997053c01ad89751c8c6d236
+  checksum: d5f78d89f90c6b75a2b6611c5860e2393bfbcb8c0b5bbc4164fceb23c18bee7d545b7183d8b3518abd5e44d852d05532dd0290dc9804c086912acdd2bf982135
   languageName: node
   linkType: hard
 
