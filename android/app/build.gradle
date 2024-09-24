@@ -94,6 +94,7 @@ def reactNativeArchitectures() {
 }
 
 android {
+    namespace 'de.marchia.couleurbummel'
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
