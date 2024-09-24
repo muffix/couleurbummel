@@ -26,14 +26,10 @@
         <true/>
         <key>NSAppTransportSecurity</key>
         <dict>
-            <key>NSExceptionDomains</key>
-            <dict>
-                <key>localhost</key>
-                <dict>
-                    <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                    <true/>
-                </dict>
-            </dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <false/>
+            <key>NSAllowsLocalNetworking</key>
+            <true/>
         </dict>
         <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
         <string>Couleurbummel uses your location to display it on the map and to calculate the distance to annotations
@@ -68,7 +64,7 @@
         <string>BootSplash.storyboard</string>
         <key>UIRequiredDeviceCapabilities</key>
         <array>
-            <string>armv7</string>
+            <string>arm64</string>
         </array>
         <key>UIRequiresFullScreen</key>
         <true/>
