@@ -47,8 +47,11 @@ export const ModelContextProvider = ({children}: PropsWithChildren) => {
         log.debug('Subscribing to database updates');
         const db = firebase.app().database(Config.DATABASE_URL);
 
-        db.ref(Config.DATABASE_PATH).on('value', snap =>
-          setModel(new CouleurbummelModel(snap.val())),
+        db.ref(Config.DATABASE_PATH).on('value', snap => {
+              log.debug('Database update received');
+              setModel(new CouleurbummelModel(snap.val()));
+            },
+            err => log.error(err),
         );
 
         db.setPersistenceEnabled(true);
