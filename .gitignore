@@ -79,3 +79,5 @@ yarn-error.log
 .env.release
 .env.prod
 ios/tmp.xcconfig
+
+*.log

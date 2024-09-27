@@ -4645,6 +4645,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/invariant@npm:^2.2.37":
+  version: 2.2.37
+  resolution: "@types/invariant@npm:2.2.37"
+  checksum: dd6ee07af8516d21c868f95fd96c601c50a231e69c2df69360cb491b5858c76cf9b5a646df166cb4197b5078ca824da3dd90d6142d01a3cefc1176c57278b129
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.4
   resolution: "@types/istanbul-lib-coverage@npm:2.0.4"
@@ -5191,6 +5198,7 @@ __metadata:
     "@rneui/themed": ^4.0.0-rc.8
     "@testing-library/jest-native": ^5.4.3
     "@testing-library/react-native": ^12.7.2
+    "@types/invariant": ^2.2.37
     "@types/jest": ^29.5.13
     "@types/react": ^18.2.6
     "@types/react-native": ^0.70.8
@@ -11421,8 +11429,8 @@ __metadata:
   linkType: hard
 
 "react-native-reanimated@npm:^3.16.0-nightly-20240822-5e23716c7":
-  version: 3.16.0-nightly-20240923-4e94ab6e4
-  resolution: "react-native-reanimated@npm:3.16.0-nightly-20240923-4e94ab6e4"
+  version: 3.16.0-nightly-20240926-434f79880
+  resolution: "react-native-reanimated@npm:3.16.0-nightly-20240926-434f79880"
   dependencies:
     "@babel/plugin-transform-arrow-functions": ^7.0.0-0
     "@babel/plugin-transform-class-properties": ^7.0.0-0
@@ -11439,7 +11447,7 @@ __metadata:
     "@babel/core": ^7.0.0-0
     react: "*"
     react-native: "*"
-  checksum: edbeff9ff7a1f3e14ba5514cae19c9f6440fa8ab0c98a118537ee608e9fcce111399b4948f9aeca30358e5d2e73b07d6f1d93901018946cf8c24d842766e19c0
+  checksum: 1a4204a97809b3e69493c40b5d53f07dcbacdb8cd76b53933b01083eeace70af2bf34af31a570a44ea0294fcefddc987b30ff77d8645eb513f7f1027f4ee3e90
   languageName: node
   linkType: hard
 

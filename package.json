@@ -57,6 +57,7 @@
     "@react-native/typescript-config": "0.75.3",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.7.2",
+    "@types/invariant": "^2.2.37",
     "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-native": "^0.70.8",
