@@ -1,3 +1,4 @@
+import './firebase';
 import './i18n';
 
 import {ThemeProvider} from '@rneui/themed';

@@ -8,6 +8,8 @@ declare module 'react-native-config' {
     DATABASE_PATH?: string;
     GOOGLE_MAPS_API_KEY: string;
 
+    ANDROID_APPCHECK_DEBUG_TOKEN?: string;
+    IOS_APPCHECK_DEBUG_TOKEN?: string;
     ENABLE_LOGGING?: string;
   }
 }
