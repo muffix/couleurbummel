@@ -27,5 +27,6 @@ jest.mock('@react-native-firebase/app-check', () => ({
 // include this line for mocking react-native-gesture-handler
 import 'react-native-gesture-handler/jestSetup';
 
-// Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
-jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+// Note: React Native >= 0.77 mocks NativeAnimatedModule directly in its jest
+// setup, so the legacy `react-native/Libraries/Animated/NativeAnimatedHelper`
+// mock is no longer needed (and that path no longer exists).

@@ -234,8 +234,21 @@ exports[`Map renders and matches the snapshot 1`] = `
             vbWidth={210}
             width="100%"
           >
-            <RNSVGGroup>
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
               <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
                 matrix={
                   [
                     1,
@@ -268,7 +281,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                       "type": 0,
                     }
                   }
-                  strokeWidth="2"
+                  strokeWidth={2}
                 />
               </RNSVGGroup>
               <RNSVGCircle
@@ -294,7 +307,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                     "type": 0,
                   }
                 }
-                strokeWidth="2"
+                strokeWidth={2}
               />
             </RNSVGGroup>
           </RNSVGSvgView>
@@ -421,7 +434,14 @@ exports[`Map renders and matches the snapshot 1`] = `
                     vbWidth={100}
                     width="100%"
                   >
-                    <RNSVGGroup>
+                    <RNSVGGroup
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                    >
                       <RNSVGEllipse
                         cx="50%"
                         cy="50%"
@@ -446,7 +466,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                             "type": 0,
                           }
                         }
-                        strokeWidth="2"
+                        strokeWidth={2}
                       />
                     </RNSVGGroup>
                   </RNSVGSvgView>
@@ -603,8 +623,21 @@ exports[`Map renders and matches the snapshot 1`] = `
             vbWidth={210}
             width="100%"
           >
-            <RNSVGGroup>
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
               <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
                 matrix={
                   [
                     1,
@@ -637,7 +670,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                       "type": 0,
                     }
                   }
-                  strokeWidth="2"
+                  strokeWidth={2}
                 />
               </RNSVGGroup>
               <RNSVGCircle
@@ -663,7 +696,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                     "type": 0,
                   }
                 }
-                strokeWidth="2"
+                strokeWidth={2}
               />
             </RNSVGGroup>
           </RNSVGSvgView>
@@ -790,7 +823,14 @@ exports[`Map renders and matches the snapshot 1`] = `
                     vbWidth={100}
                     width="100%"
                   >
-                    <RNSVGGroup>
+                    <RNSVGGroup
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                    >
                       <RNSVGEllipse
                         cx="50%"
                         cy="50%"
@@ -815,7 +855,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                             "type": 0,
                           }
                         }
-                        strokeWidth="2"
+                        strokeWidth={2}
                       />
                     </RNSVGGroup>
                   </RNSVGSvgView>
@@ -903,8 +943,21 @@ exports[`Map renders and matches the snapshot 1`] = `
             vbWidth={210}
             width="100%"
           >
-            <RNSVGGroup>
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
               <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
                 matrix={
                   [
                     1,
@@ -937,7 +990,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                       "type": 0,
                     }
                   }
-                  strokeWidth="2"
+                  strokeWidth={2}
                 />
               </RNSVGGroup>
               <RNSVGCircle
@@ -963,7 +1016,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                     "type": 0,
                   }
                 }
-                strokeWidth="2"
+                strokeWidth={2}
               />
             </RNSVGGroup>
           </RNSVGSvgView>
@@ -1090,7 +1143,14 @@ exports[`Map renders and matches the snapshot 1`] = `
                     vbWidth={100}
                     width="100%"
                   >
-                    <RNSVGGroup>
+                    <RNSVGGroup
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                    >
                       <RNSVGEllipse
                         cx="50%"
                         cy="50%"
@@ -1115,7 +1175,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                             "type": 0,
                           }
                         }
-                        strokeWidth="2"
+                        strokeWidth={2}
                       />
                     </RNSVGGroup>
                   </RNSVGSvgView>
@@ -1279,8 +1339,21 @@ exports[`Map renders and matches the snapshot 1`] = `
             vbWidth={210}
             width="100%"
           >
-            <RNSVGGroup>
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
               <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
                 matrix={
                   [
                     1,
@@ -1313,7 +1386,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                       "type": 0,
                     }
                   }
-                  strokeWidth="2"
+                  strokeWidth={2}
                 />
               </RNSVGGroup>
               <RNSVGCircle
@@ -1339,7 +1412,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                     "type": 0,
                   }
                 }
-                strokeWidth="2"
+                strokeWidth={2}
               />
             </RNSVGGroup>
           </RNSVGSvgView>
@@ -1466,7 +1539,14 @@ exports[`Map renders and matches the snapshot 1`] = `
                     vbWidth={100}
                     width="100%"
                   >
-                    <RNSVGGroup>
+                    <RNSVGGroup
+                      fill={
+                        {
+                          "payload": 4278190080,
+                          "type": 0,
+                        }
+                      }
+                    >
                       <RNSVGEllipse
                         cx="50%"
                         cy="50%"
@@ -1491,7 +1571,7 @@ exports[`Map renders and matches the snapshot 1`] = `
                             "type": 0,
                           }
                         }
-                        strokeWidth="2"
+                        strokeWidth={2}
                       />
                     </RNSVGGroup>
                   </RNSVGSvgView>

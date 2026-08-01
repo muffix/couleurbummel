@@ -37,8 +37,21 @@ exports[`AddressMarker defaults to transparent 1`] = `
       vbWidth={210}
       width="100%"
     >
-      <RNSVGGroup>
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
         <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
           matrix={
             [
               1,
@@ -71,7 +84,7 @@ exports[`AddressMarker defaults to transparent 1`] = `
                 "type": 0,
               }
             }
-            strokeWidth="2"
+            strokeWidth={2}
           />
         </RNSVGGroup>
         <RNSVGCircle
@@ -97,7 +110,7 @@ exports[`AddressMarker defaults to transparent 1`] = `
               "type": 0,
             }
           }
-          strokeWidth="2"
+          strokeWidth={2}
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -142,8 +155,21 @@ exports[`AddressMarker renders a green centre 1`] = `
       vbWidth={210}
       width="100%"
     >
-      <RNSVGGroup>
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
         <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
           matrix={
             [
               1,
@@ -176,7 +202,7 @@ exports[`AddressMarker renders a green centre 1`] = `
                 "type": 0,
               }
             }
-            strokeWidth="2"
+            strokeWidth={2}
           />
         </RNSVGGroup>
         <RNSVGCircle
@@ -202,7 +228,7 @@ exports[`AddressMarker renders a green centre 1`] = `
               "type": 0,
             }
           }
-          strokeWidth="2"
+          strokeWidth={2}
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -247,8 +273,21 @@ exports[`AddressMarker renders a pie chart for colours in the right proportions 
       vbWidth={210}
       width="100%"
     >
-      <RNSVGGroup>
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
         <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
           matrix={
             [
               1,
@@ -281,7 +320,7 @@ exports[`AddressMarker renders a pie chart for colours in the right proportions 
                 "type": 0,
               }
             }
-            strokeWidth="2"
+            strokeWidth={2}
           />
         </RNSVGGroup>
         <RNSVGPath
@@ -403,7 +442,7 @@ exports[`AddressMarker renders a pie chart for colours in the right proportions 
               "type": 0,
             }
           }
-          strokeWidth="2"
+          strokeWidth={2}
         />
       </RNSVGGroup>
     </RNSVGSvgView>
@@ -448,8 +487,21 @@ exports[`AddressMarker shows an icon 1`] = `
       vbWidth={210}
       width="100%"
     >
-      <RNSVGGroup>
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
         <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
           matrix={
             [
               1,
@@ -482,7 +534,7 @@ exports[`AddressMarker shows an icon 1`] = `
                 "type": 0,
               }
             }
-            strokeWidth="2"
+            strokeWidth={2}
           />
         </RNSVGGroup>
         <RNSVGCircle
@@ -508,7 +560,7 @@ exports[`AddressMarker shows an icon 1`] = `
               "type": 0,
             }
           }
-          strokeWidth="2"
+          strokeWidth={2}
         />
       </RNSVGGroup>
     </RNSVGSvgView>

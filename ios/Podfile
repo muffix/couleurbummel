@@ -37,5 +37,22 @@ target 'Couleurbummel' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # Xcode 26 stricter `consteval` breaks the `fmt` 11.0.2 shipped with
+    # React Native < 0.83 (call to consteval function is not a constant expression
+    # in fmt/format-inl.h). The fix (fmt >= 12.1.0, fmtlib/fmt#4065) is backported to
+    # RN 0.83+ (facebook/react-native#56225). On older RN + Xcode 26, disable
+    # fmt's compile-time format-string checking. See expo/expo#44230.
+    fmt_base = File.join(installer.sandbox.pod_dir('fmt'), 'include', 'fmt', 'base.h')
+    if File.exist?(fmt_base)
+      src = File.read(fmt_base)
+      marker = 'patched for Xcode 26 consteval'
+      unless src.include?(marker)
+        src.gsub!('#  define FMT_USE_CONSTEVAL 1', '#  define FMT_USE_CONSTEVAL 0 // #{marker}')
+        File.chmod(0o644, fmt_base)
+        File.write(fmt_base, src)
+        Pod::UI.puts 'Patched fmt/base.h: FMT_USE_CONSTEVAL=0 (Xcode 26 consteval workaround)'
+      end
+    end
   end
 end
