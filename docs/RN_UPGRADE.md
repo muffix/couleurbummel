@@ -292,8 +292,44 @@ which re-exports `Region`/`LatLng`/`Point` via `export * from './sharedTypes'`.
 - [x] `bundle exec pod install` (97 pods, fmt patch + safe-area 5.4 + screens 4.12).
 - [x] `cd android && ./gradlew clean :app:assembleDebug` — BUILD SUCCESSFUL (44s).
 - [x] `xcodebuild ... -sdk iphonesimulator build` — BUILD SUCCEEDED.
+- [x] `npx react-native run-ios` build phase — BUILD SUCCEEDED (after fixing two
+      env issues, see "iOS run-ios env fixes" below).
 - [ ] Full smoke on device/simulator — still pending (run the app, esp. map
       clustering + Firebase live DB with `DATABASE_TYPE=prod`).
+
+### iOS `run-ios` env fixes (do these once, machine-local)
+
+`npx react-native run-ios` builds via the **default** Xcode DerivedData
+(`~/Library/Developer/Xcode/DerivedData`), using a minimal shell that does NOT
+load mise/asdf. Two machine-local fixes were needed (both gitignored):
+
+1. **`ios/.xcode.env.local` — point at Node 20.** RN 0.79's codegen Run Script
+   phase sources `ios/.xcode.env` then `.xcode.env.local` to find `NODE_BINARY`.
+   Our `.xcode.env.local` hardcoded the stale asdf Node 18.16.0, which RN 0.79's
+   codegen can't use. Set it to the mise Node 20:
+   ```
+   export NODE_BINARY=/Users/<you>/.local/share/mise/installs/node/20.19.4/bin/node
+   ```
+   (`.xcode.env.local` is gitignored — it's machine-specific. Verify with
+   `node -v` in your mise shell and use that path.)
+
+2. **Stale codegen script phase (12× `../` path bug).** If `xcodebuild` fails on
+   `PhaseScriptExecution [CP-User] Generate Specs` (target `ReactCodegen`) with
+   `No such file or directory` for `with-environment.sh`, the Pods project has a
+   stale `ReactCodegen.podspec` script phase whose `RCT_SCRIPT_RN_DIR` resolves
+   past the filesystem root (12× `../` instead of 1×). This happens when a
+   previous `pod install` ran the codegen with a stale/missing output path.
+   **Fix:** nuke all codegen + Pods + DerivedData and re-run pod install:
+   ```
+   rm -rf ios/Pods ios/Podfile.lock ios/build ~/Library/Developer/Xcode/DerivedData/Couleurbummel-*
+   cd ios && bundle exec pod install
+   ```
+   Verify the regenerated `ios/build/generated/ios/ReactCodegen.podspec` has
+   `RCT_SCRIPT_RN_DIR="$RCT_SCRIPT_POD_INSTALLATION_ROOT/../node_modules/react-native"`
+   (1× `../`, not 12×).
+
+These are environmental, not code changes — nothing to commit (`.xcode.env.local`
+is gitignored). Documented here so the same fixes apply at M3+.
 
 **Note on `@react-native-firebase/*`:** still on 20.5.0 — **worked fine** under
 Metro 0.82 package exports (no resolution breakage). No bump needed at M2.
