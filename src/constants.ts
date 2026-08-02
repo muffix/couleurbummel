@@ -1,6 +1,6 @@
 import {ThemeMode} from '@rneui/themed';
 import {consoleTransport} from 'react-native-logs';
-import {Point, Region} from 'react-native-maps/lib/sharedTypes';
+import {Point, Region} from 'react-native-maps';
 
 import {DrawerScreenName} from './types/screens';
 import {GlobalState, Language, SortOptions, Theme} from './types/state';

@@ -1,6 +1,6 @@
 import Geolocation from '@react-native-community/geolocation';
 import React, {PropsWithChildren, useState} from 'react';
-import {LatLng} from 'react-native-maps/lib/sharedTypes';
+import {LatLng} from 'react-native-maps';
 
 import constants from '../../constants';
 import log from '../../log';

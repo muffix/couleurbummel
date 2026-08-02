@@ -48,7 +48,7 @@ target 'Couleurbummel' do
       src = File.read(fmt_base)
       marker = 'patched for Xcode 26 consteval'
       unless src.include?(marker)
-        src.gsub!('#  define FMT_USE_CONSTEVAL 1', '#  define FMT_USE_CONSTEVAL 0 // #{marker}')
+        src.gsub!('#  define FMT_USE_CONSTEVAL 1', "#  define FMT_USE_CONSTEVAL 0 // #{marker}")
         File.chmod(0o644, fmt_base)
         File.write(fmt_base, src)
         Pod::UI.puts 'Patched fmt/base.h: FMT_USE_CONSTEVAL=0 (Xcode 26 consteval workaround)'

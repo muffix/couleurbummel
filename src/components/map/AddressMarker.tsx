@@ -1,7 +1,7 @@
 import {Image, makeStyles, useTheme} from '@rneui/themed';
 import React, {memo, useContext, useMemo} from 'react';
 import {ColorValue, StyleSheet, View} from 'react-native';
-import {Point} from 'react-native-maps/lib/sharedTypes';
+import {Point} from 'react-native-maps';
 import Svg, {Circle, G, Path} from 'react-native-svg';
 
 import getIconNamed from '../../assets/icons';

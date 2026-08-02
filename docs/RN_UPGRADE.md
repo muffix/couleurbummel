@@ -201,40 +201,102 @@ This workaround **drops at M6 (RN 0.83+)** where fmt 12.1.0 is the bundled versi
 
 ---
 
-## Milestone 2 — 0.77 → 0.79 (Metro package exports; Remote JS Debugging removed)
+## Milestone 2 — 0.77 → 0.79 (React 19 + Metro package exports) ✅
 
-**Versions:** react-native `0.77.3` → `0.79.7` · react stays `18.3.1`
+**Versions:** react-native `0.77.3` → `0.79.7` · react **18.3.1 → 19.0.0**
 
-**Key changes:**
-- **Metro 0.82** is shipped: `package.json` `"exports"` and `"imports"` field
-  resolution is now **stable and enabled by default**. The 0.79 post explicitly
-  warns of **Firebase** and AWS Amplify breakage here.
-  - **Action:** watch `@react-native-firebase/*` resolution closely. If RNFirebase
-    breaks, bump to a 0.79-compatible RNFirebase (21.x or 22.x) and/or set
-    `resolver.unstable_enablePackageExports = false` in `metro.config.js` as a
-    temporary opt-out. Prefer fixing RNFirebase over opting out.
-- **Remote JS Debugging removed** (old debugger). Switch to React Native
-  DevTools. No code change expected; just a dev-workflow note.
-- **JSC → community package** (N/A — we use Hermes, `hermesEnabled=true`).
+**⚠️ Plan correction:** the runbook assumed M2 stays on React 18.3, but
+**RN 0.79 has peer dependency `react: ^19.0.0`** — the React 19 jump happens
+here, not at M3. M2 therefore carried the React 19 core bump (react,
+react-test-renderer, @types/react). The full JS cascade (@rneui 5, i18next 17/26,
+RTL 14) was deferred via a **minimal-bump strategy**: only the hard React-19
+requirements were bumped; @rneui rc.8, react-i18next 12, i18next 22, and
+@testing-library/react-native 12.7.2 were kept (they tolerate React 19 — verified
+via peer deps) and bumped only if they broke. None broke; tests pass.
 
-**Watch:** our 8 deep imports from `react-native-maps/lib/sharedTypes`:
-```
-src/types/screens.ts, src/components/contexts/UserLocationContext.tsx,
-src/components/Map.tsx, src/components/explore/CorporationList.tsx,
-src/components/explore/ExploreNearby.tsx, src/components/map/AddressMarker.tsx,
-src/constants.ts, src/util.ts
-```
-These are not React Native deep imports (so the 0.80 RN deep-import deprecation
-doesn't apply), and `react-native-maps@1.18` currently has **no `exports` field**
-(`main: lib/index.js`, subpath `lib/sharedTypes.*` resolves freely), so this is
-low risk *today*. But with package `exports` now stable in Metro, if a maps bump
-(1.18 → 1.29) adds an `exports` field that gates `lib/*`, these 8 imports will
-break. **Action at M2:** after bumping maps, if `lib/sharedTypes` is gated,
-import the types from the package root (`react-native-maps`) or a local `.d.ts`
-instead. Do not leave these as breakage — fix at this milestone.
+**Status: FULLY GREEN ✅ — Android `BUILD SUCCESSFUL` (clean, 44s), iOS
+`BUILD SUCCEEDED`, lint green, 32/32 tests pass.**
 
-**Gate:** full validation gate. Pay special attention to the Firebase live DB
-update + App Check token in the smoke test (use `DATABASE_TYPE=prod`).
+### JS-side changes
+
+- [x] `package.json`: react 18.3.1→19.0.0, react-native 0.77.3→0.79.7,
+      `@react-native/*` configs →0.79.7, CLI 15.0.1→18.0.0, `@types/react`→^19,
+      `@types/react-test-renderer`→^19, react-test-renderer→19.0.0.
+- [x] **Removed `@types/react-native`** (obsolete since RN 0.71 ships its own
+      types); it pulled `@types/react@18.0.26` via `*`, causing a duplicate
+      @types/react (18 + 19) that broke JSX component typing
+      (`ReactElement not assignable to ReactNode`).
+- [x] **Added `resolutions: { "@types/react": "^19.0.0" }`** to force a single
+      @types/react across transitive pulls (@types/react-native-vector-icons,
+      @types/react-test-renderer resolved @types/react via `*` → 18.0.26).
+- [x] `yarn lint` green, `yarn test` 32/32, iOS+Android JS bundles build.
+
+### Native library bumps (RN 0.79 codegen / Yoga / Fabric C++ API changes)
+
+RN 0.79 changed the codegen `codegenNativeComponent` export (moved off root),
+the Yoga `StyleLength` API, and the Fabric `ShadowViewMutation.parentShadowView`.
+Several M1 lib versions broke and needed further bumps:
+
+| Package | M1 → M2 | Why |
+|---|---|---|
+| `react-native-maps` | 1.18.0 → **1.26.0** | 1.18 `forwardRef` broke under React 19 (`restProps.mapRef is not a function`). 1.28+ import `codegenNativeComponent` from `react-native` root (removed in 0.79) — **1.26.0 is the last RN-0.79-compatible version** (uses deep-import path). |
+| `react-native-map-clustering` | 3.4.2 → **4.0.0** | 3.4.2 clustering ref calls broke under React 19 (`range` undefined). 4.0.0 uses supercluster 8 (ESM). |
+| `react-native-screens` | 3.36.0 → **4.12.0** | 3.36.0 (RN 0.77) fails on RN 0.79 Fabric `parentShadowView`. 3.x ends at 3.37.0 (RN 0.78 only) — **RN 0.79 requires screens 4.x**. 4.12.0 is the minimum with explicit RN 0.79 support; still legacy-arch compatible. |
+| `react-native-safe-area-context` | 5.1.0 → **5.4.0** | 5.1.0 (RN 0.77) fails on RN 0.79 Yoga `StyleLength::unit`. 5.4.0 "Support React Native 0.79". |
+| `react-native-country-flag` | 1.1.9 → **2.0.2** | 1.1.9 has no types; React 19 JSX inference broke it. 2.0.2 ships types. |
+
+### `react-native-maps` deep imports — fixed (the predicted M2 risk)
+
+maps 1.26.0 ships **TypeScript source** (`main: src/index.ts`); `lib/sharedTypes`
+is gone. The 8 deep imports (`react-native-maps/lib/sharedTypes`) + 1 in
+`__mocks__/` were changed to import from the package **root** (`react-native-maps`),
+which re-exports `Region`/`LatLng`/`Point` via `export * from './sharedTypes'`.
+
+### Jest config changes
+
+- `jest.config.ts` `transformIgnorePatterns`: added `react-native-maps`,
+  `react-native-map-clustering`, `supercluster`, `kdbush`, `@mapbox` (maps 1.26
+  ships TS source; clustering 4.0 pulls ESM supercluster/kdbush that need babel).
+- `jest.setup.ts`: added `jest.mock('react-native-maps/src/specs/NativeAirMapsModule')`
+  — maps 1.26 calls `TurboModuleRegistry.getEnforcing('RNMapsAirModule')` at module
+  load, which throws in jest; stubbing the spec module lets MapView render.
+- Removed a temporary AggregateError-debug toString hack.
+
+### Code change
+
+- `src/components/Map.tsx`: `showsPointsOfInterest` → `showsPointsOfInterests`
+  (maps 1.26 renamed the prop).
+
+### Native toolchain (template diff 0.77→0.79)
+
+- [x] `android/build.gradle`: targetSdk 34→35 (compile already 35 from M1).
+- [x] `android/gradle/wrapper`: Gradle 8.10.2→8.13-bin.
+- [x] `android/app/build.gradle`: `jscFlavor` → community JSC package
+  (`io.github.react-native-community:jsc-android:2026004.+`); cosmetic (Hermes on).
+- [x] `Gemfile`: added `bigdecimal`, `logger`, `benchmark`, `mutex_m`
+  (Ruby 3.4 stdlib removal).
+- [x] `.gitignore`: added `.kotlin/`.
+- [x] `ios/Podfile` `post_install` fmt patch marker fixed (Ruby single-quote
+      `#{marker}` doesn't interpolate — switched to double-quote string).
+- [x] `AppDelegate.mm` kept as ObjC++ (0.79's Swift template uses a new
+      `RCTReactNativeFactory` pattern, but ObjC `RCTAppDelegate` still supported).
+
+### Snapshot updates
+
+- 9 jest snapshots updated (benign churn): Map (maps 1.18 `AIRMap` → 1.26
+  `RNMapsMapView` render differently in jest), CountryList (country-flag 2.0.2).
+
+### Validation ✅
+
+- [x] `yarn install`, `yarn lint`, `yarn test` (32/32), iOS+Android JS bundles.
+- [x] `bundle exec pod install` (97 pods, fmt patch + safe-area 5.4 + screens 4.12).
+- [x] `cd android && ./gradlew clean :app:assembleDebug` — BUILD SUCCESSFUL (44s).
+- [x] `xcodebuild ... -sdk iphonesimulator build` — BUILD SUCCEEDED.
+- [ ] Full smoke on device/simulator — still pending (run the app, esp. map
+      clustering + Firebase live DB with `DATABASE_TYPE=prod`).
+
+**Note on `@react-native-firebase/*`:** still on 20.5.0 — **worked fine** under
+Metro 0.82 package exports (no resolution breakage). No bump needed at M2.
 
 ---
 

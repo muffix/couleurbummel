@@ -2,7 +2,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {getDistance} from 'geolib';
 import React, {useContext, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
-import {LatLng} from 'react-native-maps/lib/sharedTypes';
+import {LatLng} from 'react-native-maps';
 
 import log from '../../log';
 import {CouleurbummelModel} from '../../model/model';

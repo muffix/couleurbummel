@@ -21,7 +21,7 @@ import MapView from 'react-native-map-clustering';
  react-native-maps. It doesn't export an interface, so TypeScript complains.
  */
 import MapViewInterface, {Callout, MapMarker, Marker} from 'react-native-maps';
-import {LatLng, Region} from 'react-native-maps/lib/sharedTypes';
+import {LatLng, Region} from 'react-native-maps';
 import Popover from 'react-native-popover-view';
 import {EdgeInsets, useSafeAreaInsets} from 'react-native-safe-area-context';
 
@@ -201,7 +201,7 @@ export const Map = ({initialRegion, addressIds}: MapProps) => {
         loadingEnabled
         clusteringEnabled
         showsMyLocationButton
-        showsPointsOfInterest
+        showsPointsOfInterests
         initialRegion={initialRegion}
         minPoints={constants.map.clustering.minNumber}
         maxZoom={constants.map.clustering.maxZoomLevel}

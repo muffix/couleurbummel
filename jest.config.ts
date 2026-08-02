@@ -15,7 +15,7 @@ const jestConfig: JestConfigWithTsJest = {
     ],
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|@rneui|react-native-localize)',
+    'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|@rneui|react-native-localize|react-native-maps|react-native-map-clustering|supercluster|kdbush|@mapbox)',
   ],
   testPathIgnorePatterns: ['<rootDir>/__tests__/__helpers__'],
   setupFiles: [

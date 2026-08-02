@@ -1,7 +1,7 @@
 import {DrawerScreenProps} from '@react-navigation/drawer';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
-import {Region} from 'react-native-maps/lib/sharedTypes';
+import {Region} from 'react-native-maps';
 
 import {Address, City, Corporation} from './model';
 
