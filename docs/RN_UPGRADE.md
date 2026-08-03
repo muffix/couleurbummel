@@ -384,9 +384,82 @@ from `@rneui` 5 and React 19. Update jest snapshots deliberately (review diffs).
 
 ---
 
-## Milestone 4 — Enable New Architecture on 0.81 (no RN bump)
+## Milestone 4 — Enable New Architecture (PULLED FORWARD to M2, on 0.79) ✅
 
-**Versions:** react-native stays `0.81.6` · react stays `19.1.x`
+**Versions:** react-native stays `0.79.7` · react stays `19.0.0`
+
+**⚠️ Pulled forward from M4-on-0.81 to M2-on-0.79.** The original plan was to
+stay on the Legacy (Paper) architecture through M3 and enable New Arch at M4.
+This turned out to be **impossible** at RN 0.79 + React 19:
+
+- RN 0.79's `NewArchitectureHelper.new_arch_enabled` defaults to **TRUE** unless
+  `RCT_NEW_ARCH_ENABLED='0'` is set explicitly. Our first `pod install` built the
+  iOS Pods for Fabric while the app ran Paper → mismatch →
+  `-[RCTView setSheetLargestUndimmedDetent:]: unrecognized selector` crash at
+  startup (the Fabric-only `RNSScreen` had no legacy view manager, so
+  `requireNativeComponent` fell back to `RCTView`).
+- Forcing legacy (`RCT_NEW_ARCH_ENABLED='0'`) breaks `react-native-maps`:
+  maps 1.22+ is **Fabric-only on iOS** (`_props`/`_eventEmitter`/
+  `RCTFabricComponentsPlugins` unconditionally). maps 1.18–1.20 (Paper) break
+  under React 19 (`forwardRef`). **There is no `react-native-maps` version that
+  supports both Paper AND React 19.** `react-native-screens` 4.x is similarly
+  Fabric-first.
+
+So the New Architecture is **forced** at M2. Enabling it consistently (iOS pods
++ Android) resolved the crash.
+
+**Status: FULLY GREEN ✅ — Android `BUILD SUCCESSFUL` (clean, 2m52s), iOS
+`BUILD SUCCEEDED`, app LAUNCHES and RUNS on the simulator (no startup crash;
+Firebase App Check initializes).**
+
+### Changes
+
+- [x] `ios/Podfile`: `ENV['RCT_NEW_ARCH_ENABLED'] = '1'` (was forcing `'0'`).
+- [x] `android/gradle.properties`: `newArchEnabled=true` (was `false`).
+- [x] `react-native-maps` 1.25.0 → **1.26.0** (Fabric; 1.25 was a temporary
+      legacy attempt that doesn't compile on Paper either).
+- [x] `@react-native-firebase/app` + `app-check` + `database` 20.5.0 → **21.14.0**
+      (v21 added New Architecture support; Firebase iOS SDK bumped to v11).
+- [x] `jest.setup.ts`: added `jest.mock('@react-native-firebase/app')` (v21 needs
+      the app module mocked; v20 didn't).
+- [x] `ios/Couleurbummel/AppDelegate.mm`: `self.dependencyProvider =
+      [[RCTAppDependencyProvider alloc] init]` (required since RN 0.77; without
+      it the view-manager/TurboModule interop breaks — see screens issue #2718).
+
+### No other lib bumps needed
+
+All other current libs already support the New Architecture on both platforms:
+reanimated 3.17.5, gesture-handler 2.22.1, svg 15.11.2, safe-area-context 5.4.0,
+screens 4.12.0, async-storage 2.0.0, bootsplash 4.6.0, config 1.4.12,
+localize 2.2.4, popover-view 5.1.7, element-dropdown 2.5.3, map-clustering 4.0.0,
+vector-icons 9.2.0, country-flag 2.0.2, geolocation 3.4.0.
+
+### Validation ✅
+
+- [x] `yarn lint` green, `yarn test` 32/32 (2 pre-existing reanimated TS2612
+      suites still fail to compile — unchanged).
+- [x] `bundle exec pod install` — "Configuring the target with the New
+      Architecture", 97 pods.
+- [x] `xcodebuild ... -sdk iphonesimulator build` — BUILD SUCCEEDED.
+- [x] `cd android && ./gradlew clean :app:assembleDebug` — BUILD SUCCESSFUL.
+- [x] App **launches and runs** on iPhone 15 Pro simulator (iOS 18): no startup
+      crash, Firebase App Check debug token issued, app stays alive.
+- [ ] Full smoke on device/simulator — still pending (run the app: map render +
+      clustering, callout, drawer, search, favourites, Firebase live DB with
+      `DATABASE_TYPE=prod`).
+
+### iOS `run-ios` env notes (still apply)
+
+- `ios/.xcode.env.local` must point `NODE_BINARY` at Node 20 (machine-local,
+  gitignored) — see M2 notes.
+- If `xcodebuild` fails on `PhaseScriptExecution [CP-User] Generate Specs` with
+  `No such file or directory` for `with-environment.sh`, the Pods project has a
+  stale `ReactCodegen.podspec` script phase with a deep `../` path. Fix:
+  `rm -rf ios/Pods ios/Podfile.lock ios/build ~/Library/Developer/Xcode/DerivedData/Couleurbummel-*`
+  then re-run `bundle exec pod install` (verify the regenerated
+  `ios/build/generated/ios/ReactCodegen.podspec` has 1× `../`).
+
+---
 
 This is the **highest-risk milestone** and the RN team's recommended staging
 point. Do not cross to 0.82 until this is fully green.

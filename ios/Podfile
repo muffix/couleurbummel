@@ -8,6 +8,13 @@ require Pod::Executable.execute_command('node', ['-p',
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
+# Enable the New (Fabric) Architecture. React Native 0.79+ defaults
+# `NewArchitectureHelper.new_arch_enabled` to TRUE; react-native-maps >= 1.22
+# and react-native-screens 4.x are Fabric-only on iOS, so the New Architecture
+# is required for this project's lib set (there is no Paper + React 19 maps).
+# This must match `android/gradle.properties` `newArchEnabled=true`.
+ENV['RCT_NEW_ARCH_ENABLED'] = '1'
+
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green

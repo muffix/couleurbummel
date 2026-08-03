@@ -1,5 +1,29 @@
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
 
+jest.mock('@react-native-firebase/app', () => ({
+  __esModule: true,
+  default: {
+    app: jest.fn(() => ({
+      database: jest.fn(() => ({
+        ref: jest.fn(() => ({
+          on: jest.fn(),
+        })),
+        setPersistenceEnabled: jest.fn(),
+      })),
+    })),
+  },
+  firebase: {
+    app: jest.fn(() => ({
+      database: jest.fn(() => ({
+        ref: jest.fn(() => ({
+          on: jest.fn(),
+        })),
+        setPersistenceEnabled: jest.fn(),
+      })),
+    })),
+  },
+}));
+
 jest.mock('@react-native-firebase/database', () => ({
   firebase: {
     app: jest.fn(() => ({
