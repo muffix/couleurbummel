@@ -63,3 +63,8 @@ jest.mock('react-native-maps/src/specs/NativeAirMapsModule', () => ({
   __esModule: true,
   default: {},
 }));
+
+// react-native-worklets (required by reanimated 4.x) jest mock.
+// The moduleNameMapper in jest.config.ts redirects all imports to the mock.
+// This require sets up the global vars (_WORKLET=false, __RUNTIME_KIND, etc).
+require('react-native-worklets/lib/module/mock');

@@ -1,5 +1,4 @@
-import {DarkTheme, DefaultTheme} from '@react-navigation/native';
-import {Theme} from '@react-navigation/native/lib/typescript/src/types';
+import {DarkTheme, DefaultTheme, Theme} from '@react-navigation/native';
 import {createTheme, darkColors, lightColors} from '@rneui/themed';
 import {ColorValue, Platform} from 'react-native';
 
@@ -86,6 +85,7 @@ export const navigationTheme: {lightTheme: Theme; darkTheme: Theme} = {
       ...DefaultTheme.colors,
       primary: sharedColours.primary,
     },
+    fonts: DefaultTheme.fonts,
   },
   darkTheme: {
     dark: true,
@@ -93,6 +93,7 @@ export const navigationTheme: {lightTheme: Theme; darkTheme: Theme} = {
       ...DarkTheme.colors,
       primary: sharedColours.primary,
     },
+    fonts: DarkTheme.fonts,
   },
 };
 

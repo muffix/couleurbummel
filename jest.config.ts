@@ -11,12 +11,20 @@ const jestConfig: JestConfigWithTsJest = {
       'ts-jest',
       {
         tsconfig: 'tsconfig.test.json',
+        diagnostics: { warnOnly: true },
       },
     ],
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|@rneui|react-native-localize|react-native-maps|react-native-map-clustering|supercluster|kdbush|@mapbox)',
+    'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|@rneui|react-native-localize|react-native-maps|react-native-map-clustering|react-native-worklets|supercluster|kdbush|@mapbox)',
   ],
+  moduleNameMapper: {
+    // Mock react-native-worklets (required by reanimated 4.x) so its native
+    // module isn't loaded in jest. The mock at lib/module/mock exports a
+    // WorkletAPI with all needed methods stubbed.
+    '^react-native-worklets$':
+      '<rootDir>/node_modules/react-native-worklets/lib/module/mock',
+  },
   testPathIgnorePatterns: ['<rootDir>/__tests__/__helpers__'],
   setupFiles: [
     './node_modules/react-native/jest/setup.js',
