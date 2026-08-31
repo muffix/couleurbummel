@@ -8,13 +8,19 @@ import {waitForPromisesToResolveWithAct} from '../../__helpers__/helpers';
 import {fireEvent, render, screen} from '../../__helpers__/test-utils';
 
 describe('City list', () => {
-  it('renders correctly', async () => {
-    render(<CityList />);
+  // Rendering all city groups is slow enough on CI runners to occasionally
+  // exceed Jest's default 5000ms timeout; give it more headroom.
+  it(
+    'renders correctly',
+    async () => {
+      render(<CityList />);
 
-    await waitForPromisesToResolveWithAct().then(() =>
-      expect(screen.toJSON()).toMatchSnapshot(),
-    );
-  });
+      await waitForPromisesToResolveWithAct().then(() =>
+        expect(screen.toJSON()).toMatchSnapshot(),
+      );
+    },
+    15000,
+  );
 
   // TODO: Re-enable at RN 0.82+ — React 19.1 + RN 0.81 Animated ref cleanup bug
   // causes "Cannot read properties of undefined (reading 'remove')" in the jest
