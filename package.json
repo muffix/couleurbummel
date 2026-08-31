@@ -38,7 +38,7 @@
     "react-native-localize": "^2.2.4",
     "react-native-logs": "^5.0.1",
     "react-native-map-clustering": "4.0.0",
-    "react-native-maps": "1.26.0",
+    "react-native-maps": "1.26.20",
     "react-native-popover-view": "^5.1.7",
     "react-native-reanimated": "4.3.0",
     "react-native-safe-area-context": "5.5.2",

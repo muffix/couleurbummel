@@ -245,6 +245,23 @@ Several M1 lib versions broke and needed further bumps:
 | `react-native-safe-area-context` | 5.1.0 → **5.4.0** | 5.1.0 (RN 0.77) fails on RN 0.79 Yoga `StyleLength::unit`. 5.4.0 "Support React Native 0.79". |
 | `react-native-country-flag` | 1.1.9 → **2.0.2** | 1.1.9 has no types; React 19 JSX inference broke it. 2.0.2 ships types. |
 
+### `react-native-maps` bumped again at M5 — Android NPE fix
+
+**1.26.0 → 1.26.20** (still same minor line; M5 branch is on RN 0.82.1, so the
+RN-0.79 import-path constraint above no longer applies, but there's no reason to jump past 1.26.x
+for an unrelated fix). 1.26.0 crashes on Android with a fatal `NullPointerException` in
+`MapView.removeMapLoadingLayoutView` (`getParent()` returns null) as soon as the map actually
+finishes loading tiles (`cacheEnabled` false + `loadingEnabled` true, both true of this app's
+`<MapView>` in `src/components/Map.tsx`) — see upstream
+[#5641](https://github.com/react-native-maps/react-native-maps/issues/5641),
+[#5637](https://github.com/react-native-maps/react-native-maps/issues/5637),
+[#5592](https://github.com/react-native-maps/react-native-maps/issues/5592), fixed in
+[#5689](https://github.com/react-native-maps/react-native-maps/pull/5689) (merged 2025-09-21;
+first released in 1.26.13). This went unnoticed through all earlier M1-M5 testing because the
+committed `.env`'s placeholder `GOOGLE_MAPS_API_KEY` prevents tiles from ever finishing loading,
+so the crashing code path was never exercised locally — it only surfaced once a real key was
+used to verify the map actually renders.
+
 ### `react-native-maps` deep imports — fixed (the predicted M2 risk)
 
 maps 1.26.0 ships **TypeScript source** (`main: src/index.ts`); `lib/sharedTypes`

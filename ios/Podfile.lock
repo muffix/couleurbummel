@@ -1859,9 +1859,9 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-maps (1.26.0):
-    - react-native-maps/Maps (= 1.26.0)
-  - react-native-maps/Generated (1.26.0):
+  - react-native-maps (1.26.20):
+    - react-native-maps/Maps (= 1.26.20)
+  - react-native-maps/Generated (1.26.20):
     - boost
     - DoubleConversion
     - fast_float
@@ -1889,7 +1889,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-maps/Maps (1.26.0):
+  - react-native-maps/Maps (1.26.20):
     - boost
     - DoubleConversion
     - fast_float
@@ -3261,7 +3261,7 @@ SPEC CHECKSUMS:
   React-microtasksnativemodule: a84b9331106616ab1fa36de9ae555718d4bbdcf5
   react-native-config: 49b97ba88572f8b44272d4641d27d7526407bdad
   react-native-geolocation: 49d39b53dfeb6c22ff1ad69e71ac9c7981affdaa
-  react-native-maps: 5e52ec835cce3fb85d034deb8b43425ddf005288
+  react-native-maps: 3bd3b12ba0a2849faeaff8098be43e3d91d92040
   react-native-safe-area-context: c6e81f5f5cec822531159d99a5db3a5562438492
   React-NativeModulesApple: efd0906463c79d9b86197dbcf0d58358dff8c5ed
   React-oscompat: 95875e81f5d4b3c7b2c888d5bd2c9d83450d8bdb
