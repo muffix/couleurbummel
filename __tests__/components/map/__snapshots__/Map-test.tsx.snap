@@ -39,6 +39,14 @@ exports[`Map renders and matches the snapshot 1`] = `
     onRegionChangeComplete={[Function]}
     onRegionChangeStart={[Function]}
     onUserLocationChange={[Function]}
+    region={
+      {
+        "latitude": 51.2750092,
+        "latitudeDelta": 9.188462399999992,
+        "longitude": 11.217411795,
+        "longitudeDelta": 15.454563014999998,
+      }
+    }
     showsMyLocationButton={true}
     showsPointsOfInterests={true}
     showsUserLocation={true}
