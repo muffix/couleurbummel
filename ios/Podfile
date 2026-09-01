@@ -8,6 +8,13 @@ require Pod::Executable.execute_command('node', ['-p',
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
+# Enable the New (Fabric) Architecture. React Native 0.79+ defaults
+# `NewArchitectureHelper.new_arch_enabled` to TRUE; react-native-maps >= 1.22
+# and react-native-screens 4.x are Fabric-only on iOS, so the New Architecture
+# is required for this project's lib set (there is no Paper + React 19 maps).
+# This must match `android/gradle.properties` `newArchEnabled=true`.
+ENV['RCT_NEW_ARCH_ENABLED'] = '1'
+
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
@@ -37,5 +44,41 @@ target 'Couleurbummel' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # React Native 0.81 dropped the Folly compiler flags from the aggregate
+    # xcconfig (RN 0.79 had them in OTHER_CPLUSPLUSFLAGS). Without
+    # -DFOLLY_CFG_NO_COROUTINES=1, Folly auto-detects C++20 coroutines on
+    # Xcode 26 and tries to #include <folly/coro/Coroutine.h> which doesn't
+    # exist, causing a fatal build error. Add the Folly flags back.
+    folly_flags = '-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1'
+    installer.aggregate_targets.each do |aggregate_target|
+      aggregate_target.xcconfigs.each do |config_name, config_file|
+        ReactNativePodsUtils.add_flag_to_map_with_inheritance(config_file.attributes, 'OTHER_CPLUSPLUSFLAGS', folly_flags)
+        config_file.save_as(aggregate_target.xcconfig_path(config_name))
+      end
+    end
+    # Also add to each pod target's build settings (RCT-Folly etc.)
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        ReactNativePodsUtils.add_flag_to_map_with_inheritance(config.build_settings, 'OTHER_CPLUSPLUSFLAGS', folly_flags)
+      end
+    end
+
+    # Xcode 26 stricter `consteval` breaks the `fmt` 11.0.2 shipped with
+    # React Native < 0.83 (call to consteval function is not a constant expression
+    # in fmt/format-inl.h). The fix (fmt >= 12.1.0, fmtlib/fmt#4065) is backported to
+    # RN 0.83+ (facebook/react-native#56225). On older RN + Xcode 26, disable
+    # fmt's compile-time format-string checking. See expo/expo#44230.
+    fmt_base = File.join(installer.sandbox.pod_dir('fmt'), 'include', 'fmt', 'base.h')
+    if File.exist?(fmt_base)
+      src = File.read(fmt_base)
+      marker = 'patched for Xcode 26 consteval'
+      unless src.include?(marker)
+        src.gsub!('#  define FMT_USE_CONSTEVAL 1', "#  define FMT_USE_CONSTEVAL 0 // #{marker}")
+        File.chmod(0o644, fmt_base)
+        File.write(fmt_base, src)
+        Pod::UI.puts 'Patched fmt/base.h: FMT_USE_CONSTEVAL=0 (Xcode 26 consteval workaround)'
+      end
+    end
   end
 end

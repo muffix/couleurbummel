@@ -1,5 +1,5 @@
 import {getDistance} from 'geolib';
-import {LatLng} from 'react-native-maps/lib/sharedTypes';
+import {LatLng} from 'react-native-maps';
 
 import {Address} from './types/model';
 

@@ -109,7 +109,7 @@ exports[`Country list renders correctly 1`] = `
           <Image
             source={
               {
-                "testUri": "../../react-native-country-flag/dist/cjs/flags/at.png",
+                "uri": "https://flagcdn.com/w80/at.png",
               }
             }
             style={
@@ -374,7 +374,7 @@ exports[`Country list renders correctly 1`] = `
           <Image
             source={
               {
-                "testUri": "../../react-native-country-flag/dist/cjs/flags/de.png",
+                "uri": "https://flagcdn.com/w80/de.png",
               }
             }
             style={

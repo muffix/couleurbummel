@@ -1,4 +1,4 @@
-import {LatLng} from 'react-native-maps/lib/sharedTypes';
+import {LatLng} from 'react-native-maps';
 
 export default {
   setRNConfiguration: jest.fn(),

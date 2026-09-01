@@ -21,7 +21,7 @@ import MapView from 'react-native-map-clustering';
  react-native-maps. It doesn't export an interface, so TypeScript complains.
  */
 import MapViewInterface, {Callout, MapMarker, Marker} from 'react-native-maps';
-import {LatLng, Region} from 'react-native-maps/lib/sharedTypes';
+import {LatLng, Region} from 'react-native-maps';
 import Popover from 'react-native-popover-view';
 import {EdgeInsets, useSafeAreaInsets} from 'react-native-safe-area-context';
 
@@ -79,35 +79,49 @@ export const MapScreen = ({route}: MapScreenProps) => {
 };
 
 /**
- * Moves the map so that the markers for the requested address IDs are visible
+ * Computes the region that shows the markers for the requested address IDs.
+ *
+ * This is used as a controlled `region` prop rather than an imperative
+ * `animateToRegion`/`fitToCoordinates` ref call: on Android, react-native-maps'
+ * imperative Fabric commands are unreliable (the call reaches a valid native
+ * ref but the camera silently doesn't move), while the `region` prop goes
+ * through the standard Fabric prop-diffing path and works correctly.
  */
-const showAddressesOnMap = (
-  map: MapViewInterface,
+const regionForAddresses = (
   model: CouleurbummelModel,
   addressIds: string[],
-) => {
-  if (addressIds.length === 1) {
-    const address = model.address(addressIds[0]);
-    if (address) {
-      map.animateToRegion({
-        latitude: address.latitude,
-        longitude: address.longitude,
-        ...constants.map.zoomToMarkerDeltas,
-      });
-    }
-  } else {
-    const coordinatesToFit = addressIds
-      .map(addressId => model.address(addressId))
-      .filter(a => !!a)
-      .map(a => a as Address)
-      .map(a => {
-        return {
-          latitude: a.latitude,
-          longitude: a.longitude,
-        };
-      });
-    map.fitToCoordinates(coordinatesToFit);
+): Region | undefined => {
+  const coordinates = addressIds
+    .map(addressId => model.address(addressId))
+    .filter((a): a is Address => !!a)
+    .map(a => ({latitude: a.latitude, longitude: a.longitude}));
+
+  if (coordinates.length === 0) {
+    return undefined;
   }
+
+  if (coordinates.length === 1) {
+    return {...coordinates[0], ...constants.map.zoomToMarkerDeltas};
+  }
+
+  const latitudes = coordinates.map(c => c.latitude);
+  const longitudes = coordinates.map(c => c.longitude);
+  const minLatitude = Math.min(...latitudes);
+  const maxLatitude = Math.max(...latitudes);
+  const minLongitude = Math.min(...longitudes);
+  const maxLongitude = Math.max(...longitudes);
+  const boundingBoxPadding = 1.5;
+
+  return {
+    latitude: (minLatitude + maxLatitude) / 2,
+    longitude: (minLongitude + maxLongitude) / 2,
+    latitudeDelta:
+      (maxLatitude - minLatitude) * boundingBoxPadding ||
+      constants.map.zoomToMarkerDeltas.latitudeDelta,
+    longitudeDelta:
+      (maxLongitude - minLongitude) * boundingBoxPadding ||
+      constants.map.zoomToMarkerDeltas.longitudeDelta,
+  };
 };
 
 export const Map = ({initialRegion, addressIds}: MapProps) => {
@@ -151,11 +165,16 @@ export const Map = ({initialRegion, addressIds}: MapProps) => {
   // Remember the marker selected when transitioning to the map.
   const [selectedMarker, setSelectedMarker] = useState<string | undefined>();
 
+  const [region, setRegion] = useState<Region | undefined>(undefined);
+
   useEffect(() => {
-    // If any, animate the map to show the requested addresses once
-    if (addressIds.length && map.current) {
+    // If any, move the map to show the requested addresses once
+    if (addressIds.length) {
       log.debug('Requested to show address IDs', addressIds);
-      showAddressesOnMap(map.current, model, addressIds);
+      const newRegion = regionForAddresses(model, addressIds);
+      if (newRegion) {
+        setRegion(newRegion);
+      }
       if (addressIds.length === 1) {
         setSelectedMarker(addressIds[0]);
       }
@@ -191,7 +210,7 @@ export const Map = ({initialRegion, addressIds}: MapProps) => {
 
           if (firstCoords) {
             log.debug('Animating to first user coordinates received');
-            map.current?.animateToRegion({
+            setRegion({
               ...event.nativeEvent.coordinate,
               ...constants.map.defaultRegionDeltas,
             });
@@ -201,8 +220,9 @@ export const Map = ({initialRegion, addressIds}: MapProps) => {
         loadingEnabled
         clusteringEnabled
         showsMyLocationButton
-        showsPointsOfInterest
+        showsPointsOfInterests
         initialRegion={initialRegion}
+        region={region}
         minPoints={constants.map.clustering.minNumber}
         maxZoom={constants.map.clustering.maxZoomLevel}
         // Android only
